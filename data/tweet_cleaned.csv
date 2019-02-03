@@ -1,0 +1,3273 @@
+id,created_at,retweets,favorites,images,urls,hashtags,users_mentioned,display_text_length,full_text_lines,full_text,source,raw_data_position
+1091352975539204096,Fri Feb 01 15:10:00 +0000 2019,4,19,1,2,5,0,159,7,"Time to be creative with #python and #math.
+
+https://t.co/d8TsxDXcF0
+
+#numpy #plotnine
+
+Original #rstats tweet: https://t.co/jhuaZLk7xh https://t.co/cNnq1rdOPN",https://twitter.com/python_tip/status/1091352975539204096,0
+1091069962570088448,Thu Jan 31 20:25:24 +0000 2019,39,138,0,1,1,0,195,14,"Add leading zeros to your strings using zfill()
+
+&gt;&gt;&gt; for i in [1, 11, 222, ""aaa"", 1234]:
+...     str(i).zfill(4)
+... 
+'0001'
+'0011'
+'0222'
+'0aaa'
+'1234'
+
+https://t.co/IdSTEzqRYi
+
+#python",https://twitter.com/python_tip/status/1091069962570088448,1
+1090630716545789958,Wed Jan 30 15:20:00 +0000 2019,20,49,0,1,2,0,268,12,"0123456789 are not the only characters treated as digits in #Python3:
+
+&gt;&gt;&gt; s = ""௩௩௩""
+&gt;&gt;&gt; int(s)
+333
+&gt;&gt;&gt; s.isdecimal()
+True
+&gt;&gt;&gt; re.match('\d', s)
+&lt;_sre.SRE_Match object; span=(0, 1), match='௩'&gt;
+
+#unicode
+https://t.co/wlE0gl8Nxz",https://twitter.com/python_tip/status/1090630716545789958,2
+1090271399715827715,Tue Jan 29 15:32:12 +0000 2019,15,46,0,1,1,1,104,3,"Don't miss the guide to object-oriented programming in #Python by @tw_lgiordani
+
+https://t.co/TNq87vmgdu",https://twitter.com/python_tip/status/1090271399715827715,3
+1089985890032734208,Mon Jan 28 20:37:41 +0000 2019,30,89,1,1,2,0,230,7,"#pandas DataFrame.merge() has an indicator argument that allows you to see the source of each row.
+
+&gt;&gt;&gt; df = df1.merge(df2, on=[‘X’], how='outer', indicator='src')
+
+https://t.co/LkBTtBnHzc
+
+#python https://t.co/5nCnreaIen",https://twitter.com/python_tip/status/1089985890032734208,4
+1088580342066368513,Thu Jan 24 23:32:33 +0000 2019,19,34,0,2,1,0,225,7,"Be careful when choosing a version of your Python. Many packages will drop Python 2.7 support this year:
+
+https://t.co/gFg8PGxeQb
+
+On contrary, note that #tensorflow still does not support Python 3.7:
+
+https://t.co/aTBQthjkDc",https://twitter.com/python_tip/status/1088580342066368513,5
+1088210015905873921,Wed Jan 23 23:01:00 +0000 2019,6,20,0,1,1,1,235,10,"#pythontip from @thisPtr:
+
+Create an empty DataFrame to be filled later
+
+import pandas as pd
+
+# Creating an empty Dataframe with column names only
+dfObj = pd.DataFrame(columns=['User_ID', 'UserName', 'Action'])
+
+https://t.co/6ZpCyEUkXw",https://twitter.com/python_tip/status/1088210015905873921,6
+1087847124224532480,Tue Jan 22 22:59:00 +0000 2019,19,46,0,1,0,0,279,13,"Do you need different Python versions for different projects?
+
+With pyenv, it is as easy as
+
+# Install Python 3.6.1
+pyenv install 3.6.1
+
+# Create env. with django 1.10
+pyenv virtualenv 3.6.1 django-1.10
+pyenv activate django-1.10
+pip install django==1.10
+
+https://t.co/qvZx4ELr6M",https://twitter.com/python_tip/status/1087847124224532480,7
+1087484736430395392,Mon Jan 21 22:59:00 +0000 2019,19,74,0,1,1,1,273,8,"#pythontip from @singhjayp
+
+getpass.getpass() prompts a user for a password without echoing it.
+
+Example:
+
+import getpass                                                                       
+p = getpass.getpass(""Answer to a very secret question:"") https://t.co/JctxdkaGh5",https://twitter.com/python_tip/status/1087484736430395392,8
+1087465600123850752,Mon Jan 21 21:42:57 +0000 2019,0,0,1,2,0,2,139,4,"RT @karlafej: @python_tip What about feather? Seems pretty fast...
+
+https://t.co/VGyNajEnje
+https://t.co/WdFbAbF7Xh https://t.co/DSe93XsuVr",https://twitter.com/python_tip/status/1087465600123850752,10
+1087139487816302592,Mon Jan 21 00:07:06 +0000 2019,11,56,0,1,2,0,195,5,"Working with a large DataFrame, that is too slow to load/write with read_csv/to_csv?
+
+Try  read_hdf/to_hdf or read_parquet/to_parquet (For more info: https://t.co/CQjJxhRSh3) 
+
+#pythontip #pandas",https://twitter.com/python_tip/status/1087139487816302592,11
+1086388587812319233,Fri Jan 18 22:23:18 +0000 2019,31,111,0,0,3,0,207,9,"The step parameter in sequence slicing can be negative:
+
+&gt;&gt;&gt; a = [1, 2, 3, 4, 5, 6, 7, 8]
+&gt;&gt;&gt; a[::-1] #reverse
+[8, 7, 6, 5, 4, 3, 2, 1]
+&gt;&gt;&gt; a[::-2]
+[8, 6, 4, 2]
+
+#python #pythontip",https://twitter.com/python_tip/status/1086388587812319233,12
+1085987380790726658,Thu Jan 17 19:49:02 +0000 2019,26,79,0,0,1,0,249,8,"Remove duplicates from a list while keeping the order:
+
+&gt;&gt;&gt; from collections import OrderedDict
+&gt;&gt;&gt; a = [""foo"", ""Alice"", ""bar"", ""foo"", ""Bob""]
+&gt;&gt;&gt; list(OrderedDict.fromkeys(a).keys())
+['foo', 'Alice', 'bar', 'Bob']
+
+#python",https://twitter.com/python_tip/status/1085987380790726658,13
+1085641510496976906,Wed Jan 16 20:54:41 +0000 2019,18,59,1,1,1,0,214,8,"Change theme of #jupyter notebook with jupyterthemes.
+
+Command line usage:
+List available themes: jt -l
+Change theme: jt -t &lt;themename&gt;
+Reset to default: jt -r
+
+https://t.co/fMm3IalzUK https://t.co/24oCsEs4z9",https://twitter.com/python_tip/status/1085641510496976906,14
+1085289602057936896,Tue Jan 15 21:36:19 +0000 2019,13,45,1,1,2,1,232,7,"#pythontip by @FlorimondManca:
+
+Use #contextlib's ExitStack to cleanly enter and exit an undetermined number of context managers.
+
+https://t.co/3EqEA5Bd31
+
+Example below allows you to open many files at once: https://t.co/4TZBWQe1uP",https://twitter.com/python_tip/status/1085289602057936896,15
+1084818415670493186,Mon Jan 14 14:23:59 +0000 2019,14,65,0,0,0,0,340,12,"Dict update method can get list of pair tuples as an input:
+
+&gt;&gt;&gt; a={1:'1'}
+&gt;&gt;&gt; b=[(3,'3'),(4,'4')]
+&gt;&gt;&gt; a.update(b)
+&gt;&gt;&gt; a
+{1: '1', 3: '3', 4: '4'}
+
+It might be problematic if the list contains also non key/pair values. Try this:
+&gt;&gt;&gt; c=[(5,'5'), 6, (7,'7')]
+&gt;&gt;&gt; a.update(c)
+&gt;&gt;&gt; a",https://twitter.com/python_tip/status/1084818415670493186,16
+1083498973313155074,Thu Jan 10 23:01:00 +0000 2019,11,51,0,1,2,0,223,9,"Another #wtf #Python? for Friday. Guess what will be the output of the following code:
+
+array = [1, 8, 15]
+g = (x for x in array if array.count(x) &gt; 0)
+array = [2, 8, 22]
+print(list(g))
+
+Solution:
+https://t.co/0714VepJsq",https://twitter.com/python_tip/status/1083498973313155074,17
+1083136585829359618,Wed Jan 09 23:01:00 +0000 2019,31,74,0,1,1,1,311,13,"#pythontip from @singhjayp:
+
+Use shlex.split() to get shell-like splitting:
+
+&gt;&gt;&gt; import re
+&gt;&gt;&gt; re.split('\s', ""this is 'my string'"")
+['this', 'is', ""'my"", ""string'""]
+
+&gt;&gt;&gt; import shlex
+&gt;&gt;&gt; shlex.split(""this is 'my string'"")
+['this', 'is', 'my string']
+
+https://t.co/KlueBBcpEX",https://twitter.com/python_tip/status/1083136585829359618,18
+1082774197611495426,Tue Jan 08 23:01:00 +0000 2019,37,134,0,0,1,1,163,8,"#pythontip by @PyPrinciples:
+
+You can use | and &amp; for set union and intersection. 
+
+&gt;&gt;&gt; {1, 2} &amp; {2, 3}
+{2}
+&gt;&gt;&gt; {1, 2} | {2, 3}
+{1, 2, 3}",https://twitter.com/python_tip/status/1082774197611495426,19
+1082658324447981571,Tue Jan 08 15:20:34 +0000 2019,0,0,0,0,0,2,95,1,RT @maartendb_bel: @python_tip You have a typo in your last command. But the idea still stands.,https://twitter.com/python_tip/status/1082658324447981571,21
+1082654235932741634,Tue Jan 08 15:04:19 +0000 2019,6,34,0,1,0,0,294,19,"Python often reuses string objects:
+
+&gt; a = ""some_string""
+&gt; id(a)
+2024771270192
+&gt; id(""some"" + ""_"" + ""string"")
+2024771270192
+
+But it is not guaranteed!
+
+&gt; a = ""wtf!""
+&gt; id(a)
+2024734733736
+&gt; id(""wft"" + ""!"")
+2024761422376
+
+https://t.co/eVHbmpcBle
+
+Thanks Ondřej Novák for the tip.",https://twitter.com/python_tip/status/1082654235932741634,22
+1082303227104804869,Mon Jan 07 15:49:32 +0000 2019,3,24,0,2,2,2,233,7,"#pythontip from @thisPtr:
+
+How to check if a process is running and find it's PID in Python. #psutil
+
+https://t.co/bS69aZP2lG
+
+(Send us your tips by mentioning @python_tip in your tweet or filling the form at https://t.co/mfUQ9teK5k)",https://twitter.com/python_tip/status/1082303227104804869,23
+1081297369893871616,Fri Jan 04 21:12:37 +0000 2019,19,89,0,1,2,0,167,5,"You can write #pandas objects directly to compressed format (gzip, bz2, zip, xz).
+
+&gt;&gt;&gt; https://t.co/yGT52QVczk_csv(""data.csv.gz"", compression='gzip’)
+
+#Python",https://twitter.com/python_tip/status/1081297369893871616,24
+1080903814943789056,Thu Jan 03 19:08:46 +0000 2019,6,33,0,1,1,0,109,3,"Version control for #jupyter notebooks? Check this blog post for possible solutions.
+
+https://t.co/IIOh9doEDo",https://twitter.com/python_tip/status/1080903814943789056,25
+1080560924258373632,Wed Jan 02 20:26:14 +0000 2019,5,33,0,1,3,1,186,7,"#pythontip by @jonrocher:
+
+If you want to shuffle a #pandas dataframe, you can use the sample() method but specifying a fraction of 1:
+
+df.sample(frac=1)
+
+#Python https://t.co/ZdymJPg4GX",https://twitter.com/python_tip/status/1080560924258373632,26
+1080200666369441792,Tue Jan 01 20:34:42 +0000 2019,44,148,0,2,2,0,274,10,"Use #holidays library to check whether a date is holiday or not.
+
+&gt;&gt;&gt; from datetime import date
+&gt;&gt;&gt; import holidays
+&gt;&gt;&gt; today = https://t.co/DAMy3gbWaN()
+&gt;&gt;&gt; today in holidays.Czech()
+True
+
+Happy New Year! #Python 
+https://t.co/UsuKl4eGLI",https://twitter.com/python_tip/status/1080200666369441792,27
+1079698304244609024,Mon Dec 31 11:18:30 +0000 2018,41,176,0,0,1,0,238,9,"#python lists have the count() method that returns the number of occurrences of an element:
+
+&gt;&gt;&gt; lst = [1, 1, 2, 3, 4, 5, 1, 3, 3, 3, 7, 9, 3]
+&gt;&gt;&gt; lst.count(2)
+1
+
+Most common item:
+&gt;&gt;&gt; max(lst, key=lst.count) 
+3",https://twitter.com/python_tip/status/1079698304244609024,28
+1078297282343325696,Thu Dec 27 14:31:20 +0000 2018,13,47,1,1,2,0,149,5,"Display debug information about the compiled regular expression with re.DEBUG flag.
+
+https://t.co/aPjeqC4gCV
+
+#python #regexp https://t.co/mdqWQnYrxu",https://twitter.com/python_tip/status/1078297282343325696,29
+1077283605444001793,Mon Dec 24 19:23:21 +0000 2018,5,37,1,2,1,0,132,5,"Time for another #matplotlib animation… Merry Xmas to all!
+
+https://t.co/gidKpuJ9p6
+
+https://t.co/FNHcHMm2Gq https://t.co/TiP11PPbAa",https://twitter.com/python_tip/status/1077283605444001793,30
+1076013147142610944,Fri Dec 21 07:15:00 +0000 2018,27,82,1,1,1,1,135,7,"#pythontip from @singhjayp:
+
+Use difflib.SequenceMatcher to compare strings.
+
+https://t.co/JNcXHBFpBq
+
+Example: https://t.co/ECiN4IwuZz",https://twitter.com/python_tip/status/1076013147142610944,31
+1075676176755159040,Thu Dec 20 08:56:00 +0000 2018,3,19,0,2,3,2,229,7,"#pythontip from @thisPtr:
+
+Select elements based on multiple conditions from a #NumPy array
+
+https://t.co/REmvmOCu5f
+
+(Do you want to share your #pythontip? Send it by https://t.co/mfUQ9teK5k or mention @python_tip in your tweet)",https://twitter.com/python_tip/status/1075676176755159040,32
+1075371167278485506,Wed Dec 19 12:44:00 +0000 2018,11,38,1,2,2,2,290,10,"#pythontip from @aliakbar_saleh:
+
+Sorting in Python
+
+https://t.co/EqDh1wlXdZ
+
+Example:
+Sort complex objects using some of the object's indices as a key. 
+
+(Do you want to share your #pythontip? Send it by https://t.co/mfUQ9twkWS or mention @python_tip in your tweet) https://t.co/qvhzYmGYeL",https://twitter.com/python_tip/status/1075371167278485506,33
+1075334585972609024,Wed Dec 19 10:18:38 +0000 2018,18,53,0,1,0,0,131,7,"&gt;&gt;&gt; 0.1 + 0.1 + 0.1 == 0.3
+False
+&gt;&gt;&gt; 0.1 + 0.1 + 0.1
+0.30000000000000004
+
+https://t.co/YrnNf7uk4d 
+(via Facebook)",https://twitter.com/python_tip/status/1075334585972609024,34
+1074994485162057728,Tue Dec 18 11:47:12 +0000 2018,24,52,0,2,1,0,280,6,"#Numpy append is slow because it creates a copy. See running times of appending 10,000 values from https://t.co/A7EdFeD8ou:
+* list.append: 0.0015
+* deque.append: 0.0014
+* np.append: 0.05
+
+If possible, it is better to allocate the array beforehand. Example: https://t.co/RWo0BmlJZ6",https://twitter.com/python_tip/status/1074994485162057728,35
+1073680668142518272,Fri Dec 14 20:46:33 +0000 2018,2,13,0,1,0,0,96,1,JAX: GPU- and TPU-backed NumPy with differentiation and JIT compilation  https://t.co/2Cppu0dLZD,https://twitter.com/python_tip/status/1073680668142518272,36
+1073253966383742976,Thu Dec 13 16:31:00 +0000 2018,7,27,0,2,2,1,202,7,"#pythontip from @simonw 
+If you add a _repr_html_ method returning a HTML string to any class #Jupyter notebook will render the html inline.
+
+Demo: https://t.co/J6cp7rUrXN
+
+Docs:
+https://t.co/EXZfo9OxxC",https://twitter.com/python_tip/status/1073253966383742976,37
+1072865291397255169,Wed Dec 12 14:46:32 +0000 2018,12,42,0,0,2,2,307,11,"#pythontip from @fabridamicelli
+
+So you think you know #Python? You'll still learn from @__mharrison__ 's Illustrated Guide:
+&gt;&gt;&gt; -1 % 3
+2
+&gt;&gt;&gt; -1 % -3
+-1
+&gt;&gt;&gt; 1 % -3
+-2
+Takeaway:  you don't want to do modulo w/negative
+nums on the denominator unless you're sure that's what you need",https://twitter.com/python_tip/status/1072865291397255169,38
+1072509266882412545,Tue Dec 11 15:11:50 +0000 2018,25,74,1,1,1,0,115,5,"Use chardet library to guess encoding of your text files.
+
+https://t.co/jf4YZYjnZl
+
+#python https://t.co/C2DVvAQ5Q0",https://twitter.com/python_tip/status/1072509266882412545,39
+1072140771392962560,Mon Dec 10 14:47:33 +0000 2018,14,37,0,1,2,0,158,4,"Use matplotlib.pyplot.table to add tables to your #matplotlib plot. You can even generate an image containing only the table!
+https://t.co/nsw6PFJjSu
+
+#python",https://twitter.com/python_tip/status/1072140771392962560,40
+1071187630551912448,Fri Dec 07 23:40:07 +0000 2018,13,39,0,1,0,1,246,5,"We are constantly looking for new Python tips. Do you have any and want to share it with a broader audience? 
+
+1) Easy way: Just mention us in your tweet (add @python_tip at the end).
+
+2) Safe way: Fill it into the form at https://t.co/mfUQ9teK5k",https://twitter.com/python_tip/status/1071187630551912448,41
+1070815901740621824,Thu Dec 06 23:03:00 +0000 2018,12,38,1,2,0,0,271,8,"Debugging a decorated function:
+
+If you decorate a function, its __name__, __doc__ and __module__ might be different than what you expect.  Try @functools.wraps to get the original values.
+
+https://t.co/JVzn7SNOL4
+
+Example:
+https://t.co/Vk3SxzAwaf https://t.co/GDPXTqe1VC",https://twitter.com/python_tip/status/1070815901740621824,42
+1070462945090551808,Wed Dec 05 23:40:29 +0000 2018,15,36,0,2,1,1,239,10,"In #Python3, 'str' constructor allows you to specify encoding for a bytes-like object (bytes or bytearray)
+
+Example:
+&gt;&gt;&gt; str(b'\xf0\x9f\x90\xa3', 'utf-8')
+'🐣'
+
+Docs: https://t.co/YE6E074BVO
+
+(via @raymondh
+https://t.co/tN0pUE20ZX)",https://twitter.com/python_tip/status/1070462945090551808,43
+1070107248523952128,Wed Dec 05 00:07:04 +0000 2018,24,47,0,1,2,2,137,5,"Package your #Python Scripts into CLI Commands:
+
+https://t.co/KE0lBodwrb
+
+(#pythontip from @ManuTRILH, the post written by @thegrumpyape)",https://twitter.com/python_tip/status/1070107248523952128,44
+1069728260077031424,Mon Dec 03 23:01:06 +0000 2018,30,71,1,2,1,0,211,6,"Do you need to deprecate a function or a method? Just use this simple #decorator:
+
+https://t.co/s4SSK006ji
+
+(get more decorator ideas at Python Decorator Library:
+https://t.co/BMLNVVh3MI) https://t.co/epFcNSeSYh",https://twitter.com/python_tip/status/1069728260077031424,46
+1069367812366483457,Sun Dec 02 23:08:49 +0000 2018,33,112,0,1,2,2,176,5,"#pythontip from @kenessajr:
+
+To implement a switch-case statement in #Python, you can use a dictionary of lambda functions as in @kenessajr's example. 
+
+https://t.co/GuHwtkEkce",https://twitter.com/python_tip/status/1069367812366483457,48
+1068916190154756097,Sat Dec 01 17:14:13 +0000 2018,11,16,0,1,1,1,176,2,"#selfpromo
+Petr, one of @python_tip authors, is looking for a job. If you are hiring Data Analyst / Data Scientist / Statistician, please, let him know. https://t.co/NPZUupQr6Z",https://twitter.com/python_tip/status/1068916190154756097,49
+984687631383478272,Fri Apr 13 07:00:00 +0000 2018,6,20,1,4,0,0,287,10,"To list all values in pandas DataFrame, use .unique()
+
+To count them, use .value_counts()
+
+import pandas as pd
+reviews = https://t.co/KBWVZb2pZj_csv(""https://t.co/sz08ZG95vx"")
+
+reviews.head()
+https://t.co/9IoOFNun7I.unique()
+https://t.co/9IoOFNun7I.value_counts() https://t.co/nVna5H1V1n",https://twitter.com/python_tip/status/984687631383478272,50
+984655087497707520,Fri Apr 13 04:50:41 +0000 2018,0,0,0,0,0,3,140,1,RT @ManikosN: @python_tip @pybites I have written an (extensive) guide about Python import machinery. If you like to check it out here is t…,https://twitter.com/python_tip/status/984655087497707520,51
+984325249243086848,Thu Apr 12 07:00:01 +0000 2018,17,47,1,1,0,0,349,17,"How does Python find modules/packages?
+
+When you try
+
+&gt;&gt;&gt; import spam
+
+Interpreter looks for `spam` in sys.path folders
+
+&gt;&gt;&gt; import sys
+&gt;&gt;&gt; print(sys.path)
+
+You can manipulate sys.path:
+
+&gt;&gt;&gt;  sys.path.append('../path/to/your/modules/')
+&gt;&gt;&gt; print(sys.path)
+
+https://t.co/Vko9R9gEMT https://t.co/2k9tdPle9T",https://twitter.com/python_tip/status/984325249243086848,52
+983962857221091328,Wed Apr 11 07:00:00 +0000 2018,16,45,0,0,1,0,302,6,"Simple way to get the prime numbers less than 50 using #List_Comprehensions:
+
+&gt;&gt; noprimes = [j for i in range(2, 8) for j in range(i*2, 50, i)]
+&gt;&gt;&gt; primes = [x for x in range(2, 50) if x not in noprimes]
+&gt;&gt;&gt; print(primes)
+[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]",https://twitter.com/python_tip/status/983962857221091328,53
+983809051518619648,Tue Apr 10 20:48:50 +0000 2018,0,0,0,0,2,1,140,1,RT @ChristianHeimes: Python 2 will be replaced with Python 3 in the next Red Hat Enterprise Linux (RHEL) major release.  #python #rhel #red…,https://twitter.com/python_tip/status/983809051518619648,54
+983600469489500161,Tue Apr 10 07:00:00 +0000 2018,13,23,1,2,0,0,235,7,"Does your project need BOTH Python and R?
+
+1) Call R functions from Python with rpy2 and %R magic (https://t.co/tl0rMsFMHJ)
+
+OR
+
+2) Call Python functions from R using reticulate package (https://t.co/AWo7df1u7B) https://t.co/FJ06ol8BH1",https://twitter.com/python_tip/status/983600469489500161,55
+983238078725853184,Mon Apr 09 07:00:00 +0000 2018,16,53,0,2,2,0,146,9,"Print #Pandas Cheat Sheets:
+
+1) basic operations:
+ https://t.co/9JJ3BxiOiv
+
+2) tidy data &amp; data wrangling:
+https://t.co/rVM4LiUueh
+
+#pythontip",https://twitter.com/python_tip/status/983238078725853184,56
+982266551188389888,Fri Apr 06 14:39:30 +0000 2018,18,53,1,0,0,0,220,5,"list.sort() and sorted() accept key argument to specify a function which returns what you would like your items sorted by:
+
+mylst.sort(key = lambda x: x[-1])
+
+sorted(mylst, key = lambda x: len(x)) https://t.co/aVD7Zz2m4H",https://twitter.com/python_tip/status/982266551188389888,57
+981938295272861699,Thu Apr 05 16:55:07 +0000 2018,10,22,0,2,1,0,180,8,"Recursive folder globbing is easy in #python3
+
+imgs = glob.glob('/path/**/*.png')
+or 
+imgs = pathlib.Path('/path').glob('**/*.png')
+
+https://t.co/HjmOW04Tal
+https://t.co/jyNqpHaJXi",https://twitter.com/python_tip/status/981938295272861699,58
+981552759597142016,Wed Apr 04 15:23:08 +0000 2018,17,50,1,2,1,0,211,1,"#Pandas: If you know in advance which columns of your data you’d like to use, you can pass them to the usecols argument of https://t.co/KBWVZaKP7L_csv, https://t.co/KBWVZaKP7L_table, etc. https://t.co/QS9KYprLLl",https://twitter.com/python_tip/status/981552759597142016,59
+981141568110424064,Tue Apr 03 12:09:13 +0000 2018,5,24,0,1,1,0,211,10,"Call a function until a sentinel value is returned with iter()
+
+lines = []
+with open('file.txt') as fp:
+    for line in iter(fp.readline, ''):
+        lines.append(line.strip())
+
+https://t.co/zm5D5EXu2z
+
+#python",https://twitter.com/python_tip/status/981141568110424064,60
+980882587332829184,Mon Apr 02 19:00:07 +0000 2018,8,20,1,1,1,0,249,8,"Unhappy with != inequality operator? FLUFL Uncle Barry will help! 😈
+
+&gt;&gt;&gt; from __future__ import barry_as_FLUFL
+&gt;&gt;&gt; 1 &lt;&gt; 2
+True
+
+Happy #Easter and the belated start of the month!
+https://t.co/kWo93rADmv https://t.co/9HTYBiyc6a",https://twitter.com/python_tip/status/980882587332829184,61
+979599103909773312,Fri Mar 30 06:00:01 +0000 2018,0,0,0,1,0,1,77,3,"@property, a pythonic way to use getters and setters
+
+https://t.co/yHCJKGokgR",https://twitter.com/python_tip/status/979599103909773312,62
+979236713749921793,Thu Mar 29 06:00:00 +0000 2018,15,50,1,0,1,1,286,8,"#pythontip by @raymondh:
+A specialized tool often beats a general purpose tool
+* math.sqrt(x) is more accurate than x ** 0.5
+* math.log2(x) is more accurate than math.log(x, 2)
+* math.log1p(x) is more accurate than math.log(1+x)
+...
+
+For example (see the figure) https://t.co/gB6Vhmakow",https://twitter.com/python_tip/status/979236713749921793,63
+979139728472621056,Wed Mar 28 23:34:37 +0000 2018,0,0,0,0,0,2,94,1,"RT @kimiamania: @python_tip Good ol' rot13, use it twice and you'll get twice the encryption 😂",https://twitter.com/python_tip/status/979139728472621056,65
+978874331374628864,Wed Mar 28 06:00:01 +0000 2018,24,47,1,2,0,0,190,7,"You may know that
+
+&gt;&gt;&gt; import this
+
+prints the Zen of Python. But have you ever looked into its https://t.co/LyDaxRDcfe source code?
+
+https://t.co/OCQuRvO7jB https://t.co/JneItkIAy9",https://twitter.com/python_tip/status/978874331374628864,66
+978511938455068672,Tue Mar 27 06:00:00 +0000 2018,11,17,0,1,3,1,182,5,"Speed-up your array-oriented, math-heavy code with numba using @jit (= just-in-time compilation) decorator. See examples at
+
+https://t.co/JUVXVkNXzi 
+
+#numba #deeplearning #pythontip",https://twitter.com/python_tip/status/978511938455068672,67
+978149555253530624,Mon Mar 26 06:00:01 +0000 2018,17,43,0,2,1,0,181,7,"&gt;&gt;&gt; {True: 'yes', 1: 'no', 1.0: 'maybe'}
+{True: 'maybe'}
+
+Wait, but why?
+* Short explanation: https://t.co/kFTOrfey8k
+* Long explanation: https://t.co/wolF2ggFn9
+#pythontip",https://twitter.com/python_tip/status/978149555253530624,68
+977204746451849217,Fri Mar 23 15:25:41 +0000 2018,22,49,0,0,1,1,214,7,"One more way to combine a list of lists into a single set:
+
+&gt;&gt;&gt; lol = [['a', 'b', 'c'], ['b', 'c', 'd'], ['d', 'e']]
+&gt;&gt;&gt; set().union(*lol)
+set(['a', 'c', 'b', 'e', 'd'])
+
+#pythontip from @raymondh",https://twitter.com/python_tip/status/977204746451849217,69
+976836051191914496,Thu Mar 22 15:00:37 +0000 2018,6,20,0,0,2,0,107,9,"IPython ? magic accepts wildcards:
+
+?np.*close*
+
+np.allclose
+np.isclose
+np.real_if_close
+
+#ipython #jupyter",https://twitter.com/python_tip/status/976836051191914496,70
+976477554314969088,Wed Mar 21 15:16:05 +0000 2018,11,28,1,1,4,0,252,8,"Which one is faster?
+df[(df[""A""] &gt; 0) &amp; (df[""A""] &lt; 100)]
+or
+df.loc[(df[""A""] &gt; 0) &amp; (df[""A""] &lt; 100)]
+
+See benchmarks of various operations on #pandas dataframes: https://t.co/gkujfKtPPS
+
+#python #pandas #numpy https://t.co/1MFAdE66J3",https://twitter.com/python_tip/status/976477554314969088,71
+976076015255552005,Tue Mar 20 12:40:31 +0000 2018,16,34,1,2,1,0,139,2,"Read the content of a file as a string with #pathlib https://t.co/faYhFGaIt5_text() method.
+https://t.co/qHXdEqrjpb https://t.co/ynBOK9Z3jH",https://twitter.com/python_tip/status/976076015255552005,72
+975708743060152320,Mon Mar 19 12:21:06 +0000 2018,9,40,2,1,3,0,153,2,"Ridgeline plots are an alternative to violin plots. Make them easily with joypy. https://t.co/1LLEs2aimr
+#python #pandas #dataviz https://t.co/43EU1tAWdN",https://twitter.com/python_tip/status/975708743060152320,73
+974531657624506368,Fri Mar 16 06:23:47 +0000 2018,9,38,2,2,1,0,161,6,"Make your pandas rolling - with rolling mean and other operations
+
+Example(s):
+https://t.co/DzV59NwJBe
+https://t.co/ISxJDIb0lJ
+#pythontip https://t.co/aD3bAJ8jIR",https://twitter.com/python_tip/status/974531657624506368,74
+974188132072484864,Thu Mar 15 07:38:44 +0000 2018,9,22,1,2,1,0,304,5,"A bit late to the #PiDay party, but if you want to compute 100,000 digits of π in just a few seconds, try mpmath module and the following method
+
+https://t.co/zFfN16mgip
+
+(for those of you persistent, last 4 digits are believed to be Jeff Dean's PIN code, https://t.co/Q3jKOcd9ct) https://t.co/XfPphAV8pP",https://twitter.com/python_tip/status/974188132072484864,75
+973800901277356033,Wed Mar 14 06:00:01 +0000 2018,8,17,0,1,0,0,164,5,"Do you need to call your C++ functions/classes from Python? Wrap them with SWIG
+
+https://t.co/5qOrBJdAfY
+
+Bonus: you can then use them from Java, Perl, ... as well.",https://twitter.com/python_tip/status/973800901277356033,76
+973431339155275776,Tue Mar 13 05:31:31 +0000 2018,13,46,0,5,0,0,289,11,"https://t.co/jFOxw48Kzo() and https://t.co/1Ix7e2EG42() are timezone unaware
+
+&gt; from datetime import datetime
+&gt; https://t.co/1Ix7e2EG42().tzinfo is None
+True
+
+Read more about Python and Timezones
+https://t.co/lG8uC5M1Vt
+
+And always specify t.z.
+&gt; https://t.co/1Ix7e2EG42(pytz.utc)",https://twitter.com/python_tip/status/973431339155275776,77
+973111968088317953,Mon Mar 12 08:22:27 +0000 2018,0,0,0,0,0,2,140,1,RT @eumiro: @python_tip using .now() from dt.datetime is neither human nor computer friendly. Use .utcnow() or .now(pytz.timezone(…)) inste…,https://twitter.com/python_tip/status/973111968088317953,78
+973076122307936257,Mon Mar 12 06:00:01 +0000 2018,24,86,1,2,2,0,304,14,"#humanize = module for human friendly representations
+
+import datetime as dt
+import time
+import humanize
+
+t = https://t.co/mj5384TM25()
+time.sleep(10)
+humanize.naturaltime(t)
+
+y = https://t.co/Gt94Oj5rqW()-dt.timedelta(1)
+humanize.naturaldate(y)
+
+(from A.Samuel #PyDataNYC slides) https://t.co/gmfFwXKzOw",https://twitter.com/python_tip/status/973076122307936257,79
+972173623036399616,Fri Mar 09 18:13:48 +0000 2018,21,53,1,0,2,0,182,5,"Select rows of #pandas dataframe where a column of strings contains   a substring with str.contains()
+
+&gt;&gt;&gt; df[df[“col""].str.contains(""abc”)]
+
+#python https://t.co/AW4MwgvFcI",https://twitter.com/python_tip/status/972173623036399616,80
+971762660097363974,Thu Mar 08 15:00:47 +0000 2018,18,58,1,0,1,0,172,5,"Use textwrap.fill() to print long strings so that they fill a specified number of columns.
+
+&gt;&gt;&gt; print(textwrap.fill(long_str, 60))
+
+#python https://t.co/unhErzp5C4",https://twitter.com/python_tip/status/971762660097363974,81
+971419966544236544,Wed Mar 07 16:19:02 +0000 2018,1,12,0,1,0,0,76,1,How to Insert an element at specific index in list?  https://t.co/hLuM0Mg8Ii,https://twitter.com/python_tip/status/971419966544236544,82
+971052138729222146,Tue Mar 06 15:57:25 +0000 2018,35,80,1,0,1,0,274,8,"Use itertools.compress to filter a sequence based on the results of filtering another related sequence:
+
+counts = [0, 5, 6, 3, 2]
+names = ['Bob', 'Alice', 'Jane', 'Joe', 'Luke']
+more3 = [n &gt; 3 for n in counts]
+list(compress(names, more3))
+
+#python https://t.co/vyUL0VPXEf",https://twitter.com/python_tip/status/971052138729222146,83
+970696992799195136,Mon Mar 05 16:26:12 +0000 2018,7,33,0,1,3,0,212,11,"Place p elements randomly in a 2D #numpy array: 
+
+n = 10
+p = 3
+Z = np.zeros((n,n))
+np.put(Z, np.random.choice(range(n*n), p, replace=False),1)
+print(Z)
+
+For more #numpy tips, see https://t.co/iXKWliIbdZ 
+
+#python",https://twitter.com/python_tip/status/970696992799195136,84
+969496982631858176,Fri Mar 02 08:57:47 +0000 2018,14,41,1,1,1,0,106,3,"Download Google Image Search results with #BeautifulSoup:
+
+https://t.co/x5p3HQNTXk https://t.co/HmRSkDcEIZ",https://twitter.com/python_tip/status/969496982631858176,85
+969348948623110145,Thu Mar 01 23:09:33 +0000 2018,0,0,0,0,0,1,140,6,"RT @aaronchall: dict.setdefault works like get but also sets:
+
+chars = 'alphabet'
+found = {}
+for char in chars:
+    found.setdefault('vowel…",https://twitter.com/python_tip/status/969348948623110145,86
+969343002358378497,Thu Mar 01 22:45:55 +0000 2018,0,0,1,0,0,2,64,1,RT @hroncok: @python_tip Python 2 print? https://t.co/aOoJgbozSE,https://twitter.com/python_tip/status/969343002358378497,87
+969120059892359169,Thu Mar 01 08:00:02 +0000 2018,8,42,0,0,0,0,250,7,"Python dictionary's method get() can be used with a default value:
+
+&gt;&gt;&gt; dict = {'Name': 'Zabra', 'Age': 7}
+&gt;&gt;&gt; print ""Value : %s"" %  dict.get('Age')
+Value : 7
+&gt;&gt;&gt; print ""Value : %s"" %  dict.get('Education', ""NA"")
+Value : NA",https://twitter.com/python_tip/status/969120059892359169,88
+968742565297164290,Wed Feb 28 07:00:00 +0000 2018,18,50,1,1,1,1,297,8,"1990s The Scripting Era
+(Python as Alternative to Bash)
+2000s SciPy Era
+(Python as Alternative to Matlab)
+2010s PyData Era
+(Python as Alternative to R)
+
+Interested how Python became #1 prog. language for data analysis? Check @jakevdp #pydata slides: https://t.co/mGar7YmIbu https://t.co/OtmesBfkM6",https://twitter.com/python_tip/status/968742565297164290,89
+968395277437566976,Tue Feb 27 08:00:00 +0000 2018,11,37,0,0,1,0,184,7,"Get the list of module attributes (= all the things that are in the module):
+
+&gt;&gt;&gt; import math
+&gt;&gt;&gt; dir(math)
+['__doc__', '__name__', ... , 'tanh', 'trunc']
+
+#pythontip",https://twitter.com/python_tip/status/968395277437566976,90
+968033139749658624,Mon Feb 26 08:01:00 +0000 2018,6,36,1,2,3,0,242,8,"Describe your plot layer-by-layer, learn the grammar of graphics. For Python implementations and a comparison to R, see
+
+https://t.co/M2fb6rPZG5
+
+A quick tutorial:
+https://t.co/Sw2M4xnOxM
+
+#pythontip #plotnine #ggplot2 https://t.co/9TE1EE86C7",https://twitter.com/python_tip/status/968033139749658624,91
+967875536625152001,Sun Feb 25 21:34:44 +0000 2018,4,11,0,2,0,1,212,6,"If you are looking for your first EU Python event, @pyconcz is very open and welcoming to newcomers:
+
+🗺️ PRAGUE, CZECHIA 
+🗓 1-3 JUNE 2018
+📨 CfP deadline 2018-02-28!
+https://t.co/5PhfjVX16B https://t.co/akXvBofPOx",https://twitter.com/python_tip/status/967875536625152001,92
+967078256812941312,Fri Feb 23 16:46:38 +0000 2018,22,55,1,0,1,0,130,6,"Keep a limited history of items with collections.deque:
+
+q = deque([1,2,3], maxlen=3)
+q.append(4)
+
+#python https://t.co/Z3pSwOZ5KZ",https://twitter.com/python_tip/status/967078256812941312,93
+966704808328646657,Thu Feb 22 16:02:41 +0000 2018,29,74,0,0,2,0,188,8,"You can name your slices:
+
+&gt;&gt;&gt; record = ""01234567890123456789I want this0123456789""
+&gt;&gt;&gt; IWANT = slice(20,31) 
+&gt;&gt;&gt; record[IWANT]
+'I want this'
+
+#python #pythontip",https://twitter.com/python_tip/status/966704808328646657,94
+966323104866816000,Wed Feb 21 14:45:56 +0000 2018,5,32,1,2,1,0,148,4,"Have you tried #JupyterLab? It's pretty cool! Install it with conda or pip.
+https://t.co/MScqA087iX
+
+https://t.co/hIJ6KQJub4 https://t.co/yPmcL3hc4J",https://twitter.com/python_tip/status/966323104866816000,95
+966039756487274496,Tue Feb 20 20:00:00 +0000 2018,4,14,1,1,2,1,129,5,"Grouped violin plots with split violins (sorry, @alexpmil):
+
+https://t.co/EEJ2mFqcUo
+
+#pythontip #seaborn https://t.co/BGbIpuJ7Fj",https://twitter.com/python_tip/status/966039756487274496,96
+965496173275443201,Mon Feb 19 08:00:00 +0000 2018,5,19,0,1,2,0,195,9,"You can set a threshold for dropping NA values in #pandas dataframes, for example
+
+df.dropna(thresh=5)
+
+won't drop a row if 5 or more of the values are not NA
+
+https://t.co/zfpGy16qxQ
+
+#pythontip",https://twitter.com/python_tip/status/965496173275443201,97
+964409009699770368,Fri Feb 16 08:00:00 +0000 2018,4,13,1,1,0,1,117,3,"Twitter hashtag wordcloud in form of twitter logo by @FerroRodolfo:
+ 
+https://t.co/P9CohxasKZ https://t.co/Rbv9DDE97J",https://twitter.com/python_tip/status/964409009699770368,98
+964046629128024065,Thu Feb 15 08:00:02 +0000 2018,17,56,0,0,1,0,182,6,"#Jupyter notebook autocomplete and docs:
+
+Tab = autocomplete
+Shift-tab = arguments of the function/method
+2 x shift-tab, 3 x shift-tab, ?function = more docs
+??function = source code",https://twitter.com/python_tip/status/964046629128024065,99
+963916390267633664,Wed Feb 14 23:22:30 +0000 2018,0,0,1,0,2,2,137,4,"RT @DynamicWebPaige: @drob your heart is red
+but my heart is torn
+between #rstats + ggplot2
+and #python + seaborn https://t.co/i6h2eoWoJL",https://twitter.com/python_tip/status/963916390267633664,100
+963684235906306048,Wed Feb 14 08:00:00 +0000 2018,8,27,0,1,0,1,85,3,"Scraping data from Facebook using just urllib (by @kondrej):
+
+https://t.co/CPTE4rBhaq",https://twitter.com/python_tip/status/963684235906306048,101
+963321850934697984,Tue Feb 13 08:00:01 +0000 2018,2,16,1,1,1,0,138,3,"Preparing for #ValentineDay? Say ""I love you!"" in Python and other programming languages.
+
+https://t.co/eCzbgbvbV2 https://t.co/rIKPoIxmhc",https://twitter.com/python_tip/status/963321850934697984,102
+962959466936270848,Mon Feb 12 08:00:02 +0000 2018,5,30,1,2,2,0,239,5,"Not only #pythontip: Financial Times Visual Vocabulary
+
+https://t.co/sdLWJFJGNF
+
+can help you to select the best graphical representation of your data. (a #waterfall chart below generated by https://t.co/uKHfikWaah) https://t.co/16e39O91AP",https://twitter.com/python_tip/status/962959466936270848,103
+961975962513571842,Fri Feb 09 14:51:56 +0000 2018,5,30,1,1,3,1,209,3,"Create vega-lite plots from your #pandas dataframes with pdvega by @jakevdp. It has almost the same API as Pandas' built-in visualization tools.
+https://t.co/0zYROoElqd
+#dataviz #python https://t.co/KEn3fTQiXv",https://twitter.com/python_tip/status/961975962513571842,104
+961646715328712705,Thu Feb 08 17:03:38 +0000 2018,5,33,0,0,1,0,111,3,"Filter a #pandas dataframe based on a partial string match in a column:
+
+df[df[""filename""].str.contains(""abc"")]",https://twitter.com/python_tip/status/961646715328712705,105
+961407009076596737,Thu Feb 08 01:11:07 +0000 2018,0,0,1,0,0,2,73,1,RT @alexpmil: @python_tip Down with violin plots! https://t.co/PJTd5KqPvy,https://twitter.com/python_tip/status/961407009076596737,107
+961299457928175616,Wed Feb 07 18:03:45 +0000 2018,14,37,0,2,2,0,224,9,"Do you call the function repeatedly for the same parameters? #Memoization is your friend. See 
+
+https://t.co/d47CZdzmfG
+
+for explanation and module functools for the actual implementation
+
+https://t.co/zDNqXHDsfA
+
+#pythontip",https://twitter.com/python_tip/status/961299457928175616,108
+960931741077790721,Tue Feb 06 17:42:34 +0000 2018,3,17,0,1,1,0,198,6,"Change the maximum number of rows / columns shown when pretty-printing a #pandas dataframe:
+
+pd.set_option('display.max_rows', 200)
+pd.set_option('display.max_columns', 200)
+
+https://t.co/2oib0fbReP",https://twitter.com/python_tip/status/960931741077790721,109
+960527247525449729,Mon Feb 05 14:55:16 +0000 2018,2,17,0,1,0,2,136,6,"Complex is better than complicated.
+One liners are not the same thing as concise
+
+https://t.co/SZMWt5MbKN
+
+(via @raymondh and @jackdied)",https://twitter.com/python_tip/status/960527247525449729,110
+959721832516534272,Sat Feb 03 09:34:50 +0000 2018,2,48,0,1,0,1,79,1,A year ago the first @python_tip was published. 🎂 🎈 🎉 🎏 https://t.co/ESz7QXv78z,https://twitter.com/python_tip/status/959721832516534272,111
+959335579757367297,Fri Feb 02 08:00:00 +0000 2018,27,73,0,1,2,0,159,7,"Unzipping files in Python:
+
+import zipfile
+with zipfile.ZipFile(""https://t.co/FFxRQWEcR8"",""r"") as zip_ref:
+    zip_ref.extractall(""targetdir"")
+
+#zip #pythontip",https://twitter.com/python_tip/status/959335579757367297,112
+958973194630778880,Thu Feb 01 08:00:01 +0000 2018,7,27,1,2,1,0,302,7,"Compare distributions of two variables with seaborn.violinplot:
+
+df = pd.DataFrame({""Group"": 50*[""A""] + 50*[""B""], ""Y"": np.random.normal(2, 1, 100) + np.array([0]*50 + [1]*50)})
+sns.violinplot(https://t.co/4jtacwaQPQ, df.Y, inner=""quartile"")
+https://t.co/mdh1L2FULi()
+
+#pythontip https://t.co/74Q4BZCe8l",https://twitter.com/python_tip/status/958973194630778880,113
+958610806471499776,Wed Jan 31 08:00:01 +0000 2018,14,51,0,0,2,0,292,18,"Does your #numpy array contain missing values? 
+
+&gt; import numpy as np
+&gt; x = np.array([1,2,3,np.nan])
+
+You can remove them:
+
+&gt; x[~np.isnan(x)]
+array([ 1.,  2.,  3.])
+&gt; np.nanmean(x)
+2.0
+
+Or replace them by a number:
+
+&gt; np.nan_to_num(x,0)
+array([ 1.,  2.,  3.,  0.]) 
+
+#pythontip",https://twitter.com/python_tip/status/958610806471499776,117
+958248415632113664,Tue Jan 30 08:00:00 +0000 2018,10,55,1,1,4,1,242,7,"Create an interactive map of your followers' locations in #Jupyter notebook:
+
+https://t.co/jwkLwTCZ8N
+
+It is amazing to see that @python_tip is now followed from 96 countries. Thank you all.
+
+#tweepy #googlemaps #gmaps https://t.co/MVqVN8n1r8",https://twitter.com/python_tip/status/958248415632113664,118
+957886029209456640,Mon Jan 29 08:00:00 +0000 2018,9,27,0,0,1,0,315,16,"The tilde ~ is the unary negation operator:
+
+&gt;&gt;&gt; import numpy as np
+&gt;&gt;&gt; ~ np.array([True,False])
+array([False,  True], dtype=bool)
+
+Be aware that using ~ to scalars can lead to unexpected results:
+
+ &gt;&gt;&gt; ~ True
+-2
+&gt;&gt;&gt; ~ False
+-1
+&gt;&gt;&gt; ~ np.isfinite(np.inf)
+True
+
+#pythontip",https://twitter.com/python_tip/status/957886029209456640,119
+956953573673328640,Fri Jan 26 18:14:45 +0000 2018,13,38,0,1,2,0,121,1,Add interactivity to #matplotlib plots inside #Jupyter notebooks with %matplotlib notebook magic. https://t.co/yMJHcu6PNj,https://twitter.com/python_tip/status/956953573673328640,120
+956901652161814530,Fri Jan 26 14:48:26 +0000 2018,0,0,0,0,0,1,140,3,"RT @jakevdp: On this day in 1994, Python version 1.0 was released! And today, you can try it yourself using conda:
+
+  $ conda create -n py1…",https://twitter.com/python_tip/status/956901652161814530,121
+956545313195642881,Thu Jan 25 15:12:29 +0000 2018,35,93,0,1,0,0,314,14,"Know the difference between append() and extend():
+
+&gt;&gt;&gt; x = [1,2,3]
+&gt;&gt;&gt; x.append([4,5])
+&gt;&gt;&gt; x
+[1, 2, 3, [4, 5]]
+&gt;&gt;&gt; x.extend([6,7])
+&gt;&gt;&gt; x
+[1, 2, 3, [4, 5], 6, 7]
+&gt;&gt;&gt; x.extend(""abc"")
+&gt;&gt;&gt; x
+[1, 2, 3, [4, 5], 6, 7, 'a', 'b', 'c']
+
+https://t.co/qbMrM1bRAf",https://twitter.com/python_tip/status/956545313195642881,122
+956213407027515395,Wed Jan 24 17:13:36 +0000 2018,3,38,1,0,2,0,168,5,"Find frequency of values in #pandas dataframe with value_counts() method. 
+
+&gt;&gt;&gt; df.groupby('State')['Industry'].value_counts()
+
+#python https://t.co/IdzsPCdDcr",https://twitter.com/python_tip/status/956213407027515395,123
+955800730014834688,Tue Jan 23 13:53:46 +0000 2018,3,19,0,1,3,0,135,5,"Use #pandas to extract values from a file as a #numpy array:
+
+val = https://t.co/KBWVZaKP7L_csv(""./dl/val.csv"")['mask'].values
+
+#python",https://twitter.com/python_tip/status/955800730014834688,124
+955429320591364096,Mon Jan 22 13:17:55 +0000 2018,26,51,0,1,2,0,189,8,"Use #pathlib for recursive globbing:
+&gt;&gt;&gt; import pathlib
+&gt;&gt;&gt; images = pathlib.Path('/mypath/').glob('**/*.png')
+&gt;&gt;&gt; list(images)
+
+https://t.co/jyNqpHaJXi
+
+#python3",https://twitter.com/python_tip/status/955429320591364096,125
+954603461353422848,Sat Jan 20 06:36:15 +0000 2018,60,127,1,3,4,0,276,9,"Microsoft offers free #Jupyter notebooks in the cloud:
+
+https://t.co/VYbNmjZFwf
+
+Even better, Google's free Colaboratory notebooks (https://t.co/m6vNsFxku5) now comes with Tesla K80 GPU. Crazy! 
+
+https://t.co/3c9ISNIq7y
+
+#pythontip #deeplearning #colab https://t.co/IPrUm5Hp9V",https://twitter.com/python_tip/status/954603461353422848,128
+953902899309903872,Thu Jan 18 08:12:28 +0000 2018,9,27,2,1,3,0,164,5,"Reshaping data from the wide format to the long format (melt) and back again (pivot):
+
+https://t.co/mqOgAdSZwt
+
+#pandas #pythontip #tidydata https://t.co/sF3p22389c",https://twitter.com/python_tip/status/953902899309903872,129
+953543713686343680,Wed Jan 17 08:25:11 +0000 2018,6,39,0,1,2,2,177,5,"The goldmine of #pythontips from @dan_s_becker and @rctatman: 
+
+https://t.co/rmOuNHdzpN
+
+Interactive #python tutorials on machine learning, deep learning and data visualization.",https://twitter.com/python_tip/status/953543713686343680,130
+953174987346776065,Tue Jan 16 08:00:00 +0000 2018,13,34,0,1,0,0,279,14,"Do you need to save a large object?
+
+import numpy as np
+x = np.zeros((1000,1000))
+
+Compress your pickle file
+
+import gzip, cPickle
+with https://t.co/wFbykHTCKH('tmp.gz','wb') as f:
+  cPickle.dump(x, f, 2)
+
+Or take advantage of savez_compressed:
+
+np.savez_compressed('tmp.npz', x)",https://twitter.com/python_tip/status/953174987346776065,131
+952812602819739654,Mon Jan 15 08:00:01 +0000 2018,9,42,0,0,3,0,307,11,"f(x) = log(1+x) is a common transformation for non-negative data. With #numpy, use log1p(x), not log(x)+1, to get a better precision for small numbers:
+
+&gt;&gt;&gt; import numpy as np
+&gt;&gt;&gt; np.log1p(1e-99)
+1e-99
+&gt;&gt;&gt; np.log(1 + 1e-99)
+0.0
+
+The inverse function is 'expm1'.
+
+#pythontip #numpy",https://twitter.com/python_tip/status/952812602819739654,133
+951829597523456000,Fri Jan 12 14:53:54 +0000 2018,6,24,0,0,1,0,185,5,"split pandas dataframe into two random subsets:
+&gt;&gt;&gt; from sklearn.model_selection import train_test_split
+&gt;&gt;&gt; train, test = train_test_split(df, test_size=0.2)
+
+#python",https://twitter.com/python_tip/status/951829597523456000,134
+951383599449767937,Thu Jan 11 09:21:40 +0000 2018,5,45,0,2,2,0,177,4,"Read a csv into #pandas dataframe while interpreting “,” as a thousands seperator:
+df = https://t.co/KBWVZaKP7L_csv('example.csv', thousands=',')
+https://t.co/m2WbjDPWv4
+#python",https://twitter.com/python_tip/status/951383599449767937,135
+951006935670820864,Wed Jan 10 08:24:56 +0000 2018,12,33,0,2,1,0,119,4,"You can also use csv.Sniffer() to guess the delimiter for you.
+https://t.co/YMJ1LDOuOJ
+
+#python https://t.co/e05SXlG3sL",https://twitter.com/python_tip/status/951006935670820864,136
+950649826739392512,Tue Jan 09 08:45:55 +0000 2018,16,41,0,1,2,0,118,2,"pandas.cut() can be used to turn a continuous variable into a categorical one. https://t.co/RAP83qYiVu
+#python #pandas",https://twitter.com/python_tip/status/950649826739392512,137
+950275889127936000,Mon Jan 08 08:00:01 +0000 2018,10,49,1,1,3,0,278,10,"Trying to find a bug in your script? Rerun it with pdb as follows
+
+python -m pdb example.py
+(example.py and output attached)
+
+Too complicated? The text-GUI debugger pudb is here to help
+
+python -m https://t.co/o81VcY0Mt6 example.py
+
+#pythontip #pdb #pudb https://t.co/OhLIwcFCPj",https://twitter.com/python_tip/status/950275889127936000,138
+949516017838956545,Sat Jan 06 05:40:34 +0000 2018,10,31,0,2,1,0,234,9,"absl-py is a library for building Python applications developed by Google, extensively tested and used in production
+
+Example with flags and logging:
+https://t.co/js8hJLg9Ml
+
+Codes and installation:
+https://t.co/jLX7J9s1cc
+
+#pythontip",https://twitter.com/python_tip/status/949516017838956545,139
+949159440137228289,Fri Jan 05 06:03:39 +0000 2018,15,60,0,0,1,0,176,6,"Get absolute path with pathlib.Path.resolve():
+&gt;&gt;&gt; from pathlib import Path
+&gt;&gt;&gt; p = Path('.’)
+&gt;&gt;&gt; p.resolve()
+PosixPath(‘/home/sweet/home’)
+#python 3",https://twitter.com/python_tip/status/949159440137228289,140
+948605053367074816,Wed Jan 03 17:20:43 +0000 2018,15,21,0,2,1,0,171,9,"PEP 435 introduced enum to Python:
+
+from enum import Enum
+class Animal(Enum):
+    ant, bee, cat, dog = range(4)
+https://t.co/gfa6c4GDuS
+https://t.co/441iquh5Qq
+
+#pythontip",https://twitter.com/python_tip/status/948605053367074816,141
+948530689900732416,Wed Jan 03 12:25:13 +0000 2018,0,0,0,1,0,3,138,1,RT @click_arun: @python_tip @iandanforth Looks like there is a better option if you are ready for some extensions  https://t.co/TSW6mSQbQX,https://twitter.com/python_tip/status/948530689900732416,142
+948317850913026048,Tue Jan 02 22:19:29 +0000 2018,5,18,0,1,2,1,157,5,"Time for #javascript! Add a beep after a long running cell in #jupyter notebook to let you know when it’s done. 
+
+https://t.co/AJNqTRMBU0 
+
+(by @iandanforth)",https://twitter.com/python_tip/status/948317850913026048,143
+947739169291423744,Mon Jan 01 08:00:00 +0000 2018,26,61,1,0,0,0,62,1,"New year, new chance to master Python! https://t.co/AGEoKvlnlg",https://twitter.com/python_tip/status/947739169291423744,144
+946764011080732672,Fri Dec 29 15:25:04 +0000 2017,17,77,0,0,2,0,251,9,"Create new directories with #pathlib.Path.mkdir() method
+
+import pathlib
+pathlib.Path('/my/new/directory').mkdir(parents=True, exist_ok=True) 
+
+This creates all missing parents
+and doesn't raise an exception if the directory already exists.
+
+#python 3",https://twitter.com/python_tip/status/946764011080732672,145
+946381556591054849,Thu Dec 28 14:05:20 +0000 2017,25,59,1,0,1,0,120,4,"In #jupyter notebook, you can use _N to get the output of N-th cell:
+
+In  [20]: _2
+Out [20]: 200 https://t.co/TCenrGXd8j",https://twitter.com/python_tip/status/946381556591054849,147
+946025257932066816,Wed Dec 27 14:29:32 +0000 2017,14,33,0,1,1,0,118,3,"Use %debug magic in #jupyter notebook to see details of an exception. 
+
+(see the whole thread) https://t.co/lDhNe03UZA",https://twitter.com/python_tip/status/946025257932066816,148
+945724472807522304,Tue Dec 26 18:34:19 +0000 2017,13,29,0,1,1,1,180,5,"Fastest way to uniquify a list in #python &gt;=3.6:
+&gt;&gt;&gt; list(set(seq))
+or, if order is important:
+&gt;&gt;&gt; list(dict.fromkeys(seq))
+https://t.co/IGrYHrPUMM by @peterbe",https://twitter.com/python_tip/status/945724472807522304,149
+945252910228795393,Mon Dec 25 11:20:30 +0000 2017,15,29,1,1,1,0,89,3,"Draw a tree with #python 
+https://t.co/LFPtKCsWkq
+Happy Holidays! https://t.co/Rfu2EERVpN",https://twitter.com/python_tip/status/945252910228795393,150
+944115292560609280,Fri Dec 22 08:00:01 +0000 2017,8,11,0,1,3,0,138,5,"If you did not try turtle graphics yet,  remember, now is better than never:
+
+https://t.co/4luWNTI91J
+
+#turtle #StarryNight #ChristmasTree",https://twitter.com/python_tip/status/944115292560609280,151
+943752906091761664,Thu Dec 21 08:00:01 +0000 2017,7,26,0,2,2,0,185,6,"Do you need an alternative to XML/JSON that is fast, cross-language and dense (binary)? Consider protocol buffers:
+
+https://t.co/TZeUnQRDT0
+https://t.co/zCPEJ85MXM
+
+#protobuf #pythontip",https://twitter.com/python_tip/status/943752906091761664,152
+943359749051109376,Wed Dec 20 05:57:45 +0000 2017,2,33,0,2,1,0,146,8,"pyautogui module: automate mouse clicks &amp; other interactions with Python! 
+
+https://t.co/dmCcbGPxmn
+
+(via
+https://t.co/fF6XHk4PRN)
+
+#pythontip",https://twitter.com/python_tip/status/943359749051109376,153
+943029886607691776,Tue Dec 19 08:07:00 +0000 2017,0,0,0,0,0,2,140,3,"RT @eumiro: @python_tip No need for dateutil, pandas is an ""eierlegende Wollmilchsau"" (Swiss Army Knife) for this:
+
+from https://t.co/90SI7…",https://twitter.com/python_tip/status/943029886607691776,155
+943024844995571713,Tue Dec 19 07:46:58 +0000 2017,14,34,0,1,1,0,272,11,"2018 is coming! Find all US holidays in the new year:
+
+from https://t.co/qnfMyvMjvg import USFederalHolidayCalendar as cal
+cal().holidays(start='2018-01-01', end='2018-12-31').to_pydatetime()
+
+What about Easter?
+
+from dateutil.easter import easter
+easter(2018)
+
+#pythontip",https://twitter.com/python_tip/status/943024844995571713,156
+942673519699046400,Mon Dec 18 08:30:55 +0000 2017,16,62,0,0,0,0,176,5,"When a string won't fit on a line, you can use parentheses for implicit line joining:
+
+x = ('Oh my god, this is so long, really '
+     'long long long long long long string')
+x",https://twitter.com/python_tip/status/942673519699046400,157
+941674812153450498,Fri Dec 15 14:22:25 +0000 2017,4,19,0,1,1,0,140,6,"Install a conda package in the current #Jupyter kernel
+
+import sys
+!conda install --yes --prefix {sys.prefix} numpy
+
+https://t.co/JFDfgPHSCC",https://twitter.com/python_tip/status/941674812153450498,158
+941594201699049472,Fri Dec 15 09:02:06 +0000 2017,0,0,0,0,2,3,140,3,"RT @BerndVerst: #Pythonistas, @Microsoft is considering bringing #Python 🐍 scripting to @msexcel! 🎉
+
+Please add your feedback here: https:/…",https://twitter.com/python_tip/status/941594201699049472,159
+941243060108906496,Thu Dec 14 09:46:47 +0000 2017,9,40,0,1,1,0,234,7,"iter() can take two arguments, first one being a function that takes no arguments, second one marks the stop:
+with open('mydata.txt') as fp:
+    for line in iter(fp.readline, '""""):
+        do_something
+
+https://t.co/dQe7JWUGNQ
+#python",https://twitter.com/python_tip/status/941243060108906496,160
+940909138367873024,Wed Dec 13 11:39:54 +0000 2017,20,66,1,0,1,0,229,4,"Use operator.methodcaller to find items or sort a list: 
+&gt;&gt;&gt; mylist = ['first', 'second!', 'third!!', 'fourth!!!']
+&gt;&gt;&gt; list(filter(operator.methodcaller('endswith', '!'), mylist))
+#python https://t.co/UIBYpfl7b6",https://twitter.com/python_tip/status/940909138367873024,161
+940506518042169350,Tue Dec 12 09:00:02 +0000 2017,23,72,1,0,1,0,102,1,Compare two floats with math.isclose() to see if they are nearly equal #python https://t.co/y9QiKtpbNP,https://twitter.com/python_tip/status/940506518042169350,163
+940151264033300480,Mon Dec 11 09:28:23 +0000 2017,12,20,0,1,1,0,86,2,"List of projects dropping #python 2 support in or before 2020:
+https://t.co/w0qfUZR20x",https://twitter.com/python_tip/status/940151264033300480,164
+939041858990116865,Fri Dec 08 08:00:00 +0000 2017,6,19,0,0,0,1,103,6,"Shift a bit ten to the left - and you've got 2**10:
+
+&gt;&gt;&gt; 1 &lt;&lt; 10
+1024
+
+(via @aaronchall)",https://twitter.com/python_tip/status/939041858990116865,165
+938686214495911936,Thu Dec 07 08:26:48 +0000 2017,7,27,0,0,1,0,152,3,"#Jupyter If you are using the IPython kernel, you can save the actual execution history to a notebook with %notebook magic: 
+
+%notebook -e history.ipynb",https://twitter.com/python_tip/status/938686214495911936,166
+938317088183242752,Wed Dec 06 08:00:01 +0000 2017,47,86,0,1,1,0,280,8,"#Python3 is coming. Still need to code in Python2? Use these 4 lines and your future self will thank you:
+
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+from __future__ import unicode_literals
+
+https://t.co/V3TGunnoR8",https://twitter.com/python_tip/status/938317088183242752,167
+937956210246144001,Tue Dec 05 08:06:01 +0000 2017,5,20,0,2,3,0,218,8,"You do not have to specify object's type in Python but with #mypy you can hint it
+
+def greeting(name: str) -&gt; str:
+    return 'Hello ' + name
+
+https://t.co/zPloEQzYP2 https://t.co/nrT4JaCL3u
+
+#pythontip #typehinting",https://twitter.com/python_tip/status/937956210246144001,168
+937592318399602688,Mon Dec 04 08:00:02 +0000 2017,17,29,0,1,1,0,153,6,"#Django 2.0 is out:
+* Simplified URL routing syntax
+* Responsive, mobile-friendly contrib.admin
+* Python 2.7 no longer supported
+
+https://t.co/X5DdbeSLF1",https://twitter.com/python_tip/status/937592318399602688,169
+936541242086903808,Fri Dec 01 10:23:26 +0000 2017,11,45,1,1,0,0,154,5,"What output do you expect?
+F = [lambda x: x**i for i in range(10)]
+print([g(2) for g in F])
+
+Explanation:  https://t.co/jWpT4E6UOb https://t.co/LI6p4AXuyy",https://twitter.com/python_tip/status/936541242086903808,170
+936176194525032448,Thu Nov 30 10:12:52 +0000 2017,4,23,0,1,2,0,146,2,"numpy.nan_to_num() replaces nan with 0, inf with a very large float, and -inf with the most negative float. https://t.co/HpR577615s
+#numpy #python",https://twitter.com/python_tip/status/936176194525032448,171
+935980424295149568,Wed Nov 29 21:14:57 +0000 2017,0,0,0,0,1,4,140,1,RT @TalkPython: It's time to challenge yourself with #100daysofcode in Python. Listen to @pybites's @bbelderbos and @_juliansequeira take u…,https://twitter.com/python_tip/status/935980424295149568,172
+935866082036015104,Wed Nov 29 13:40:36 +0000 2017,24,52,0,1,1,0,142,1,"Do you want collapsible headings, prettified code and more in your #jupyter notebook? Try Jupyter notebook extensions. https://t.co/c4ezfEOzvO",https://twitter.com/python_tip/status/935866082036015104,173
+935439990418477062,Tue Nov 28 09:27:28 +0000 2017,16,45,1,0,1,0,126,3,"Restore normal dict behavior of a defaultdict by setting
+&gt;&gt;&gt; d.default_factory = None
+#python https://t.co/BkYktbjgGl",https://twitter.com/python_tip/status/935439990418477062,174
+935165034992427009,Mon Nov 27 15:14:53 +0000 2017,2,16,0,2,1,0,197,9,"Use feather for fast storage of dataframes:
+
+import feather
+path = 'my_data.feather'
+feather.write_dataframe(df, path)
+df = https://t.co/mxOEK04vCm_dataframe(path)
+
+#python 
+https://t.co/yz9nJoOo5T",https://twitter.com/python_tip/status/935165034992427009,175
+933852919169933313,Fri Nov 24 00:21:00 +0000 2017,9,30,0,1,3,1,110,5,"Learn from @jackdbd about Dash and its differences from #rstats Shiny:
+
+https://t.co/IF4PQizU4g
+
+#python #dash",https://twitter.com/python_tip/status/933852919169933313,176
+933710594536103936,Thu Nov 23 14:55:27 +0000 2017,16,54,0,0,0,0,327,14,"&gt;&gt;&gt; a = [2, 1, 3]
+&gt;&gt;&gt; sorted(a) == sorted(a)
+True
+&gt;&gt;&gt; reversed(a) == reversed(a)
+False
+
+Explanation: reversed(a) is an iterator, not a list
+
+&gt;&gt;&gt; type(sorted(a))
+&lt;type 'list'&gt;
+&gt;&gt;&gt; type(reversed(a))
+&lt;type 'listreverseiterator'&gt;
+&gt;&gt;&gt; id(reversed(a))
+139938992007504",https://twitter.com/python_tip/status/933710594536103936,177
+933258231421345793,Wed Nov 22 08:57:56 +0000 2017,18,39,0,0,0,0,225,7,"Comparison operator chaining, the reason why 
+
+&gt;&gt;&gt; False == False in [False]
+
+is actually True. Because both '==' and 'in' happens at the same time, the line is equivalent to 
+
+(False == False) and (False in [False])",https://twitter.com/python_tip/status/933258231421345793,178
+932881280559181824,Tue Nov 21 08:00:04 +0000 2017,5,25,0,0,1,0,208,11,"#NumPy equivalent of enumerate:
+
+import numpy as np
+
+Z = np.arange(9).reshape(3,3)
+
+for index, value in np.ndenumerate(Z):
+    print(index, value)
+
+for index in np.ndindex(Z.shape):
+    print(index, Z[index])",https://twitter.com/python_tip/status/932881280559181824,179
+932512160185323521,Mon Nov 20 07:33:18 +0000 2017,7,21,0,1,0,0,194,10,"What is the result of the following expressions?
+
+0 * np.nan
+np.nan == np.nan
+np.inf &gt; np.nan
+np.nan - np.nan
+0.3 == 3 * 0.1
+
+(solution: nan, False, False, nan, False)
+https://t.co/NfrdFyL0cv",https://twitter.com/python_tip/status/932512160185323521,181
+931517939227951104,Fri Nov 17 13:42:38 +0000 2017,6,17,0,1,1,0,129,6,"Friday #python magic:
+&gt;&gt;&gt; x = (1 &lt;&lt; 53) + 1
+&gt;&gt;&gt; x + 1.0 &lt; x
+True
+
+Explanation: https://t.co/gvcTcmq1Pd",https://twitter.com/python_tip/status/931517939227951104,182
+931073706646032384,Thu Nov 16 08:17:24 +0000 2017,3,31,1,0,2,0,173,3,"Select a random sample from a 1D array:
+&gt;&gt;&gt; np.random.choice(['cat', 'dog', 'pig', 'cow', 'sheep', 'duck'], 3, replace=False)
+#numpy #python https://t.co/I40nyIA897",https://twitter.com/python_tip/status/931073706646032384,183
+930727795080220672,Wed Nov 15 09:22:53 +0000 2017,2,22,1,1,2,0,131,3,"Add extra dimensions to a #numpy array using the keyword None when indexing
+https://t.co/bcEjlU3LC2
+#python https://t.co/5Qk3FdnOHf",https://twitter.com/python_tip/status/930727795080220672,184
+930371323683012608,Tue Nov 14 09:46:23 +0000 2017,4,21,1,0,2,0,146,3,"Find indices of N elements of a #numpy array that are neares to a given value:
+np.argsort(np.abs(myarray-0.5))[:N]
+#python https://t.co/sU8lRZbJwQ",https://twitter.com/python_tip/status/930371323683012608,185
+929984742421942272,Mon Nov 13 08:10:15 +0000 2017,9,32,1,0,1,0,93,1,Use exclamation mark to execute a shell command in #Jupyter notebook. https://t.co/lhcvnjhjLF,https://twitter.com/python_tip/status/929984742421942272,186
+928895502304858115,Fri Nov 10 08:02:00 +0000 2017,8,23,0,0,2,0,112,5,"Numpy: Find the index of the minimal value in an array Z:
+
+np.unravel_index(Z.argmin(), Z.shape)
+
+#numpy #python",https://twitter.com/python_tip/status/928895502304858115,187
+928532619314151425,Thu Nov 09 08:00:02 +0000 2017,20,34,0,1,0,0,164,9,"Import * can be dangerous:
+
+&gt;&gt;&gt; print(sum(range(5),-1))
+9
+&gt;&gt;&gt; from numpy import *
+&gt;&gt;&gt; print(sum(range(5),-1))
+10
+
+https://t.co/MgvngboWzF",https://twitter.com/python_tip/status/928532619314151425,188
+928170229519278080,Wed Nov 08 08:00:01 +0000 2017,19,43,0,0,0,0,119,6,"New in Python &gt;3.5: operator for matrix multiplication @
+
+import numpy as np
+a = np.ones(2,3)
+b = np.ones(3,4)
+a @ b",https://twitter.com/python_tip/status/928170229519278080,191
+927807842001682432,Tue Nov 07 08:00:02 +0000 2017,2,8,0,1,0,1,79,3,"A short esoteric Python string tutorial from @dabeaz: 
+
+https://t.co/FewHi0uWNH",https://twitter.com/python_tip/status/927807842001682432,192
+927445451892281344,Mon Nov 06 08:00:01 +0000 2017,7,16,0,1,0,0,140,7,"Create a matrix with chessboard pattern of 0s and 1s
+
+Z = np.zeros((8,8),dtype=int)
+Z[1::2,::2] = 1
+Z[::2,1::2] = 1
+
+https://t.co/NfrdFytpkX",https://twitter.com/python_tip/status/927445451892281344,193
+926432146243424257,Fri Nov 03 12:53:30 +0000 2017,17,39,0,0,1,0,122,5,"Get alphabet in #python:
+
+&gt;&gt;&gt; import string
+&gt;&gt;&gt; print(string.ascii_uppercase)
+ABCDEFGHIJKLMNOPQRSTUVWXYZ",https://twitter.com/python_tip/status/926432146243424257,194
+926034688585629703,Thu Nov 02 10:34:09 +0000 2017,9,23,0,1,1,1,118,4,"Today’s tip by @ratneshkush:
+Struggling for PDF generation using #Python. Use ReportLab API. 
+
+https://t.co/PhbykBykrJ",https://twitter.com/python_tip/status/926034688585629703,195
+925938103595835392,Thu Nov 02 04:10:21 +0000 2017,0,0,0,1,1,2,140,3,"RT @pybites: New PyBites Code Challenge 41 is out:
+Daily Python Tip Part 2 - Build an #API https://t.co/dQCo203vwP 
+@python_tip https://t.c…",https://twitter.com/python_tip/status/925938103595835392,196
+925689685468499969,Wed Nov 01 11:43:14 +0000 2017,50,115,1,1,1,0,111,3,"a += b doesn't always behave the same way as a = a + b!
+https://t.co/osZWBD9HDT
+#python https://t.co/D9thf9b5ZD",https://twitter.com/python_tip/status/925689685468499969,197
+925337967094304768,Tue Oct 31 12:25:37 +0000 2017,27,55,1,1,1,0,99,3,"Want colorful terminal spinners? Try halo. 
+https://t.co/CElzEp75vZ
+#python https://t.co/roJhvlCtrb",https://twitter.com/python_tip/status/925337967094304768,198
+924938430819090432,Mon Oct 30 09:58:01 +0000 2017,13,45,1,1,1,0,153,3,"Use difflib.SequenceMatcher.find_longest_match() to find longest common substring of two strings.
+https://t.co/GDY0TzWZoV
+#python https://t.co/LKeV1nJyzK",https://twitter.com/python_tip/status/924938430819090432,199
+923806478422757376,Fri Oct 27 07:00:02 +0000 2017,15,33,0,0,0,0,146,6,"'is not' is a binary operator, different from using is and not separately:
+
+&gt; 'something' is not None
+True
+&gt; 'something' is (not None)
+False",https://twitter.com/python_tip/status/923806478422757376,200
+923444093010808834,Thu Oct 26 07:00:03 +0000 2017,5,18,0,0,1,0,152,7,"'where' finds indexes of all Trues in #NumPy array:
+
+&gt; import numpy as np
+&gt; a = [1,2,0,0,4,0]
+&gt; a != 0
+&gt; np.where(a != 0)
+&gt; np.nonzero(a)",https://twitter.com/python_tip/status/923444093010808834,201
+923317432587927552,Wed Oct 25 22:36:44 +0000 2017,12,21,0,1,1,1,131,1,"If anybody wants to practice Web App development, @pybites hosts a simple challenge on our data. #selfpromo https://t.co/xi2eJrqYnX",https://twitter.com/python_tip/status/923317432587927552,202
+923316707199827969,Wed Oct 25 22:33:52 +0000 2017,0,0,0,1,2,2,140,5,"RT @pybites: PyBites Code Challenge #40:
+Daily Python Tip Part 1 - Make a Web App
+https://t.co/OMa6BSgSxR
+@python_tip 
+#django #flask #bott…",https://twitter.com/python_tip/status/923316707199827969,203
+923081705233231872,Wed Oct 25 07:00:03 +0000 2017,5,22,0,2,1,0,140,4,"Colab, Google's fork of #Jupyter notebook with remote kernels, is now publicly available at
+
+https://t.co/vaeZBJ7var
+https://t.co/ewZ8RTeR4K",https://twitter.com/python_tip/status/923081705233231872,204
+922719309301870593,Tue Oct 24 07:00:01 +0000 2017,8,16,0,0,1,0,128,6,"Get a random number from a range with 'randrange':
+
+&gt;&gt;&gt; import random
+&gt;&gt;&gt; random.randrange(0,9,2) + 1
+
+#python",https://twitter.com/python_tip/status/922719309301870593,205
+922552711949799425,Mon Oct 23 19:58:01 +0000 2017,1,5,0,1,1,0,103,2,"Use Ctrl (or Cmd on Mac) + mouse clicks for multicursors in #jupyter notebooks.
+https://t.co/YetSCWX86D",https://twitter.com/python_tip/status/922552711949799425,206
+921296013092163584,Fri Oct 20 08:44:21 +0000 2017,4,23,0,0,2,0,164,7,"Memory size of any #numpy array:
+
+&gt;&gt;&gt; import numpy as np
+&gt;&gt;&gt; Z = np.zeros((10,10))
+&gt;&gt;&gt; print(""%d bytes"" % (Z.size * Z.itemsize))
+
+#python",https://twitter.com/python_tip/status/921296013092163584,207
+920942575858733057,Thu Oct 19 09:19:55 +0000 2017,14,22,0,2,1,0,192,12,"Try this:
+&gt;&gt;&gt; a = 256
+&gt;&gt;&gt; b = 256
+&gt;&gt;&gt; a is b
+
+&gt;&gt;&gt; a = 257
+&gt;&gt;&gt; b = 257
+&gt;&gt;&gt; a is b
+
+#python 
+https://t.co/GygqCOpDwn
+https://t.co/EFM5AdZh7N",https://twitter.com/python_tip/status/920942575858733057,208
+920576687364075520,Wed Oct 18 09:06:00 +0000 2017,7,12,0,1,0,0,139,7,"Want to stress the variable is throw away? Use _
+
+name, _ = 'https://t.co/wE9MoewaGu'.split('.', 1)
+
+or 
+
+[list([0]*10) for _ in range(10)]",https://twitter.com/python_tip/status/920576687364075520,209
+920210222098067457,Tue Oct 17 08:49:48 +0000 2017,18,36,0,1,1,0,84,2,"https://t.co/RSQiHuUv2y
+Python Graph Gallery: Learn how to visualize data in #python",https://twitter.com/python_tip/status/920210222098067457,210
+919868104615882752,Mon Oct 16 10:10:21 +0000 2017,0,16,0,1,1,0,91,1,pivottablejs - drag’n’drop pivot tables for your #jupyter notebook. https://t.co/zbRyRdMTLq,https://twitter.com/python_tip/status/919868104615882752,211
+918913245351514113,Fri Oct 13 18:56:04 +0000 2017,8,29,0,2,1,0,94,4,"Make a slideshow from your #Jupyter Notebook:
+
+https://t.co/j2ragxfoUR
+https://t.co/n3j6JgFyWy",https://twitter.com/python_tip/status/918913245351514113,213
+918503319210885120,Thu Oct 12 15:47:10 +0000 2017,0,0,0,0,0,2,61,1,RT @Roger120M: @python_tip Is there a good way without numpy?,https://twitter.com/python_tip/status/918503319210885120,216
+918370653530554368,Thu Oct 12 07:00:00 +0000 2017,9,21,0,0,1,0,152,10,"Why NOT to create a 10x10 matrix of zeroes like this?
+
+&gt; row = [0] * 10
+&gt; matrix = [row] * 10
+
+Hint:Try
+&gt; matrix[3][3] = 1
+&gt; matrix
+
+#python",https://twitter.com/python_tip/status/918370653530554368,217
+918008268043124736,Wed Oct 11 07:00:01 +0000 2017,10,28,0,2,1,0,125,9,"JSAnimation is now included in Matplotlib 2.1.0
+
+https://t.co/iLw5Zzp8YQ
+
+What else is new?
+
+https://t.co/Z86YAdLZTn
+
+#python",https://twitter.com/python_tip/status/918008268043124736,218
+917645883075911681,Tue Oct 10 07:00:02 +0000 2017,1,9,0,1,0,0,131,5,"tempC = (tempF-32)*(9/5)
+
+Why is this (Fahrenheit -&gt; Celsius) wrong in Python 2 and what to do about it
+
+https://t.co/MeQDIcbwlP",https://twitter.com/python_tip/status/917645883075911681,219
+917283490755997696,Mon Oct 09 07:00:01 +0000 2017,2,14,0,1,2,0,76,1,Face detection with #Python using #dplib and opencv: https://t.co/XBslIIlvey,https://twitter.com/python_tip/status/917283490755997696,220
+916224763021885440,Fri Oct 06 08:53:00 +0000 2017,14,35,0,1,1,0,155,5,"Number of times substring occurs in a string:
+&gt;&gt;&gt; s = 'pythonpythonpython #python'
+&gt;&gt;&gt; print(s.count('python'))
+4
+https://t.co/I0v7mA2I0r",https://twitter.com/python_tip/status/916224763021885440,221
+915852812310814722,Thu Oct 05 08:15:00 +0000 2017,9,22,1,1,2,0,127,3,"#pandas: beware of changing elements referring to a non-existing index:
+https://t.co/ARCmrgp4ht
+#python https://t.co/9GpNcFRrPv",https://twitter.com/python_tip/status/915852812310814722,222
+915497274352046080,Wed Oct 04 08:42:13 +0000 2017,6,12,0,1,1,0,48,3,"Play music with #Python
+
+https://t.co/ZKNcW1OIsi",https://twitter.com/python_tip/status/915497274352046080,223
+915135495843336192,Tue Oct 03 08:44:39 +0000 2017,6,10,0,1,2,0,74,5,"Convert an image into #LaTeX expression:
+
+https://t.co/Vsf4lXWHJr
+
+#python",https://twitter.com/python_tip/status/915135495843336192,224
+914800298488713216,Mon Oct 02 10:32:41 +0000 2017,1,14,0,2,2,0,140,2,"Change the look of your plots with only 1 line of code with #matplotlib style sheets https://t.co/d8exkjHDzR https://t.co/gbKABdDTON
+#python",https://twitter.com/python_tip/status/914800298488713216,225
+913659611001090049,Fri Sep 29 07:00:00 +0000 2017,8,29,0,1,0,1,133,3,"Context Manager Using @contextmanager &amp; yield and other ""Advanced Python Features"" at tech.io playground
+
+https://t.co/cIL3g7txoL",https://twitter.com/python_tip/status/913659611001090049,226
+913298174483120129,Thu Sep 28 07:03:47 +0000 2017,2,21,0,1,0,1,99,1,Use PIL to convert multiple images into one PDF file: (by @shravankumar147) https://t.co/t6jXlCS9UB,https://twitter.com/python_tip/status/913298174483120129,227
+912940118230683648,Wed Sep 27 07:21:00 +0000 2017,11,31,0,0,1,0,140,11,"You can fork your process with os.fork:
+
+import os
+res = os.fork()
+
+if res==0:
+    print(""I'm child"")
+else:
+    print(""I'm parent"")
+
+#python",https://twitter.com/python_tip/status/912940118230683648,228
+912577229036638208,Tue Sep 26 07:19:00 +0000 2017,7,21,0,0,1,1,158,10,"Guess, then try:
+
+&gt;&gt;&gt; True + True - False
+
+In #python, boolean values are integers.
+
+&gt;&gt;&gt; isinstance(False,int)
+True
+
+(insp. by @PythonInsta)",https://twitter.com/python_tip/status/912577229036638208,229
+912207345312194566,Mon Sep 25 06:49:13 +0000 2017,24,73,0,1,2,0,144,8,"Make your numbers, dates, etc. human readable:
+
+&gt;&gt;&gt; humanize.intword(123455913)
+'123.5 million'
+
+https://t.co/KsDi4zn50I
+
+#python #i18n",https://twitter.com/python_tip/status/912207345312194566,230
+911162912219078658,Fri Sep 22 09:39:01 +0000 2017,0,7,0,1,2,0,106,3,"Find duplicated entries in #pandas dataframe with the duplicated() method.
+https://t.co/JQuu0Uhx0J
+#python",https://twitter.com/python_tip/status/911162912219078658,231
+910865358973784064,Thu Sep 21 13:56:39 +0000 2017,10,18,0,2,1,0,112,3,"%store magic allows you to pass data between #Jupyter notebooks.
+https://t.co/VDWinlyKuh
+https://t.co/mNmvKudEFq",https://twitter.com/python_tip/status/910865358973784064,232
+910367367955386374,Wed Sep 20 04:57:48 +0000 2017,10,29,0,1,1,0,136,3,"Find unique items in a #numpy array and count their frequency:
+unique, counts = np.unique(a, return_counts=True)
+https://t.co/AEOJTRtFls",https://twitter.com/python_tip/status/910367367955386374,233
+910056617986727936,Tue Sep 19 08:23:00 +0000 2017,5,18,0,1,2,0,88,3,"Speed up your functions with numba.jit decorator.
+https://t.co/Vt7MO5FNXW
+#python #numba",https://twitter.com/python_tip/status/910056617986727936,234
+909698512962461696,Mon Sep 18 08:40:01 +0000 2017,8,24,0,1,1,0,88,3,"Manage your google spreadsheets with the gspread library
+https://t.co/QGcEtF2Z1U
+#python",https://twitter.com/python_tip/status/909698512962461696,235
+909099472486932481,Sat Sep 16 16:59:39 +0000 2017,3,7,0,1,0,0,123,3,"If you or your friend prefer Facebook to Twitter, you can now find all our tips on this FB page:
+  
+https://t.co/sCu8dvzVkd",https://twitter.com/python_tip/status/909099472486932481,236
+909098365941514240,Sat Sep 16 16:55:15 +0000 2017,0,0,1,1,0,1,81,1,RT @inkatze: Extended explanation https://t.co/MuzCcaZkya https://t.co/HaCy9Bn41Y,https://twitter.com/python_tip/status/909098365941514240,237
+908719766969344000,Fri Sep 15 15:50:50 +0000 2017,0,0,0,0,0,3,112,3,"RT @TonyFlury: @Sydonahi @python_tip Confirm identity by 
+&gt;&gt;&gt; id(a) == id(b) # Equivalent to a is b
+2/4",https://twitter.com/python_tip/status/908719766969344000,238
+908716438222815233,Fri Sep 15 15:37:36 +0000 2017,6,14,0,1,3,0,101,7,"Because it is Friday...
+
+&gt;&gt;&gt; import antigravity
+
+https://t.co/4O10yEHXgW
+
+#python #fun #xkcd",https://twitter.com/python_tip/status/908716438222815233,239
+908356538435125248,Thu Sep 14 15:47:29 +0000 2017,29,43,0,0,1,0,188,14,"Equality vs Identity:
+
+&gt;&gt;&gt; a = [""x"", ""y""]
+&gt;&gt;&gt; b = a
+&gt;&gt;&gt; c = [""x"", ""y""]
+
+&gt;&gt;&gt; a == b == c
+True
+&gt;&gt;&gt; a is b
+True
+&gt;&gt;&gt; a is c
+False
+
+#python",https://twitter.com/python_tip/status/908356538435125248,240
+908057688311033857,Wed Sep 13 19:59:58 +0000 2017,8,21,0,2,2,0,132,3,"Use parse_dates=True option in https://t.co/9kF9eFMeYn_csv to automatically recognize dates.
+https://t.co/AJNMYae1aH
+#python #pandas",https://twitter.com/python_tip/status/908057688311033857,241
+907540520154537984,Tue Sep 12 09:44:55 +0000 2017,5,21,0,1,1,0,140,8,"Need a set of sets? Use frozenset:
+
+set([set(['a']), set(['b'])])
+#Error
+
+set([frozenset(['a']), frozenset(['b'])])
+
+https://t.co/Ba0PalbxnT",https://twitter.com/python_tip/status/907540520154537984,242
+907129498495197184,Mon Sep 11 06:31:40 +0000 2017,19,55,0,0,1,0,158,8,"List Slicing with None as argument:
+
+&gt;&gt;&gt; a = [0, 1, 2, 3, 4, 5]
+&gt;&gt;&gt; LASTTHREE = slice(-3, None)
+&gt;&gt;&gt; a[LASTTHREE]
+[3, 4, 5]
+
+#python",https://twitter.com/python_tip/status/907129498495197184,244
+906053736157638657,Fri Sep 08 07:16:59 +0000 2017,3,22,0,0,2,0,131,3,"#python #fun
+from itertools import *
+pi = next(islice(accumulate(map(operator.truediv, cycle([4,-4]), count(1,2))),10000000, None))",https://twitter.com/python_tip/status/906053736157638657,245
+905742157033689088,Thu Sep 07 10:38:52 +0000 2017,23,57,1,0,1,0,145,1,"You can use a comma for extracting a value from a list of length one: ""x, = s"". It's even faster than ""x = s[0]"". #python https://t.co/QG3nLuOMFc",https://twitter.com/python_tip/status/905742157033689088,246
+905383919071236097,Wed Sep 06 10:55:22 +0000 2017,11,26,1,0,3,0,140,2,"The -a option to %%cython magic command shows how much of code has not been converted to C 
+#ipython #cython #python https://t.co/eKQ7qdkgGy",https://twitter.com/python_tip/status/905383919071236097,247
+905009955098566656,Tue Sep 05 10:09:22 +0000 2017,10,26,0,0,1,0,139,1,sys.getsizeof() shows the memory consumption directly attributed to an object. Be sure to add in the sizes for referred-to objects. #python,https://twitter.com/python_tip/status/905009955098566656,248
+904625971013222400,Mon Sep 04 08:43:33 +0000 2017,11,28,1,1,2,0,130,3,"Pandas_profiling generates profile reports from #pandas dataframe objects.
+https://t.co/fquXHLyiLD
+#python https://t.co/E076G91OCn",https://twitter.com/python_tip/status/904625971013222400,249
+903548376775569408,Fri Sep 01 09:21:34 +0000 2017,16,52,0,1,1,0,139,6,"You can put a breakpoint into your #python program that drops to interactive terminal:
+
+import pdb
+pdb.set_trace()
+
+https://t.co/oomAGtAh8k",https://twitter.com/python_tip/status/903548376775569408,250
+903255680467030016,Thu Aug 31 13:58:30 +0000 2017,12,24,0,1,1,0,95,1,Need to write  #python 2/3 compatible code? Check out this cheat sheet: https://t.co/bEa4LoKa8M,https://twitter.com/python_tip/status/903255680467030016,251
+902825127846477825,Wed Aug 30 09:27:38 +0000 2017,6,30,1,1,0,0,161,3,"Use textwrap and don't worry about where to line break 
+
+(just used it to wrap text in a Pillow image: https://t.co/c08IAHH6uY - line 83) https://t.co/FVxEqvKVxW",https://twitter.com/python_tip/status/902825127846477825,252
+902444261572005888,Tue Aug 29 08:14:13 +0000 2017,7,17,0,1,1,0,115,1,Need a syntax and style checker for #vim? Install flake8 (pip install flake8) and syntastic https://t.co/nNtyFGL4Y2,https://twitter.com/python_tip/status/902444261572005888,253
+902057777589350400,Mon Aug 28 06:38:28 +0000 2017,17,32,0,1,1,0,140,1,#Pandas Shift a column by 1 row with .shift command. See how to use it to calculate time duration and other tricks:  https://t.co/AquZAk2xdr,https://twitter.com/python_tip/status/902057777589350400,254
+900993650347302913,Fri Aug 25 08:10:00 +0000 2017,7,18,0,1,1,0,139,6,"Create a download link in your #Jupyter notebook:
+
+from IPython.display import FileLink
+FileLink('data/input.csv')
+
+https://t.co/WAuX2rQ6bL",https://twitter.com/python_tip/status/900993650347302913,255
+900760061240373251,Thu Aug 24 16:41:48 +0000 2017,0,0,0,0,0,2,96,2,"RT @KPilnacek: @python_tip Nice tip 🙂. How about:
+print('{name} is {age} years old'.format(**d))",https://twitter.com/python_tip/status/900760061240373251,256
+900631011268153344,Thu Aug 24 08:09:00 +0000 2017,26,53,0,0,1,0,126,5,"#python formatting tip:
+d = dict(name = 'Joe', age = 30)
+print('{name} is {age} years old'.format_map(d))
+
+Joe is 30 years old",https://twitter.com/python_tip/status/900631011268153344,257
+900308908945944576,Wed Aug 23 10:49:05 +0000 2017,5,22,1,0,1,0,111,1,"Recall inputs and outputs of previous cells in #Jupyter notebook with In[6], Out[2], _2 https://t.co/OkXgGE9GEN",https://twitter.com/python_tip/status/900308908945944576,258
+899919008119566336,Tue Aug 22 08:59:45 +0000 2017,12,20,0,1,2,0,112,3,"Profile #python code in #Jupyter notebooks with line_profiler:
+%lprun -f myfunc myfunc()
+https://t.co/U3iBevj6Bw",https://twitter.com/python_tip/status/899919008119566336,259
+899613754165518336,Mon Aug 21 12:46:47 +0000 2017,0,0,0,1,0,2,91,1,RT @pybites: @python_tip Cool. See also https://t.co/3Ei8SqPo1S for comparison using sorted,https://twitter.com/python_tip/status/899613754165518336,260
+899552663439802368,Mon Aug 21 08:44:02 +0000 2017,17,38,0,0,1,0,137,7,"Check if two words are anagrams:
+
+from collections import Counter
+def is_anagram(s1, s2):
+     return Counter(s1) == Counter(s2)
+
+#python",https://twitter.com/python_tip/status/899552663439802368,261
+898545993351909376,Fri Aug 18 14:03:53 +0000 2017,4,21,1,1,0,0,158,3,"Last week we reached 1000 follower count. Thank you all! This is a wordcloud of our followers' profile texts.
+
+https://t.co/5DjBavZTGK https://t.co/WD0jFl1NdC",https://twitter.com/python_tip/status/898545993351909376,262
+898099306820972544,Thu Aug 17 08:28:55 +0000 2017,20,50,0,1,1,0,153,5,"Ever miscounted the number of 0? Underscores in #python3.6 can help you.
+&gt;&gt;&gt; m = 1_000_000_000
+&gt;&gt;&gt; m
+1000000000
+https://t.co/2z5HRtMtXx",https://twitter.com/python_tip/status/898099306820972544,263
+897728384976928768,Wed Aug 16 07:55:00 +0000 2017,17,48,1,0,0,0,124,1,"In Jupyter Notebook, use Shift+Tab to show a tooltip with arguments of function/class and docstring. https://t.co/taZQXHWOxE",https://twitter.com/python_tip/status/897728384976928768,264
+897367263900299264,Tue Aug 15 08:00:02 +0000 2017,4,15,1,1,3,0,164,5,"Fast save/load for numpy arrays = flush/open in bcolz module
+
+(taken from #fastai DL course https://t.co/WNxudbZbcd)
+ 
+#needforspeed #python https://t.co/127S66wYtn",https://twitter.com/python_tip/status/897367263900299264,265
+897022078129496064,Mon Aug 14 09:08:23 +0000 2017,1,7,1,3,2,0,137,3,"#Matplotlib supports animations.
+https://t.co/qCBR5sPT9j https://t.co/V9UBhGirIu https://t.co/2anOLvOrPq 
+#python https://t.co/xMUiY4k4oj",https://twitter.com/python_tip/status/897022078129496064,266
+895915187626233856,Fri Aug 11 07:50:00 +0000 2017,7,17,1,1,1,0,122,2,"Visualize “missingness” of data in your #pandas dataframes with missingno.
+https://t.co/P8Oxzl82vP https://t.co/yWBUFG8ikT",https://twitter.com/python_tip/status/895915187626233856,267
+895554058207076352,Thu Aug 10 07:55:00 +0000 2017,1,15,1,0,2,0,109,2,"#pandas: print summary statistics for a column with df[‘col_name’].describe()
+#python https://t.co/iNDzAnnSYf",https://twitter.com/python_tip/status/895554058207076352,268
+895192934647087104,Wed Aug 09 08:00:02 +0000 2017,2,4,0,1,1,0,118,2,"%watermark #IPython magic extension outputs version information to make notebooks reproducible
+https://t.co/r3CZhJPEGj",https://twitter.com/python_tip/status/895192934647087104,269
+894841524512600064,Tue Aug 08 08:43:39 +0000 2017,13,31,0,0,1,0,149,5,"re-arrange tuples by indices
+&gt;&gt;&gt; map(operator.itemgetter(2,1,0),[(1,'x','cat'),(2, 'y', 'dog')])
+
+[('cat', 'x', 1), ('dog', 'y', 2)]
+#python",https://twitter.com/python_tip/status/894841524512600064,270
+894480969092255744,Mon Aug 07 08:50:56 +0000 2017,0,10,0,1,1,0,93,5,"Use str.casefold() for case-insensitive string comparisons.
+
+https://t.co/R1DVCym39E
+
+#python",https://twitter.com/python_tip/status/894480969092255744,271
+893448228376641536,Fri Aug 04 12:27:11 +0000 2017,4,20,1,1,1,0,116,5,"Fetch zipped file without temporary extracting it to disk:
+
+https://t.co/MaVEA6PA1t
+
+#python https://t.co/lkeOiumSLh",https://twitter.com/python_tip/status/893448228376641536,272
+893397611947982848,Fri Aug 04 09:06:03 +0000 2017,0,0,0,0,0,2,106,4,"RT @wbolster: @python_tip for strings, the idiomatic pattern is:
+
+s = ""a b c""
+ab, _, c = s.rpartition("" "")",https://twitter.com/python_tip/status/893397611947982848,273
+893018874437873664,Thu Aug 03 08:01:05 +0000 2017,3,15,0,1,1,0,176,9,"Split from right:
+&gt;&gt;&gt; s = ‘1st M Last'
+&gt;&gt;&gt; first, last = s.rsplit(None,1)
+&gt;&gt;&gt; first
+‘1st M'
+&gt;&gt;&gt; last
+'Last'
+#python 
+https://t.co/m8S6njFLpt",https://twitter.com/python_tip/status/893018874437873664,274
+892671812160684032,Wed Aug 02 09:01:59 +0000 2017,23,45,1,1,1,0,143,3,"%%HTML magic renders #jupyter notebook cell as HTML, so you can embed an image or other media:
+
+https://t.co/KfmfPz27j5 https://t.co/RiToK88XJ1",https://twitter.com/python_tip/status/892671812160684032,275
+892321459196108800,Tue Aug 01 09:49:49 +0000 2017,14,42,1,1,3,0,160,5,"Working with NumPy arrays instead of Python lists gives you a significant speedup
+
+https://t.co/X7jtdH4mHX
+
+#numpy #python #needforspeed https://t.co/DacXBclXS2",https://twitter.com/python_tip/status/892321459196108800,276
+891910802160144384,Mon Jul 31 06:38:00 +0000 2017,3,8,0,2,1,0,126,6,"Use @functools.lru_cache decorator to memoize/cache function calls:
+
+https://t.co/P9jx4MdzpD
+https://t.co/zDNqXHlRo2
+
+#python3",https://twitter.com/python_tip/status/891910802160144384,278
+890844283514867712,Fri Jul 28 08:00:02 +0000 2017,3,19,0,1,1,0,121,4,"Try this:
+&gt;&gt;&gt; from datetime import date
+&gt;&gt;&gt; 'Today is {0:%A}'.format(https://t.co/DAMy3gbWaN())
+#python",https://twitter.com/python_tip/status/890844283514867712,279
+890588109062254592,Thu Jul 27 15:02:06 +0000 2017,0,0,0,0,0,2,140,4,"RT @kicksopenminds: @python_tip # writerows is nice too
+import csv
+rows = [('a', 'b', 'c'), (1, 2, 3), (4, 5, 6)]
+csv.writer(open('foo.csv'…",https://twitter.com/python_tip/status/890588109062254592,280
+890481887663210496,Thu Jul 27 08:00:01 +0000 2017,5,23,0,0,0,0,140,6,"Write data into csv file:
+import csv
+with open(""test.csv"", ""w"") as f:
+    wr = csv.writer(f)
+    for line in data:
+        wr.writerow(line)",https://twitter.com/python_tip/status/890481887663210496,281
+890119498380058625,Wed Jul 26 08:00:00 +0000 2017,11,19,0,1,1,1,138,6,"You can use atexit.register as a decorator:
+@atexit.register
+def goodbye():
+    print("" #python is closing down"")
+
+https://t.co/BHm69FeRem",https://twitter.com/python_tip/status/890119498380058625,282
+889757112884187136,Tue Jul 25 08:00:01 +0000 2017,13,23,0,0,0,0,147,7,"List all packages (&amp;version info):
+
+pip freeze &gt; requirements.txt
+
+Install all packages in requirements.txt
+
+pip install -r requirements.txt",https://twitter.com/python_tip/status/889757112884187136,283
+889406333769986050,Mon Jul 24 08:46:08 +0000 2017,6,10,0,1,1,0,140,3,"Use Categoricals for categorical data in #Pandas to improve performance
+df['color'] = df['color'].astype('category')
+https://t.co/yLNh8XZJUO",https://twitter.com/python_tip/status/889406333769986050,284
+888309068393312257,Fri Jul 21 08:06:00 +0000 2017,2,8,0,1,1,1,126,5,"Need to plot millions of points in #Matplotlib? mpl-scatter-density do precisely this!
+
+https://t.co/Oj0dbSlmSs
+
+by @astrofrog",https://twitter.com/python_tip/status/888309068393312257,285
+887911699482898433,Thu Jul 20 05:47:00 +0000 2017,1,2,0,2,2,0,138,6,"Use smartcd to activate virtual environment when you cd into folder:
+
+https://t.co/JEYcaIddA2
+https://t.co/Be8szPUTi9
+
+#python #virtualenv",https://twitter.com/python_tip/status/887911699482898433,286
+887625256453722114,Wed Jul 19 10:48:47 +0000 2017,13,21,0,0,1,0,139,10,"How to introspect an object in #python:
+
+l = [1, 2, 3]
+dir(l)
+type(l)
+id(l)
+
+# see also inspect module
+import inspect
+inspect.getmembers(l)",https://twitter.com/python_tip/status/887625256453722114,287
+887242145261899777,Tue Jul 18 09:26:26 +0000 2017,13,37,0,1,1,0,136,9,"a = ""roses""
+b = ""red""
+'{a} are {b}'.format(%%locals())
+
+#python3.6
+f'{a} are {b}'
+'roses are red'
+
+For more, see https://t.co/sLvaHdXTQL",https://twitter.com/python_tip/status/887242145261899777,288
+886854735260602368,Mon Jul 17 07:47:00 +0000 2017,12,31,0,0,1,0,138,4,"The symmetric_difference method finds elements that are in exactly one of the two sets:
+&gt;&gt;&gt; {2,4,6} ^ {1,2,3,4}
+{1, 3, 6}
+#python",https://twitter.com/python_tip/status/886854735260602368,289
+885770846421360640,Fri Jul 14 08:00:01 +0000 2017,9,21,0,0,1,0,139,6,"Find k closest numbers to a central value:
+k = 4
+cnt = 11
+heapq.nsmallest(k, range(50), key = lambda x: abs(x-cnt))
+[11, 10, 12, 9]
+#python",https://twitter.com/python_tip/status/885770846421360640,290
+885408465291792384,Thu Jul 13 08:00:02 +0000 2017,3,6,0,0,1,0,134,4,"Guess the MIME type from the file extension:
+&gt;&gt;&gt; mimetypes.guess_type('test.pyc')
+('application/x-python-code', None)
+#python",https://twitter.com/python_tip/status/885408465291792384,291
+885046077782581248,Wed Jul 12 08:00:02 +0000 2017,8,27,0,1,0,0,146,9,"Use functools.partial to prefill arguments:
+
+&gt; def foo(a,b):
+    return a+b
+&gt; bar = partial(foo, a=1)
+&gt; bar(3)
+4
+
+https://t.co/VWb1OKSN8l",https://twitter.com/python_tip/status/885046077782581248,292
+884683682870693888,Tue Jul 11 08:00:01 +0000 2017,1,4,0,2,2,0,102,4,"#pandas: include functions in chains with pipe
+https://t.co/RnpkOILseR
+https://t.co/iUgMMKkqZQ
+#python",https://twitter.com/python_tip/status/884683682870693888,293
+884353407380852736,Mon Jul 10 10:07:37 +0000 2017,20,47,0,0,1,0,140,4,"Use the pathlib module to recursively search for files 
+&gt;&gt;&gt; from pathlib import Path
+&gt;&gt;&gt; Path('.').glob('**/*.py')
+#python",https://twitter.com/python_tip/status/884353407380852736,294
+883234134985818112,Fri Jul 07 08:00:02 +0000 2017,5,6,0,1,1,0,137,4,"Keyword-only args in #python3
+def f(a, b, *, c=3):
+the only way to access c it is to explicitly call f(a, b, c=1)
+https://t.co/69D3MzLN2u",https://twitter.com/python_tip/status/883234134985818112,295
+882871740468035584,Thu Jul 06 08:00:00 +0000 2017,13,24,1,1,2,0,96,1,Create XKCD-like plots with #matplotlib: https://t.co/AzSFgaof7W #python https://t.co/19OX0Hy8k8,https://twitter.com/python_tip/status/882871740468035584,296
+882509359657254912,Wed Jul 05 08:00:02 +0000 2017,10,20,0,1,1,0,158,4,"Check #python process memory usage with psutil:
+&gt;&gt;&gt; pr = psutil.Process(os.getpid())
+&gt;&gt;&gt; print(pr.memory_info().rss)
+https://t.co/9maqySldnc",https://twitter.com/python_tip/status/882509359657254912,297
+882146972626329606,Tue Jul 04 08:00:02 +0000 2017,7,20,0,0,1,0,153,9,"Get n items of a generator:
+&gt;&gt;&gt; g = (x**3 for x in range(1,101))
+&gt;&gt;&gt; for x in itertools.islice(g,4):
+...     print(x)
+1
+8
+27
+64
+#python",https://twitter.com/python_tip/status/882146972626329606,298
+881784587973677057,Mon Jul 03 08:00:03 +0000 2017,15,41,0,0,1,0,123,5,"When slicing a sequence, the third parameter is the step:
+&gt;&gt;&gt; x = '01234567890'
+&gt;&gt;&gt; x[::3]
+'0369'
+#python",https://twitter.com/python_tip/status/881784587973677057,299
+1068646714914078726,Fri Nov 30 23:23:25 +0000 2018,7,47,0,1,2,0,282,10,"np.nonzero() returns indices of the non-zero indices of an array.
+
+&gt;&gt;&gt; x = np.array([[1,0,0], [0,2,0], [1,1,0]])
+&gt;&gt;&gt; np.nonzero(x)
+(array([0, 1, 2, 2]), array([0, 1, 0, 1]))
+&gt;&gt;&gt; x[np.nonzero(x)]
+array([1, 2, 1, 1])
+
+#python #numpy 
+https://t.co/4EKsABvNH4",https://twitter.com/python_tip/status/1068646714914078726,300
+1068077859984560129,Thu Nov 29 09:43:00 +0000 2018,7,20,0,0,1,1,204,3,"#pythontip from @KarolinaBzdusek 
+
+The unary ~ (invert) operator yields the bitwise inversion of its integer argument. The bitwise inversion of x is defined as -(x+1). It only applies to integral numbers.",https://twitter.com/python_tip/status/1068077859984560129,301
+1067800552334131204,Wed Nov 28 15:21:05 +0000 2018,18,43,0,2,0,0,199,5,"re.X or re.VERBOSE flag allow you to write regular expression in a more readable way, allowing you to visually separate sections and insert comments.
+
+https://t.co/KVgg5aFP2f
+
+https://t.co/hpNLkCTKWL",https://twitter.com/python_tip/status/1067800552334131204,302
+1067452042191474688,Tue Nov 27 16:16:13 +0000 2018,12,51,1,1,2,0,113,3,"#pandas asfreq() converts #timeseries to the specified frequency
+
+https://t.co/wIG2Vj1qvM https://t.co/ZrGXavyMk2",https://twitter.com/python_tip/status/1067452042191474688,303
+1067065996429746176,Mon Nov 26 14:42:13 +0000 2018,10,21,0,1,2,0,139,4,"When applied to a column of categories, pandas.get_dummies() will convert it into one-hot encoding
+https://t.co/jI0mOdEkPS
+
+#python #pandas",https://twitter.com/python_tip/status/1067065996429746176,304
+1065741968687489024,Thu Nov 22 23:01:00 +0000 2018,9,50,1,1,1,1,194,7,"#cutie: Command line User Tools for Input Easification 
+
+Because sometimes you just need a checkbox in your terminal window.
+
+https://t.co/Ag7W8h1upp
+
+(via @randal_olson) https://t.co/eu1UpJ0XVu",https://twitter.com/python_tip/status/1065741968687489024,305
+1065380586435555329,Wed Nov 21 23:05:00 +0000 2018,45,141,0,1,1,0,272,10,"#Python3 pathlib is awesome. You can join paths by '/' operator:
+
+data_folder = Path(""my_project/data/"")
+file_to_open = data_folder/""raw_data.txt""
+
+Moreover, you can directly get a content of the file, for example,
+
+print(file_to_open.read_text())
+
+https://t.co/MnvcCCtbHz",https://twitter.com/python_tip/status/1065380586435555329,306
+1065017192536633345,Tue Nov 20 23:01:00 +0000 2018,13,57,0,0,1,0,170,4,"Slightly weird idea, but since in #Python3 print() is a function, you can use it in a list-comprehension:
+
+import sympy
+[print(x) for x in range(100) if sympy.isprime(x)]",https://twitter.com/python_tip/status/1065017192536633345,307
+1064811349719621633,Tue Nov 20 09:23:03 +0000 2018,22,74,1,0,0,0,301,6,"Moving files from/to a notebook running on a remote server can be painful. But for Colab (Google's flavor of Jupyter), there is an easy way to connect your Google Drive:
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+Now you can even see it in your Files panel. https://t.co/BFEGDo9G1S",https://twitter.com/python_tip/status/1064811349719621633,308
+1064288596356726784,Sun Nov 18 22:45:49 +0000 2018,11,46,0,0,3,0,189,7,"Find the location of #Jupyter default startup script folder:
+
+get_ipython().profile_dir.startup_dir
+
+Python scripts in this folder will be run in lexicographical order.
+
+#jupyter #pythontip",https://twitter.com/python_tip/status/1064288596356726784,309
+1063446102572179456,Fri Nov 16 14:58:03 +0000 2018,18,73,0,0,1,0,160,10,"Convert a list containing numbers into string:
+
+lst = [1, 2, 3, 4, 'hello', 'world']
+""_"".join([str(item) for item in lst])
+
+or
+
+""_"".join(map(str, lst))
+
+#python",https://twitter.com/python_tip/status/1063446102572179456,310
+1063340121410478080,Fri Nov 16 07:56:55 +0000 2018,32,129,0,1,0,0,280,9,"If your data is in a dictionary, perhaps from a JSON file, then str.format_map() is your best friend
+
+Pretty way
+print('{name} works at {status} {company}'.format_map(info))
+
+Less pretty
+print(f'{info[""name""]} works at {info[""status""]} {info[""company""]}')
+
+https://t.co/HO9ixnRsrf",https://twitter.com/python_tip/status/1063340121410478080,311
+1062734635879333891,Wed Nov 14 15:50:56 +0000 2018,12,39,0,1,1,1,103,7,"Check where and how to use asterisks in #python.
+*
+**
+
+https://t.co/bfyhBmPe1t
+
+blogpost by @treyhunner",https://twitter.com/python_tip/status/1062734635879333891,312
+1062417299481784320,Tue Nov 13 18:49:57 +0000 2018,16,43,0,0,1,0,86,1,Use Ctrl+/ (or Cmd+/ on Mac) to comment/uncomment selected lines in #jupyter notebook.,https://twitter.com/python_tip/status/1062417299481784320,313
+1062026642950889473,Mon Nov 12 16:57:37 +0000 2018,19,52,0,1,2,1,278,10,"#python tips &amp; tricks #TipoftheDay by @GeekyTipsTricks
+
+Have u ever wondered which modules are imported in a Python code?
+
+import sys
+print(sys.modules)
+
+* sys.modules is a dictionary; keys are imported module names, values are path to those modules
+
+https://t.co/eyoRhdPJym",https://twitter.com/python_tip/status/1062026642950889473,314
+1060804433548845056,Fri Nov 09 08:01:00 +0000 2018,19,66,1,2,2,1,282,9,"#pythontip from @singhjayp:
+
+Sometimes string representations from __repr__ can be too long. Using reprlib module you can help to avoid unwanted items in the log.
+
+Example:
+https://t.co/MevyvlgYBB
+
+Send us your Python tips to https://t.co/mfUQ9teK5k
+#reprlib https://t.co/PFCKK0Pusv",https://twitter.com/python_tip/status/1060804433548845056,315
+1060442045557456896,Thu Nov 08 08:01:00 +0000 2018,18,41,1,1,0,0,301,13,"The module 'inspect' is great for understanding what is happening behind the scene. 
+
+https://t.co/L5DrMtN8oi
+
+How to inspect 'inspect'?
+
+from inspect import getsource, getmodule, getmembers
+
+print(getsource(getsource))
+print(getmodule(getmodule))
+
+import time
+getmembers(time) https://t.co/m552jh4aLE",https://twitter.com/python_tip/status/1060442045557456896,316
+1060083003794182144,Wed Nov 07 08:14:18 +0000 2018,12,59,1,0,1,1,304,14,"#pythontip from @KarolinaBzdusek
+
+people = ['Jane', 'John', 'Jiri']
+
+# Iterate through people
+for p in people:
+  print(p)
+
+# iterate backwards
+for p in reversed(people):
+  print(p)
+
+reversed(people) == reversed(people) 
+(Why False? Because reversed returns an iterator,not a list) https://t.co/3qb5mxuxbV",https://twitter.com/python_tip/status/1060083003794182144,319
+1059717269809455105,Tue Nov 06 08:01:00 +0000 2018,15,49,1,1,2,0,229,11,"Einstein notation (numpy.einsum) for geeks and mathematicians that find
+
+&gt;&gt;&gt; einsum('ij,jk-&gt;i', A, B)
+
+more elegant than
+
+&gt;&gt;&gt; (A@B).sum(axis=1)
+
+https://t.co/dTGXvokBpM
+
+#numpy #einsum https://t.co/NvyPVkRqMd",https://twitter.com/python_tip/status/1059717269809455105,320
+1058856295854264320,Sat Nov 03 22:59:48 +0000 2018,56,139,2,1,0,0,284,5,"Which line of code is eating all the memory? Discover it with memory_profiler:
+
+$ python -m memory_profiler profiling_memory.py
+
+(Unfortunately, this is a bit hard to do in Jupyter notebook. Either use %memit or see %mprun example from https://t.co/2g58UQpuNc) https://t.co/58JwM0YWsZ",https://twitter.com/python_tip/status/1058856295854264320,321
+1058474244873601026,Fri Nov 02 21:41:40 +0000 2018,16,68,1,0,1,0,227,4,"Use expand=True in the str.split() method if you want to split string into several columns in a #pandas dataframe.
+
+s  = pd.Series(['aa-123', 'ff-ds-ds', 'zzz-42', 'xx’])
+s.str.split(""-"", 1, expand=True) https://t.co/2s0Epdz5tB",https://twitter.com/python_tip/status/1058474244873601026,322
+1058085817309114369,Thu Nov 01 19:58:11 +0000 2018,16,48,1,1,1,0,102,3,"Use #selenium to get JavaScript rendered web content.
+
+https://t.co/httYRoTsNH https://t.co/m8jYycoHhs",https://twitter.com/python_tip/status/1058085817309114369,323
+1057726118403493888,Wed Oct 31 20:08:52 +0000 2018,5,17,1,1,1,0,98,3,"Draw your own Jack O’Lantern with #python turtle.
+
+https://t.co/0t9r83FiBA https://t.co/NEZtuqIox5",https://twitter.com/python_tip/status/1057726118403493888,324
+880678711393177601,Fri Jun 30 06:45:41 +0000 2017,16,36,1,2,2,0,122,1,#Matplotlib supports interactive controls: https://t.co/lpjPNPJQFr https://t.co/hCiygiBMeE #Python https://t.co/hK6PaLPdG8,https://twitter.com/python_tip/status/880678711393177601,325
+880335027007094785,Thu Jun 29 08:00:00 +0000 2017,4,9,0,1,0,0,105,3,"Is Python interpreted or compiled? And what are the .pyc created in your folder:
+
+https://t.co/pAybMT7clJ",https://twitter.com/python_tip/status/880335027007094785,326
+879972637694238720,Wed Jun 28 08:00:00 +0000 2017,3,16,0,0,0,0,139,6,"split iterator into copies:
+x = itertools.count(2, step=2)
+a, b = itertools.tee(x)
+print(next(a)) # 2
+print(next(a)) # 4
+print(next(b)) # 2",https://twitter.com/python_tip/status/879972637694238720,327
+879610259664404480,Tue Jun 27 08:00:02 +0000 2017,8,26,0,1,1,0,132,6,"Add a progress meter to your loops:
+from tqdm import tqdm
+for i in tqdm(range(10)):
+    do something
+https://t.co/ypeSj7jo3v
+#python",https://twitter.com/python_tip/status/879610259664404480,328
+879274115189919745,Mon Jun 26 09:44:19 +0000 2017,8,18,0,0,2,0,153,5,"Calculate the difference between consecutive elements in list:
+&gt;&gt;&gt; import numpy
+&gt;&gt;&gt; numpy.diff([4,3,21])
+array([-1, 18])
+#python #numpy",https://twitter.com/python_tip/status/879274115189919745,329
+878118167687696385,Fri Jun 23 05:11:00 +0000 2017,3,9,0,1,0,0,148,9,"&gt; def function(data=[]):
+     data.append(1)
+     return data 
+&gt; function()
+[1]
+&gt; function()
+[1, 1]
+
+Explanation at https://t.co/hT6EUs5KSD",https://twitter.com/python_tip/status/878118167687696385,330
+877757038549454848,Thu Jun 22 05:16:00 +0000 2017,1,8,0,1,2,0,125,3,"Common #python plots, comparison of different modules (super useful if you come from #ggplot2 world)
+
+https://t.co/D1y5IDBuTO",https://twitter.com/python_tip/status/877757038549454848,331
+877398427121930240,Wed Jun 21 05:31:00 +0000 2017,14,36,1,2,0,0,128,4,"Use named groups for more readable regular expressions:
+
+https://t.co/Hu7fU20Vkz
+https://t.co/B30VUIXc4f https://t.co/ts6PAPU4C5",https://twitter.com/python_tip/status/877398427121930240,332
+877038555389980672,Tue Jun 20 05:41:00 +0000 2017,0,10,0,0,1,1,140,5,"[f for bar in foo for f in bar]
+
+Meditate what this code does, then try it for foo = [[1,2],[3,4]]
+
+Inspired by @kiwicom247 quiz at #pyconcz",https://twitter.com/python_tip/status/877038555389980672,333
+876706551788163072,Mon Jun 19 07:41:45 +0000 2017,20,44,1,2,0,0,125,4,"Learn to parse command line arguments with argparse:
+
+https://t.co/cUIPGC5Rn7
+https://t.co/OrjT9CoW2N https://t.co/9zCs4xIUk5",https://twitter.com/python_tip/status/876706551788163072,334
+875623983307264000,Fri Jun 16 08:00:00 +0000 2017,22,46,0,0,1,0,138,4,"str.startswith() accepts also a tuple of prefixes to look for:
+&gt;&gt;&gt; ""somestring"".startswith((""aa"", ""xx"", ""z"", ""som""))
+True
+#python",https://twitter.com/python_tip/status/875623983307264000,335
+875243854051635200,Thu Jun 15 06:49:30 +0000 2017,0,0,0,1,0,0,38,1,you are right! https://t.co/i7uQoJDqJw,https://twitter.com/python_tip/status/875243854051635200,336
+875242817857171456,Thu Jun 15 06:45:23 +0000 2017,16,28,1,1,1,0,109,1,Add interactivity to your #Jupyter notebooks with ipywidgets. https://t.co/Ex1H0joaMD https://t.co/54tOsgZCDY,https://twitter.com/python_tip/status/875242817857171456,337
+874899208393826304,Wed Jun 14 08:00:00 +0000 2017,8,30,0,0,1,0,108,3,"Use list comprehension to sum two lists element-wise:
+&gt;&gt;&gt; x+y for x, y in zip(list1, list2)
+#python",https://twitter.com/python_tip/status/874899208393826304,338
+874553515556864000,Tue Jun 13 09:06:21 +0000 2017,0,0,0,0,0,2,166,6,"RT @pybites: @python_tip cool! it even supports unary +
+
+&gt;&gt;&gt; c = collections.Counter([1, 2, 2])
+&gt;&gt;&gt; c[1] -= 3
+&gt;&gt;&gt; c
+Counter({2: 2, 1: -2})…",https://twitter.com/python_tip/status/874553515556864000,339
+874536822407286784,Tue Jun 13 08:00:01 +0000 2017,10,21,0,0,0,0,169,6,"&gt;&gt;&gt; a=collections.Counter([1, 2, 2])
+&gt;&gt;&gt; b=collections.Counter([2, 2, 3])
+&gt;&gt;&gt; a+b
+Counter({2: 4, 1: 1, 3: 1})
+&gt;&gt;&gt; a-b
+Counter({1: 1})",https://twitter.com/python_tip/status/874536822407286784,340
+874159340323610627,Mon Jun 12 07:00:02 +0000 2017,17,40,1,2,2,0,157,5,"Read tables from a webpage into a list of #pandas dataframes:
+
+dfs = https://t.co/KBWVZb2pZj_html('https://t.co/0hkIqtoWE4’)
+
+#python https://t.co/ikKblTaXQB",https://twitter.com/python_tip/status/874159340323610627,341
+873068394508988418,Fri Jun 09 06:45:00 +0000 2017,0,1,0,1,0,1,138,12,"@mydecorator
+def myfun():
+…
+
+is equivalent to
+
+def myfun():
+…
+myfun = mydecorator(myfun)
+
+Learn about decorators: 
+https://t.co/ujYbiHem73",https://twitter.com/python_tip/status/873068394508988418,342
+872719047401644032,Thu Jun 08 07:36:49 +0000 2017,7,32,0,0,1,0,121,5,"Get first and last line of a file:
+&gt;&gt;&gt; with open(""somefile"") as f:
+    first, *_, last = f.readlines()
+
+#python3",https://twitter.com/python_tip/status/872719047401644032,343
+872343617330741248,Wed Jun 07 06:45:00 +0000 2017,11,26,0,0,0,0,152,7,"We like zip, what about unzip? 
+&gt; x = ('Al',25), ('Bob',26), ('Dan',47)
+&gt; names, ages = zip(*x)
+&gt; names
+('Al','Bob','Dan')
+&gt; ages
+(25,26,47)",https://twitter.com/python_tip/status/872343617330741248,344
+871981984964390914,Tue Jun 06 06:48:00 +0000 2017,4,15,0,1,1,0,156,7,"Capitalize first letters:
+&gt;&gt;&gt; import string
+&gt;&gt;&gt; string.capwords('some random words')
+'Some Random Words'
+
+#python 
+https://t.co/VjYbkGaL1P",https://twitter.com/python_tip/status/871981984964390914,345
+871618841520025600,Mon Jun 05 06:45:00 +0000 2017,1,4,0,1,1,0,134,5,"Copy a list by slicing or using the list() function:
+new_list = old_list[:]
+new_list = list(old_list)
+
+#python https://t.co/5wJ8kMTkPk",https://twitter.com/python_tip/status/871618841520025600,346
+870550552568102912,Fri Jun 02 08:00:00 +0000 2017,4,7,0,1,1,0,102,3,"Use functools.partial to reduce the number of arguments to a function:
+https://t.co/wto9rOSc8e
+#python",https://twitter.com/python_tip/status/870550552568102912,347
+870188166325600256,Thu Jun 01 08:00:00 +0000 2017,7,25,0,0,1,0,140,6,"Working with paths is easy in #Python3
+from pathlib import Path
+d = Path(""/etc"")
+filepath = d/""test.txt""
+if filepath.exists():
+    somestuff",https://twitter.com/python_tip/status/870188166325600256,348
+869833326437294081,Wed May 31 08:30:00 +0000 2017,2,8,0,1,1,0,138,3,"Process your csv as a collection of OrderedDicts, very convenient for data analysis: use csv.DictReader() 
+https://t.co/f1tGWrciHB
+#python",https://twitter.com/python_tip/status/869833326437294081,349
+869463389398904832,Tue May 30 08:00:00 +0000 2017,4,9,0,2,1,0,129,6,"Use `decode` and `encode` to convert between Unicode and byte strings:
+
+https://t.co/8KdE18WA8W
+https://t.co/qGeTdo1010
+
+#python3",https://twitter.com/python_tip/status/869463389398904832,350
+869110833074376704,Mon May 29 08:39:04 +0000 2017,1,6,0,0,1,0,139,3,"In #Python 3.6, dicts remember order of your values/keys
+
+(for backwards-compatibility you might still want to use collections.OrderedDict)",https://twitter.com/python_tip/status/869110833074376704,351
+868012579670679553,Fri May 26 07:55:00 +0000 2017,10,27,0,0,1,0,155,6,"consecutive pairs:
+&gt;&gt;&gt; mylist = [1, 2, 3, 4]
+&gt;&gt;&gt; a = list(zip(mylist, mylist[1:]))
+&gt;&gt;&gt; print(a)
+[(1, 2), (2, 3), (3, 4)]
+#python",https://twitter.com/python_tip/status/868012579670679553,352
+867651455829671936,Thu May 25 08:00:01 +0000 2017,6,6,0,2,1,0,135,6,"Use fnmatch module to match strings using Unix shell-style wildcard patterns.
+
+https://t.co/unEecTzEKf
+https://t.co/uGDFf35YAy
+
+#python",https://twitter.com/python_tip/status/867651455829671936,353
+867286294354812928,Wed May 24 07:49:00 +0000 2017,3,1,0,1,1,0,140,3,"Split #pandas dataframe into a dictionary of subsets using groupby
+year_subsets = dict(list(new_df.groupby('Year')))
+https://t.co/28D6v6MsWf",https://twitter.com/python_tip/status/867286294354812928,354
+866926676520738816,Tue May 23 08:00:01 +0000 2017,4,7,1,0,0,0,206,8,"Shallow and deep copy:
+&gt;&gt; from copy import copy, deepcopy
+&gt;&gt; a = [1,[2,3]]
+&gt;&gt; b = a
+&gt;&gt; c = copy(a)
+&gt;&gt; d = deepcopy(a)
+&gt;&gt; a[0]=0
+&gt;&gt; a[1][1]=4 https://t.co/4jzSsbf2LS",https://twitter.com/python_tip/status/866926676520738816,355
+866518988867555328,Mon May 22 05:00:00 +0000 2017,53,60,0,2,1,0,121,7,"All #PyCon2017 talks are online
+
+https://t.co/cOZoelIh1g
+
+Feeling overwhelmed? Here is the list:
+
+https://t.co/mqSA0QMoJx",https://twitter.com/python_tip/status/866518988867555328,356
+865493734028226561,Fri May 19 09:06:00 +0000 2017,2,7,1,1,1,1,97,5,"Drawing #Python Logo in Matplotlib:
+
+https://t.co/qXgVIgVPhp
+
+by @jakevdp https://t.co/2HVNc6ogOn",https://twitter.com/python_tip/status/865493734028226561,357
+865141253687693313,Thu May 18 09:45:23 +0000 2017,3,4,0,3,0,0,146,6,"Image to Numpy array:
+&gt; pic = https://t.co/DoWiUwfKEo(""foo.jpg"")
+&gt; pix = numpy.asarray(pic)
+
+https://t.co/X2R65FR1xb
+https://t.co/pRTiWFIxJu",https://twitter.com/python_tip/status/865141253687693313,358
+864772010743914497,Wed May 17 09:18:08 +0000 2017,2,7,0,0,1,0,139,9,"To check version of #python modules:
+
+$ pip freeze | grep numpy
+numpy==1.8.2
+
+OR
+
+$ python -c ""import numpy; print numpy.__version__""
+1.8.2",https://twitter.com/python_tip/status/864772010743914497,359
+864397514719604736,Tue May 16 08:30:01 +0000 2017,1,7,0,1,1,0,128,2,"Use ast_note_interactivity option in #Jupyter notebooks to see the value of multiple statements at once.
+https://t.co/KKZG3UtPlf",https://twitter.com/python_tip/status/864397514719604736,360
+864027571855409152,Mon May 15 08:00:00 +0000 2017,5,4,0,1,1,0,150,5,"Open a page using the default web browser:
+&gt;&gt;&gt; import webbrowser
+&gt;&gt;&gt; https://t.co/JZLG2Ssemg('https://t.co/TLfViwAzEt')
+True
+#python",https://twitter.com/python_tip/status/864027571855409152,361
+862940662190288896,Fri May 12 08:01:01 +0000 2017,3,5,0,1,2,1,105,3,"Struggling with matplotlib? Get enlightened at https://t.co/JD0opkDORD
+
+#python #matplotlib by @chris1610",https://twitter.com/python_tip/status/862940662190288896,362
+862578271422042112,Thu May 11 08:01:00 +0000 2017,10,15,0,0,1,0,163,8,"locals() and globals() return a dictionary of local / global variables:
+
+&gt;&gt;&gt; a = 1
+&gt;&gt;&gt; b = 1
+&gt;&gt;&gt; locals()
+{'a': 1, 'b': 1, ...}
+
+#python",https://twitter.com/python_tip/status/862578271422042112,363
+862359967155834880,Wed May 10 17:33:32 +0000 2017,0,0,0,0,0,3,125,2,"RT @mohhinder: @python_tip @pybites I like! You see this one? 
+python -c 'import platform; print(platform.architecture()[0])'",https://twitter.com/python_tip/status/862359967155834880,364
+862155489492250625,Wed May 10 04:01:01 +0000 2017,1,4,0,0,1,1,121,6,"Is machine 64 bits? Get uname from #Python:
+
+$ python -c 'import platform; print(platform.machine())'
+x86_64
+
+by @pybites",https://twitter.com/python_tip/status/862155489492250625,365
+861793101433757696,Tue May 09 04:01:01 +0000 2017,0,3,0,2,0,0,152,6,"Use seek to move file pointer
+&gt; f=open('test', 'wb+')
+&gt; f.write(b'0123456789')
+&gt; https://t.co/5BY1okN2Hl(5)
+&gt; https://t.co/0bta4rtQPv(1)
+'5'",https://twitter.com/python_tip/status/861793101433757696,367
+861430710673879040,Mon May 08 04:01:00 +0000 2017,3,8,0,0,1,0,147,16,"Else Clause on Loop Statement
+
+&gt;&gt;&gt; x = [1, 2]
+&gt;&gt;&gt; while x:
+print(""Then"")
+x.pop()
+else:
+print(""Else"")
+
+Then
+2
+Then
+1
+Else
+
+#python",https://twitter.com/python_tip/status/861430710673879040,368
+860403698207305730,Fri May 05 08:00:01 +0000 2017,5,7,1,2,1,0,127,3,"Generate word clouds in #python with wordcloud package:
+https://t.co/hUKyZnCQ0b
+https://t.co/PUFsXtTPox https://t.co/PT2zTRshVS",https://twitter.com/python_tip/status/860403698207305730,369
+860071251859038208,Thu May 04 09:59:00 +0000 2017,10,16,0,0,1,0,145,8,"If you miss an equivalent of C’s ”?” ternary operator, try
+
+&gt;&gt;&gt; a = 1
+&gt;&gt;&gt; b = 2
+&gt;&gt;&gt; 1 if a &gt; b else -1 
+-1
+
+#python",https://twitter.com/python_tip/status/860071251859038208,370
+859686468628774912,Wed May 03 08:30:00 +0000 2017,6,17,1,0,0,0,196,4,"&gt;&gt;&gt; words = 'I want only hello and world'.split()
+&gt;&gt;&gt; indexes = 3, 5
+&gt;&gt;&gt; from operator import itemgetter
+&gt;&gt;&gt; itemgetter(*indexes)(words) https://t.co/WOT9SzcZ1E",https://twitter.com/python_tip/status/859686468628774912,371
+859320306472759296,Tue May 02 08:15:01 +0000 2017,7,7,0,0,0,0,196,9,"Chaining Of Comparison Operators
+
+&gt;&gt;&gt; n = 10
+&gt;&gt;&gt; result = 1 &lt; n &lt; 20
+&gt;&gt;&gt; print(result)
+True
+&gt;&gt;&gt; result = 1 &gt; n &lt;= 9
+&gt;&gt;&gt; print(result)
+False",https://twitter.com/python_tip/status/859320306472759296,372
+858954147067961349,Mon May 01 08:00:01 +0000 2017,2,1,0,1,2,0,88,3,"Use MappingProxyType as a read-only dictionary:
+https://t.co/q5kTZVOFxF
+#python #python3",https://twitter.com/python_tip/status/858954147067961349,373
+857806835180605440,Fri Apr 28 04:01:01 +0000 2017,4,8,0,2,1,0,138,5,"Bored? Try The #Python Challenge!
+
+https://t.co/lCPWbqBg4s
+
+(if you prefer tasks that involve real objects, go to https://t.co/f6Ki1Vsiy6)",https://twitter.com/python_tip/status/857806835180605440,374
+857444444068380672,Thu Apr 27 04:01:00 +0000 2017,2,3,0,0,0,0,143,11,"Unpacking with * &amp; **
+
+def test(x,y,z):
+print(x,y,z)
+
+testD = {'x':1,'y':2,'z':3} 
+testL = [4,5,6]
+
+test(*testD)
+test(**testD)
+test(*testL)",https://twitter.com/python_tip/status/857444444068380672,375
+857082055837884417,Wed Apr 26 04:01:00 +0000 2017,6,8,0,0,1,0,185,9,"`is` operator tests if variables point to the same object:
+&gt;&gt;&gt; a = [1, 2]
+&gt;&gt;&gt; b = [1, 2]
+&gt;&gt;&gt; c = a
+&gt;&gt;&gt; a is b
+False
+&gt;&gt;&gt; a is c
+True 
+#python",https://twitter.com/python_tip/status/857082055837884417,376
+856719669327253505,Tue Apr 25 04:01:00 +0000 2017,9,18,0,0,1,0,140,8,"Saving #python object to file
+
+import pickle
+a = {'hello': 'world'}
+
+pickle.dump(a, open(""save.p"", ""wb""))
+
+pickle.load(open(""save.p"", ""rb""))",https://twitter.com/python_tip/status/856719669327253505,379
+856402336897544192,Mon Apr 24 07:00:02 +0000 2017,14,18,0,0,1,0,161,13,"Measure object size in memory
+
+&gt; import sys
+&gt; x=1
+&gt; sys.getsizeof(x)
+28
+&gt; y=1.0
+&gt; sys.getsizeof(y)
+24
+&gt; z=""1""
+&gt; sys.getsizeof(z)
+50
+#python3",https://twitter.com/python_tip/status/856402336897544192,381
+855360210818527233,Fri Apr 21 09:59:00 +0000 2017,12,29,0,0,1,0,122,6,"&gt;&gt;&gt; numbers = ['9','44','8','222']
+&gt;&gt;&gt; max(numbers)
+'9'
+&gt;&gt;&gt; max(numbers, key=int)
+'222'
+#python",https://twitter.com/python_tip/status/855360210818527233,383
+854997823649173504,Thu Apr 20 09:59:00 +0000 2017,4,8,0,1,1,1,76,1,Free #Python Data Science Handbook from @uwescience: https://t.co/ND6vmoNFLQ,https://twitter.com/python_tip/status/854997823649173504,384
+854605489677664257,Wed Apr 19 08:00:01 +0000 2017,2,7,1,1,1,0,164,4,"Builtin max and min accept iterators of datetime!
+maxd = max(dates) # dates=list of datetime objects
+source: https://t.co/W5N5vCUZ5O
+#python https://t.co/0fZgeKQG5m",https://twitter.com/python_tip/status/854605489677664257,385
+854217934297718785,Tue Apr 18 06:20:00 +0000 2017,4,9,1,1,1,0,104,2,"Use folium to generate interactive webmaps from #python.
+https://t.co/J6tVWDq1Uf https://t.co/F6pONmTu58",https://twitter.com/python_tip/status/854217934297718785,386
+853840699795673088,Mon Apr 17 05:21:01 +0000 2017,7,10,0,1,3,0,149,7,"#python #fun
+
+&gt;&gt;&gt; from __future__ import braces
+  File ""&lt;stdin&gt;"", line 1
+SyntaxError: not a chance
+
+#EasterEgg https://t.co/O0AYLTFjjn",https://twitter.com/python_tip/status/853840699795673088,387
+852921098320703489,Fri Apr 14 16:26:51 +0000 2017,0,0,0,0,0,2,143,1,"RT @pybites: @python_tip Very cool, but note it's &gt;= 3.5, for earlier version you probably want itertools.chain, nice article: https://t.co…",https://twitter.com/python_tip/status/852921098320703489,389
+852828279019057152,Fri Apr 14 10:18:01 +0000 2017,8,19,0,0,1,0,131,8,"Merge two dictionaries:
+x = {'a':1, 'b':2}
+y = {'c':3, 'd':4}
+z = {**x, **y}
+
+output:
+z = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+#python3",https://twitter.com/python_tip/status/852828279019057152,390
+852465638593482754,Thu Apr 13 10:17:00 +0000 2017,4,1,0,1,1,0,143,3,"Use collections.Counter().most_common() to find most common words:
+&gt;&gt;&gt; Counter(mylist).most_common(10)
+https://t.co/kdfaV86TkL #python",https://twitter.com/python_tip/status/852465638593482754,391
+852098972609126400,Wed Apr 12 10:00:00 +0000 2017,1,2,0,0,1,0,167,7,"#python can work with complex numbers:
+&gt;&gt;&gt; a = complex(1,2)
+&gt;&gt;&gt; b = 1 - 3j
+&gt;&gt;&gt; print(a+b)
+(2-1j)
+&gt;&gt;&gt; print(abs(a))
+2.23606797749979",https://twitter.com/python_tip/status/852098972609126400,392
+851781899387379713,Tue Apr 11 13:00:04 +0000 2017,4,6,0,1,0,0,146,5,"Calculate the number of days between two dates:
+
+&gt;from datetime import datetime as dt
+&gt;(https://t.co/0O6FbyJick() - dt(2016,12,31)).days
+101",https://twitter.com/python_tip/status/851781899387379713,394
+851430842626965504,Mon Apr 10 13:45:06 +0000 2017,6,5,0,0,1,0,158,4,"Split string with multiple delimiters #python
+&gt;&gt;&gt; import re
+&gt;&gt;&gt; print(re.split('\W+', 'Hello,world;a:test'))
+['Hello', 'world', 'a', 'test']",https://twitter.com/python_tip/status/851430842626965504,395
+850226636125462528,Fri Apr 07 06:00:01 +0000 2017,3,2,0,1,1,0,165,8,"Find N smallest items in a list:
+&gt;&gt;&gt; import heapq
+&gt;&gt;&gt; heapq.nsmallest(N, mylst)
+
+or
+&gt;&gt;&gt; sorted(mylst)[:N]
+
+https://t.co/HFX0T3GIpP #python",https://twitter.com/python_tip/status/850226636125462528,397
+849834299985625092,Thu Apr 06 04:01:00 +0000 2017,5,12,0,0,0,1,176,7,"Make a dictionary of 2 lists
+&gt;&gt;&gt; name = ('bob','tim')
+&gt;&gt;&gt; age = (35,27)
+&gt;&gt;&gt; d = dict(zip(name,age))
+&gt;&gt;&gt; d
+{'bob': 35, 'tim': 27}
+by @pybites",https://twitter.com/python_tip/status/849834299985625092,398
+849562261379096576,Wed Apr 05 10:00:01 +0000 2017,1,0,0,0,1,0,159,10,"#numpy Slicing vs. indexing:
+&gt; x=np.array(range(1,5))
+&gt; y=x[[1,2]]
+&gt; z=x[1:3]
+&gt; y[0]=9
+&gt; x
+array([1,2,3,4])
+&gt; z[0]=9 
+&gt; x
+array([1,9,3,4])",https://twitter.com/python_tip/status/849562261379096576,399
+849207410988392448,Tue Apr 04 10:29:58 +0000 2017,1,1,0,1,1,0,138,4,"Iterate over list and get index and value pairs:
+for i, item in enumerate(mylist):
+    print(i, item)
+#python See: https://t.co/SECAO6sci5",https://twitter.com/python_tip/status/849207410988392448,400
+848807030252945408,Mon Apr 03 07:59:00 +0000 2017,2,3,0,1,1,0,176,7,"Sorting
+&gt;&gt;&gt; import operator
+&gt;&gt;&gt; L = [(1,4),(2,3)]
+&gt;&gt;&gt; L.sort(key=operator.itemgetter(1))
+&gt;&gt;&gt; L
+[(2,3),(1,4)]
+https://t.co/aGFGYPD5jJ #python",https://twitter.com/python_tip/status/848807030252945408,401
+848022361983025153,Sat Apr 01 04:01:01 +0000 2017,1,3,1,0,1,0,45,1,Happy #AprilFoolsDay! https://t.co/EwdXsFktZx,https://twitter.com/python_tip/status/848022361983025153,402
+847682099435847681,Fri Mar 31 05:28:56 +0000 2017,2,4,0,2,1,0,135,5,"Manage your Twitter with Tweepy:
+* Write a Twitter bot https://t.co/D2J7EHBhEx
+* Who likes your tweets?
+https://t.co/UAY1e0KQBi
+#python",https://twitter.com/python_tip/status/847682099435847681,403
+847636027615322112,Fri Mar 31 02:25:51 +0000 2017,0,0,0,1,1,2,118,1,RT @pybites: #100DaysOfCode - Day 001: script to check if tip already submitted to @python_tip https://t.co/SwtTASAcuv,https://twitter.com/python_tip/status/847636027615322112,405
+847297709660819458,Thu Mar 30 04:01:30 +0000 2017,2,4,0,1,1,0,152,6,"Replace substrings:
+&gt;&gt;&gt; s = 'old old old'
+&gt;&gt;&gt; r = s.replace('old', 'new')
+&gt;&gt;&gt; r
+'new new new'
+#python https://t.co/LRs0oR9Y0f",https://twitter.com/python_tip/status/847297709660819458,406
+846935198713495556,Wed Mar 29 04:01:01 +0000 2017,2,5,0,1,1,0,167,6,"&gt;&gt;&gt; from fractions import Fraction
+&gt;&gt;&gt; a = Fraction(1,3)
+&gt;&gt;&gt; b = Fraction(5,4)
+&gt;&gt;&gt; print(a+b)
+19/12
+#python https://t.co/IPvT1Cc3XH",https://twitter.com/python_tip/status/846935198713495556,407
+846572807911751680,Tue Mar 28 04:01:00 +0000 2017,3,10,0,0,1,0,158,5,"Find minimum value and the corresponding key in a dictionary:
+&gt;&gt;&gt; d = {'a':5,'b':2,'c':4}
+&gt;&gt;&gt; min(zip(d.values(),d.keys()))
+(2, 'b')
+#python",https://twitter.com/python_tip/status/846572807911751680,408
+846210427906375681,Mon Mar 27 04:01:02 +0000 2017,4,9,0,1,1,0,140,5,"Flattening lists:
+a = [[1, 2], [3, 4], [5, 6]]
+list(itertools.chain.from_iterable(a))
+[1, 2, 3, 4, 5, 6]
+#python see https://t.co/CWt7WIWjDG",https://twitter.com/python_tip/status/846210427906375681,409
+845153205738651648,Fri Mar 24 06:00:01 +0000 2017,10,12,0,0,0,1,167,6,"from @pybites: Reverse a string with negative stride 
+&gt;&gt;&gt; s = 'hello world'
+&gt;&gt;&gt; ''.join(reversed(s))
+'dlrow olleh'
+&gt;&gt;&gt; s[::-1]
+'dlrow olleh'",https://twitter.com/python_tip/status/845153205738651648,412
+844922871650627585,Thu Mar 23 14:44:45 +0000 2017,3,6,1,3,1,0,164,6,"Do you know R? Add R magic to your #IPython Notebooks:
+https://t.co/RDLEP33jN0
+
+More details
+https://t.co/8mzuUBWjee
+https://t.co/oFNvdpbbmN https://t.co/QkdTzdPg7B",https://twitter.com/python_tip/status/844922871650627585,413
+844413330747908097,Wed Mar 22 05:00:01 +0000 2017,5,4,0,0,1,0,159,7,"5-8 character words:
+&gt;&gt;&gt; import re
+&gt;&gt;&gt; s = 'Fox jumps over RegExp.'
+&gt;&gt;&gt; re.findall(r'\b(\w{5,8})\b', s)
+['jumps', 'RegExp']
+
+#python",https://twitter.com/python_tip/status/844413330747908097,414
+844126441117810690,Tue Mar 21 10:00:01 +0000 2017,5,9,0,0,1,0,155,6,"Use sets for intersection of lists:
+&gt;&gt;&gt; a = [1,2,3,4,5,9,10,11]
+&gt;&gt;&gt; b = [4,5,6,7]
+&gt;&gt;&gt; set(a).intersection(b)
+set([4, 5])
+#python",https://twitter.com/python_tip/status/844126441117810690,415
+843764055055781888,Mon Mar 20 10:00:01 +0000 2017,2,3,0,0,1,0,151,4,"Check for #python version:
+&gt;&gt;&gt; import sys
+&gt;&gt;&gt; if (sys.version_info) &lt; (2,5):
+    raise Exception(""must use python 2.5 or greater"")",https://twitter.com/python_tip/status/843764055055781888,416
+842592109538373633,Fri Mar 17 04:23:08 +0000 2017,1,5,0,0,1,0,167,5,"&gt;&gt;&gt; group_adjacent = lambda a, k: zip(*([iter(a)] * k))
+&gt;&gt;&gt; a = list(range(6))
+&gt;&gt;&gt; list(group_adjacent(a, 3))
+[(0, 1, 2), (3, 4, 5)]
+#python",https://twitter.com/python_tip/status/842592109538373633,417
+842224153490997248,Thu Mar 16 04:01:00 +0000 2017,3,4,0,2,1,0,140,3,"Too much time spent on installation and settings? Run #Jupyter NB in docker: https://t.co/RdgJxvTpmf
+
+(for hackers: https://t.co/AIhyBi0B9L)",https://twitter.com/python_tip/status/842224153490997248,418
+841861768364363777,Wed Mar 15 04:01:01 +0000 2017,8,5,0,0,1,0,131,9,"Slice assignment:
+&gt;&gt;&gt; a = range(5)
+&gt;&gt;&gt; a
+[0, 1, 2, 3, 4]
+&gt;&gt;&gt; a[1:-1] = []
+&gt;&gt;&gt; a
+[0, 4]
+
+#python",https://twitter.com/python_tip/status/841861768364363777,421
+841499379454357504,Tue Mar 14 04:01:01 +0000 2017,1,1,0,2,1,0,121,4,"Generate command line interfaces from any #python code with Python Fire.
+
+https://t.co/UuLsNOCpUF
+https://t.co/3EYiexcwCY",https://twitter.com/python_tip/status/841499379454357504,422
+841136990770814977,Mon Mar 13 04:01:00 +0000 2017,8,13,0,0,1,0,176,8,"Name elements in tuples:
+&gt;&gt;&gt; Point = collections.namedtuple('Point', ['x', 'y'])
+&gt;&gt;&gt; p = Point(x=1.0, y=2.0)
+&gt;&gt;&gt; p.x
+1.0
+&gt;&gt;&gt; p.y
+2.0
+#python",https://twitter.com/python_tip/status/841136990770814977,423
+840140186457522176,Fri Mar 10 10:00:04 +0000 2017,1,3,0,0,1,0,167,6,"Sliding windows:
+&gt;&gt;&gt; a = [1,2,3,4]
+&gt;&gt;&gt; z = (itertools.islice(a,i,None) for i in range(2))
+&gt;&gt;&gt; list(zip(*z))
+[(1, 2), (2, 3), (3, 4)]
+#python",https://twitter.com/python_tip/status/840140186457522176,424
+839777788852789248,Thu Mar 09 10:00:01 +0000 2017,3,2,0,1,1,0,158,6,"&gt;&gt;&gt; import itertools
+&gt;&gt;&gt; print(list(itertools.compress('ABCDEFGH',[0,1,1,0,0,0,1,1])))
+['B', 'C', 'G', 'H']
+
+#python
+https://t.co/SHWsGWCpcM",https://twitter.com/python_tip/status/839777788852789248,425
+839415405751873538,Wed Mar 08 10:00:02 +0000 2017,3,5,0,0,1,0,88,5,"Leap years:
+&gt;&gt;&gt; import calendar
+&gt;&gt;&gt; calendar.isleap(2020)
+True
+#python",https://twitter.com/python_tip/status/839415405751873538,426
+839053008042360833,Tue Mar 07 10:00:00 +0000 2017,2,2,0,1,1,0,156,6,"Slices with negative indexing
+&gt;&gt;&gt; a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+&gt;&gt;&gt; a[-4:-2]
+[7, 8]
+
+More tips at https://t.co/CWt7WIWjDG #python",https://twitter.com/python_tip/status/839053008042360833,427
+838705722779107328,Mon Mar 06 11:00:01 +0000 2017,5,11,0,0,1,1,138,6,"Flatten a list of lists with sum
+
+&gt;&gt;&gt; sum([[1, 2], [3], [4, 5], [6, 7, 8]], [])
+[1, 2, 3, 4, 5, 6, 7, 8]
+
+tip by @pybites #python",https://twitter.com/python_tip/status/838705722779107328,428
+837528211449864192,Fri Mar 03 05:01:00 +0000 2017,0,2,0,1,1,0,146,7,"One-line tree definition:
+
+&gt; from collections import defaultdict
+&gt; def tree(): return defaultdict(tree)
+
+See https://t.co/V2oW5JRPMr
+#python",https://twitter.com/python_tip/status/837528211449864192,429
+837165825668878336,Thu Mar 02 05:01:01 +0000 2017,0,3,0,0,1,0,151,12,"Shuffling a list of objects:
+
+&gt; from random import shuffle
+
+&gt; a = range(5)
+&gt; a
+[0, 1, 2, 3, 4]
+&gt; shuffle(a)
+&gt; a
+[0, 4, 1, 2, 3]
+
+#python",https://twitter.com/python_tip/status/837165825668878336,430
+836803438784700416,Wed Mar 01 05:01:01 +0000 2017,1,8,0,0,1,0,116,7,"In #python3 a, *b, c = [1, 2, 3, 4, 5] unpacks as follows
+&gt;&gt;&gt; a
+1
+&gt;&gt;&gt; b
+[2, 3, 4]
+&gt;&gt;&gt; c
+5",https://twitter.com/python_tip/status/836803438784700416,432
+836453906184028160,Tue Feb 28 05:52:06 +0000 2017,1,4,0,0,1,0,86,6,"Select a random item from a list:
+
+import random
+rand = random.choice(mylist)
+
+#python",https://twitter.com/python_tip/status/836453906184028160,434
+836088310401486850,Mon Feb 27 05:39:21 +0000 2017,3,7,0,0,1,0,166,6,"Inverting a dictionary:
+&gt;&gt;&gt; my_map = { 'a': 1, 'b': 2}
+&gt;&gt;&gt; inv_map = {v: k for k, v in my_map.items()}
+&gt;&gt;&gt; inv_map
+{1: 'a', 2: 'b'}
+#python",https://twitter.com/python_tip/status/836088310401486850,435
+835081849969999873,Fri Feb 24 11:00:02 +0000 2017,2,9,0,1,1,0,157,6,"Use _ in #python console to retrieve the result of the last statement
+&gt;&gt;&gt; 3 + 4
+7
+&gt;&gt;&gt; _ * 3
+21
+For other uses, see: https://t.co/lJVdDoGGt2",https://twitter.com/python_tip/status/835081849969999873,436
+834719462381215744,Thu Feb 23 11:00:02 +0000 2017,0,1,0,0,1,0,149,5,"Measure time of code snippets
+import timeit
+&gt;&gt;&gt; timeit.timeit('""""-"""".join(str(n) for n in range(100))', number=10000)
+0.818726062774
+#python",https://twitter.com/python_tip/status/834719462381215744,437
+834357074356219906,Wed Feb 22 11:00:02 +0000 2017,2,8,0,1,1,0,157,6,"""New in #python3.6 - formatted string literals:
+&gt;&gt;&gt; name = Fred
+&gt;&gt;&gt; f'His name is {name}'
+His name is Fred
+
+More: https://t.co/YFkgH9YqeS """,https://twitter.com/python_tip/status/834357074356219906,438
+833994677753769985,Tue Feb 21 11:00:00 +0000 2017,0,2,0,1,2,0,86,1,#python #rstats Coming from R to Python? See NumPy for R Users https://t.co/G0ljt7je0R,https://twitter.com/python_tip/status/833994677753769985,439
+833632289846226949,Mon Feb 20 11:00:00 +0000 2017,2,4,0,1,1,1,139,3,"sum can take a generator:
+sum(LETTER_SCORES.get(char.upper(), 0) for char in word)
+Tip by @pybites. Thanks! https://t.co/CnR8dtGLM6 #python",https://twitter.com/python_tip/status/833632289846226949,440
+832454783604776961,Fri Feb 17 05:01:01 +0000 2017,1,2,0,1,1,0,117,6,"A static HTTP server with #python
+
+cd /home/somedir
+python -m SimpleHTTPServer
+
+For more, see https://t.co/9BLQNMYmDJ",https://twitter.com/python_tip/status/832454783604776961,441
+832092397437743105,Thu Feb 16 05:01:01 +0000 2017,0,3,0,0,2,0,131,11,"one-character string to Unicode code point:
+
+&gt;&gt;&gt; ord('❤')
+10084
+
+…and back:
+
+&gt;&gt;&gt; chr(10084)
+'❤'
+
+#python3 #python",https://twitter.com/python_tip/status/832092397437743105,442
+831730007135416323,Wed Feb 15 05:01:01 +0000 2017,3,3,0,0,1,0,140,6,"&gt;&gt;&gt; d = collections.deque(range(10))
+&gt;&gt;&gt; d.rotate(2)
+&gt;&gt;&gt; print(d)
+​
+deque([8, 9, 0, 1, 2, 3, 4, 5, 6, 7])
+#python",https://twitter.com/python_tip/status/831730007135416323,443
+831375199983501312,Tue Feb 14 05:31:08 +0000 2017,0,1,0,1,1,0,138,5,"&gt;&gt;&gt; from math import log
+&gt;&gt;&gt; log(2**31, 2) == 31
+False
+
+For why that is the case in #python, see https://t.co/9N7PEbNROp",https://twitter.com/python_tip/status/831375199983501312,444
+830998306956406785,Mon Feb 13 04:33:30 +0000 2017,1,3,1,1,1,0,146,7,"Have you ever tried to type
+
+&gt;&gt;&gt; import this
+
+into your #python?
+
+(explanation on Quora: https://t.co/6DD47a3h7a) https://t.co/nTs7kwyTLL",https://twitter.com/python_tip/status/830998306956406785,445
+829918067530539008,Fri Feb 10 05:01:01 +0000 2017,0,0,0,0,1,0,88,4,"Select n random items from a list:
+import random
+rand = random.sample(mylist, n)
+#python",https://twitter.com/python_tip/status/829918067530539008,446
+829555679065108480,Thu Feb 09 05:01:00 +0000 2017,0,2,0,0,1,0,153,7,"Print list elements in #python3
+
+&gt;&gt;&gt; L = ['print', 'is', 'fun']
+&gt;&gt;&gt; print(*L)
+print is fun
+&gt;&gt;&gt; print(*L, sep=',')
+print,is,fun",https://twitter.com/python_tip/status/829555679065108480,447
+829193291744813056,Wed Feb 08 05:01:01 +0000 2017,0,4,0,0,1,0,149,14,"&gt;&gt;&gt; for c in itertools.combinations([1, 2, 3, 4, 5], 3):
+  print ''.join(str(x) for x in c)
+
+123
+124
+125
+134
+135
+145
+234
+235
+245
+345
+#python",https://twitter.com/python_tip/status/829193291744813056,448
+828939847163330561,Tue Feb 07 12:13:55 +0000 2017,0,1,0,0,1,0,155,7,"Frequency count:
+&gt;&gt;&gt; from collections import Counter
+&gt;&gt;&gt; a = [1,2,1,1,2,4,1]
+&gt;&gt;&gt; Counter(a)
+Counter({1: 4, 2: 2, 4: 1})
+
+#python",https://twitter.com/python_tip/status/828939847163330561,449
+828563074873454592,Mon Feb 06 11:16:45 +0000 2017,0,0,0,1,1,0,133,3,"Need to sort a list 's' by multiple criteria? Use sorted(s, key = lambda x: (x[1], x[2])).
+
+Detail on https://t.co/Ay0e0Q5SQn #python",https://twitter.com/python_tip/status/828563074873454592,450
+827923237048819712,Sat Feb 04 16:54:16 +0000 2017,0,0,0,1,1,0,158,14,"Unusual use of else:
+&gt;&gt;&gt; x = [1]
+&gt;&gt;&gt; while x:
+ print(""Then"")
+ x.pop()
+else:
+ print(""Else"")
+
+Then
+1
+Else
+
+See https://t.co/3QeQT61PEi
+#python",https://twitter.com/python_tip/status/827923237048819712,451
+827622022461214721,Fri Feb 03 20:57:21 +0000 2017,2,3,0,1,1,0,134,4,"Comma as thousand separator:
+&gt;&gt;&gt; '{:,.2f}'.format(1234567.8901)
+'1,234,567.89'
+More examples: https://t.co/dt1hlmWCZ2 #python",https://twitter.com/python_tip/status/827622022461214721,452
+1057301809495191552,Tue Oct 30 16:02:49 +0000 2018,6,26,0,1,1,0,102,4,"The splitlines() method returns a list with all the lines in string.
+
+#python 
+https://t.co/dFgVJNhfe4",https://twitter.com/python_tip/status/1057301809495191552,453
+1056928098246184960,Mon Oct 29 15:17:50 +0000 2018,36,126,1,0,1,0,188,5,"Want to know if your string contains any of multiple string patterns? Use any(). 
+
+&gt;&gt;&gt; any(pattern in my_string for pattern in [""hello"", ""world""])
+
+#python https://t.co/hmDohz0so1",https://twitter.com/python_tip/status/1056928098246184960,454
+1055631740482375680,Fri Oct 26 01:26:34 +0000 2018,10,51,0,2,3,0,266,7,"Anybody interested in free $500 Google Cloud credit? This is in addition to $300 you get for a new account ($800 in total):
+
+https://t.co/2K4krRZbp1
+
+For a quick overview what you can accomplish with Python on GCP, see https://t.co/N0x2kVe8By
+
+#cloud #gcp #pythontip",https://twitter.com/python_tip/status/1055631740482375680,457
+1055350870617903104,Thu Oct 25 06:50:29 +0000 2018,15,45,0,1,1,0,279,16,"When making an assignment to a variable in a scope that variable is automatically considered to be local:
+
+# this works
+lst = [1, 2, 3]
+def f1():
+    lst.append(5)
+f1()
+
+# this throws error
+lst = [1, 2, 3]
+def f2():
+    lst += [5]
+f2()
+
+#UnboundLocalError
+https://t.co/VZyZsTSV9X",https://twitter.com/python_tip/status/1055350870617903104,458
+1055325037228507137,Thu Oct 25 05:07:50 +0000 2018,0,0,0,0,0,1,140,3,"RT @kcemenike: A Nobel Prize has just been awarded to a Python enthusiast 😊
+
+And it's not in Computer Science, it's in Economics 😎 pycoders…",https://twitter.com/python_tip/status/1055325037228507137,459
+1054991000018579456,Wed Oct 24 07:00:29 +0000 2018,15,63,0,2,1,0,130,8,"Create HTML profiling report from a pandas DataFrame:
+
+https://t.co/3qRiEdBMTo
+
+Example:
+https://t.co/ILVesgDSig
+
+#pandasprofiling",https://twitter.com/python_tip/status/1054991000018579456,460
+1054673828154986497,Tue Oct 23 10:00:10 +0000 2018,0,0,0,0,0,2,84,2,"RT @MiloslavPojman: @python_tip &gt;&gt;&gt; sorted('\N{EGG}\N{CHICKEN}')
+['🐔', '🥚']",https://twitter.com/python_tip/status/1054673828154986497,461
+1054607253251088384,Tue Oct 23 05:35:37 +0000 2018,169,445,0,0,2,0,160,6,"Finally sorted out! Which came first, the chicken or the egg?
+
+&gt;&gt;&gt; x = ['\U0001F95A',  '\U0001F414']
+&gt;&gt;&gt; sorted(x)
+['🐔', '🥚'] 
+#emoji #python3",https://twitter.com/python_tip/status/1054607253251088384,462
+1054268707575226370,Mon Oct 22 07:10:21 +0000 2018,14,52,1,1,1,0,252,6,"Print All Cell’s Outputs (not just the last output of the cell):
+
+from IPython.core.interactiveshell import InteractiveShell
+InteractiveShell.ast_node_interactivity = ""all""
+
+See other #Jupyter tricks from https://t.co/HLbUnAOqh5 https://t.co/kvLfeps7Q3",https://twitter.com/python_tip/status/1054268707575226370,464
+1053352156487671808,Fri Oct 19 18:28:19 +0000 2018,21,76,0,0,1,0,152,8,"Try this:
+
+&gt;&gt;&gt; for i in range(20):
+...     print(f'Number {i}', end='\r')
+
+(Using carriage return in print makes the line replaceable)
+
+#python",https://twitter.com/python_tip/status/1053352156487671808,465
+1052916751980212225,Thu Oct 18 13:38:10 +0000 2018,46,150,0,0,1,0,238,9,"Add elements of one dictionary to another with the update() method:
+
+&gt;&gt;&gt; d1 = {'a' : 1, ""b"" : 2}
+&gt;&gt;&gt; d2 = {'c' : 2, ""d"" : 42, ""a"" : 3}
+&gt;&gt;&gt; d1.update(d2)
+&gt;&gt;&gt; d1
+{'a': 3, 'b': 2, 'c': 2, 'd': 42}
+
+#python",https://twitter.com/python_tip/status/1052916751980212225,466
+1052583379529596929,Wed Oct 17 15:33:28 +0000 2018,16,63,1,0,1,0,169,5,"Iterate over #pandas dataframe rows with DataFrame.iterrows()
+
+for i, row in df.iterrows():
+    print(row[""title""])
+    print(row[""description""]) https://t.co/7ipyCHFc4d",https://twitter.com/python_tip/status/1052583379529596929,467
+1052215207408349184,Tue Oct 16 15:10:29 +0000 2018,16,44,1,0,3,0,145,3,"re.compile accepts the re.DOTALL flag, which makes . in #regexp match all characters, including newlines.
+
+#python #regex https://t.co/EUyJJ4EThy",https://twitter.com/python_tip/status/1052215207408349184,468
+1051920951997333504,Mon Oct 15 19:41:13 +0000 2018,19,59,1,2,1,0,215,7,"Select a random sample from #pandas dataframe:
+
+&gt;&gt;&gt; import pandas as pd
+&gt;&gt;&gt; df = https://t.co/KBWVZaKP7L_csv(""data.csv"")
+&gt;&gt;&gt; df.sample(n=5)
+
+https://t.co/0RZGHoVUHw https://t.co/7fqhb4DUxV",https://twitter.com/python_tip/status/1051920951997333504,469
+1050642473486352384,Fri Oct 12 07:01:00 +0000 2018,16,68,1,1,2,0,146,5,"With Jupytext plugin, you can reads and writes notebooks as plain text files.
+
+https://t.co/Ys4IxsGhS1
+
+#jupyter #jupytext https://t.co/pDMT3Yvlhx",https://twitter.com/python_tip/status/1050642473486352384,470
+1050280088510423042,Thu Oct 11 07:01:01 +0000 2018,16,44,1,0,1,1,275,7,"#pythontip from @singhjayp:
+
+reduce(f, seq, initializer) returns a single value constructed by calling 'f' on the first two items of 'seq', then on the result and the next item, and so on.
+
+Set 'initializer' to avoid error if 'seq' is empty.
+
+Example: https://t.co/R09mpIb7kd",https://twitter.com/python_tip/status/1050280088510423042,471
+1049917697734008832,Wed Oct 10 07:01:00 +0000 2018,8,36,1,0,0,0,304,9,"Get N minimal values with numpy.argpartition. Example:
+
+import numpy as np
+
+N = 3
+random_points = np.random.rand(100,2)
+distance_from_origin = (random_points ** 2).sum(axis=1)       
+idx_N_near_origin = np.argpartition(distance_from_origin, N)[:N]
+random_points[idx_N_near_origin] https://t.co/ba2rMrkjf4",https://twitter.com/python_tip/status/1049917697734008832,472
+1049555309885149185,Tue Oct 09 07:01:00 +0000 2018,13,50,0,2,0,0,96,3,"Understanding pandas selection (.iloc vs .loc):
+
+https://t.co/j8uRNmQWuA https://t.co/XP8kReNiRU",https://twitter.com/python_tip/status/1049555309885149185,473
+1049192922225283072,Mon Oct 08 07:01:00 +0000 2018,30,113,0,1,0,0,192,7,"How to read two text files, line by line, simultaneously
+
+with open(file1) as f1, open(file2) as f2:
+  for x, y in zip(f1, f2):
+     print(f""{x.strip()}\t{y.strip()}"")
+
+https://t.co/jIOjiiJgDh",https://twitter.com/python_tip/status/1049192922225283072,474
+1048288346693423105,Fri Oct 05 19:06:32 +0000 2018,12,56,1,0,2,0,131,4,"Not all ñ’s are equal! 
+It’s a good idea to normalize #unicode input. Use unicodedata.normalize().
+
+#python https://t.co/44XUeHSXzR",https://twitter.com/python_tip/status/1048288346693423105,476
+1047839410321084416,Thu Oct 04 13:22:37 +0000 2018,36,138,1,0,0,0,196,5,"Pretty-print dictionaries with json.dumps
+
+&gt;&gt;&gt; import json
+&gt;&gt;&gt; d = {'a':'hello', 'd':1, 'b':5}
+&gt;&gt;&gt; print(json.dumps(d, indent=4, sort_keys=True)) https://t.co/9plSBWrkOc",https://twitter.com/python_tip/status/1047839410321084416,477
+1047574691487997954,Wed Oct 03 19:50:44 +0000 2018,0,0,0,0,0,2,71,2,"RT @SargonoffAkkad: @python_tip for item in (*x,*y,*z):
+    print(item)",https://twitter.com/python_tip/status/1047574691487997954,478
+1047526246656225280,Wed Oct 03 16:38:13 +0000 2018,39,178,0,0,2,0,286,19,"Use itertools.chain to iterate over items in separate lists:
+
+&gt;&gt;&gt; from itertools import chain
+&gt;&gt;&gt; x = [1, 2, 3]
+&gt;&gt;&gt; y = [5, 6, 7]
+&gt;&gt;&gt; z = ['a', 'b']
+&gt;&gt;&gt; for item in chain(x, y, z):
+...     print(item)
+... 
+1
+2
+3
+5
+6
+7
+a
+b
+
+#python #itertools",https://twitter.com/python_tip/status/1047526246656225280,479
+1047128390103420928,Tue Oct 02 14:17:17 +0000 2018,13,31,0,2,4,0,133,3,"Ever wanted to try TPU? Do it for free in #Google #Colaboratory
+https://t.co/zzSuXIe0Hy
+#python #DeepLearning https://t.co/Z9NxSBZCFT",https://twitter.com/python_tip/status/1047128390103420928,480
+1046838233429135362,Mon Oct 01 19:04:18 +0000 2018,19,69,1,0,1,0,256,6,"If you want a lambda to capture a value ad the definition point and keep it, include it as a default value. 
+Compare:
+&gt;&gt;&gt; pow1 = [lambda x: x**n for n in range(5)]
+and 
+pow2 = [lambda x, n=n: x**n for n in range(5)]
+#python https://t.co/QOEbNCIEEO",https://twitter.com/python_tip/status/1046838233429135362,481
+1045569043682320384,Fri Sep 28 07:01:00 +0000 2018,11,75,1,0,0,0,122,3,"Apply a function to each row of a data frame with DataFrame.apply(your_function, axis=1)
+
+Example: https://t.co/vOfaslwFY5",https://twitter.com/python_tip/status/1045569043682320384,482
+1045378961218318336,Thu Sep 27 18:25:41 +0000 2018,9,31,0,1,1,1,225,5,"Back to school? Or just want to take Python more seriously?
+
+@pybites offers 20-60 minute challenges you can code and verify in your browser. Try #100DaysOfCode in Python.
+
+https://t.co/g1ikeEho56 (disclaimer: affiliate link)",https://twitter.com/python_tip/status/1045378961218318336,483
+1044844267708043264,Wed Sep 26 07:01:00 +0000 2018,12,48,0,2,0,0,206,6,"When you get an exception in Jupyter notebook, you can use %debug magic to diagnose the problem (run ipdb debugger)
+
+Try it in Colaboratory: https://t.co/QC2IC19z2U
+
+Original source:
+https://t.co/lDhNe03UZA",https://twitter.com/python_tip/status/1044844267708043264,484
+1044483137890279424,Tue Sep 25 07:06:00 +0000 2018,77,233,1,1,0,0,133,3,"When web-scraping with Python, you can use cookies from your Firefox/Chrome browser:
+
+https://t.co/IbouMJVl4u https://t.co/jNS0F45eLa",https://twitter.com/python_tip/status/1044483137890279424,485
+1044466344463200256,Tue Sep 25 05:59:16 +0000 2018,6,18,0,2,0,0,215,1,"If you ever wanted to get into Machine Learning, I highly recommend to sign-up to https://t.co/OzHG7XYu97 Practical Deep Learning For Coders (starting Oct 22, need to register before Oct 12). https://t.co/UyR3yFlxjV",https://twitter.com/python_tip/status/1044466344463200256,486
+1044322317898108931,Mon Sep 24 20:26:57 +0000 2018,0,0,0,0,0,2,115,6,"RT @alvinlindstam: @python_tip Though still with the classic grapheme gotchas:
+
+&gt;&gt;&gt; ""🇸🇪"" in ""🇪🇸🇪🇸""
+True
+
+🤯",https://twitter.com/python_tip/status/1044322317898108931,487
+1044119492446621696,Mon Sep 24 07:01:00 +0000 2018,15,117,0,0,1,0,197,8,"One of my favorite things in Python. Testing if a string A contains a substring B is just ""B in A"", for example,
+
+&gt;&gt;&gt; x = 'hello'
+&gt;&gt;&gt; y = 'll'
+&gt;&gt;&gt; y in x
+True
+
+#pythontip",https://twitter.com/python_tip/status/1044119492446621696,488
+1043289661181808640,Sat Sep 22 00:03:33 +0000 2018,0,0,0,0,0,3,108,1,RT @alexpmil: @python_tip @kondrej from tqdm import tqdm_notebook for pretty HTML5 progress bars in Jupyter.,https://twitter.com/python_tip/status/1043289661181808640,489
+1043257783628361728,Fri Sep 21 21:56:53 +0000 2018,57,166,1,0,3,1,158,5,"With 'tqdm' you can add a progress meter to any iterable object (see examples in @kondrej's short video):
+
+https://t.co/mS1J4YIZd0
+
+#pythontip #iterable #tqdm",https://twitter.com/python_tip/status/1043257783628361728,490
+1042829817090064386,Thu Sep 20 17:36:17 +0000 2018,6,24,0,1,1,0,140,5,"Sort objects of the same class that don’t natively support comparison operations using operator.attrgetter
+
+https://t.co/2VAlOgrHKh
+
+#python",https://twitter.com/python_tip/status/1042829817090064386,491
+1042396175968677888,Wed Sep 19 12:53:09 +0000 2018,68,200,0,0,2,0,126,6,"Use ""\N"" escape sequence to print #unicode symbols by name.
+
+&gt;&gt;&gt; print('\N{smiling face with sunglasses}’)
+😎
+
+#python",https://twitter.com/python_tip/status/1042396175968677888,492
+1042088083091595265,Tue Sep 18 16:28:54 +0000 2018,12,49,0,1,1,0,137,3,"Run simple #python code directly from the command line with the -c switch:
+
+python -c ""import datetime; print(https://t.co/FXWDCB9dX6())""",https://twitter.com/python_tip/status/1042088083091595265,493
+1041606233894133760,Mon Sep 17 08:34:12 +0000 2018,25,104,1,0,3,0,152,1,"When using expand=True in pandas.Series.str.split(), the elements will expand out into separate columns. #python #pandas #python https://t.co/jJVLH2kX4P",https://twitter.com/python_tip/status/1041606233894133760,494
+1040480261782175749,Fri Sep 14 06:00:00 +0000 2018,13,46,1,1,1,0,118,3,"Ever wanted to plot graphs in the console? Try #bashplotlib package. 
+
+https://t.co/XxAalm2oOk https://t.co/xl3XQtsokf",https://twitter.com/python_tip/status/1040480261782175749,495
+1040117874013089792,Thu Sep 13 06:00:00 +0000 2018,27,115,1,0,2,0,250,6,"dict(zip(list1, list2)) creates a dictionary from two lists.
+
+Example:
+&gt;&gt;&gt; keys = ['red', 'green', 'blue']
+&gt;&gt;&gt; values = ['#FF0000','#008000', '#0000FF']
+&gt;&gt;&gt; color_dictionary = dict(zip(keys, values)) https://t.co/rYjtdkGvaz",https://twitter.com/python_tip/status/1040117874013089792,496
+1039755234455605248,Wed Sep 12 05:59:00 +0000 2018,10,42,0,4,3,0,303,7,"Installing Python packages is sometimes challenging but #virtualenv, #easy_install and #conda are here to assist.
+
+1) A helpful list what to try if you get stuck https://t.co/jIsVAAIwII
+
+2) conda vs. pip, which tool should I use? https://t.co/dR0ULw0Rpx?
+
+https://t.co/28AbHoyF6P https://t.co/VwMiw7ryVv",https://twitter.com/python_tip/status/1039755234455605248,497
+1039393100232314880,Tue Sep 11 06:00:00 +0000 2018,23,77,1,1,1,1,197,6,"#pythontip from @singhjayp:
+
+zip stops without warning when one of the iterables is
+exhausted; consider using https://t.co/yR33kQMdOF_longest to avoid that problem
+
+Example: https://t.co/CEvjrZgXP0",https://twitter.com/python_tip/status/1039393100232314880,498
+1039030713381605376,Mon Sep 10 06:00:00 +0000 2018,31,89,1,1,0,0,321,16,"Do not use mutable default arguments (lists, sets, dicts...)
+
+Why? Consider a function:
+
+def append_to(element, to=[]):
+    to.append(element)
+    return to
+
+&gt;&gt;&gt; append_to(12)
+[12]
+# looks ok, but...
+&gt;&gt;&gt; append_to(42)
+[12, 42]
+# what? not ok
+
+Explanation: https://t.co/4V26oZgmw1 https://t.co/TNiTcZox71",https://twitter.com/python_tip/status/1039030713381605376,499
+1038129674931654658,Fri Sep 07 18:19:36 +0000 2018,14,51,1,1,3,0,177,4,"Let your colleagues know what you think about the data quality. Use pictures as data markers in #matplotlib plots:
+https://t.co/j0ixbtiOdQ
+
+#python #tgif https://t.co/N2zQcAjw35",https://twitter.com/python_tip/status/1038129674931654658,500
+1037681602443325440,Thu Sep 06 12:39:07 +0000 2018,5,23,0,1,2,0,95,3,"Download and parse newspaper articles with #newspaper3k module.
+#python
+https://t.co/K4cR5kt8ar",https://twitter.com/python_tip/status/1037681602443325440,501
+1037353846719356928,Wed Sep 05 14:56:44 +0000 2018,20,58,1,1,2,0,200,6,"Make toy dataframes and series with pandas.util.testing:
+&gt;&gt;&gt; import pandas.util.testing as tm
+&gt;&gt;&gt; tm.makeDataFrame()
+
+#pandas #python 
+https://t.co/lVGKkUrc9I https://t.co/7qr4wGAK8h",https://twitter.com/python_tip/status/1037353846719356928,502
+1036935333340950529,Tue Sep 04 11:13:43 +0000 2018,13,65,1,1,1,0,98,3,"Use textwrap module to format text output.
+https://t.co/jiuYvHOwIj
+#python https://t.co/wtbKMhsUGX",https://twitter.com/python_tip/status/1036935333340950529,503
+1036606549798662144,Mon Sep 03 13:27:15 +0000 2018,39,137,0,1,1,0,246,9,"enumerate() takes a second parameter to change the starting count:
+
+&gt;&gt;&gt; names = [""Alice"", ""Bob"", ""Charlie""]
+&gt;&gt;&gt; list(enumerate(names, start=101))
+[(101, 'Alice'), (102, 'Bob'), (103, 'Charlie')]
+
+https://t.co/SECAO6sci5
+
+#python",https://twitter.com/python_tip/status/1036606549798662144,504
+1035431760551497728,Fri Aug 31 07:39:03 +0000 2018,0,0,0,0,0,2,122,3,"RT @zuoike: @python_tip Why not ignore the "".pyc"" in a "".gitignore"" file? 
+
+There is a reason for the byte code existence!",https://twitter.com/python_tip/status/1035431760551497728,505
+1035407587284602880,Fri Aug 31 06:03:00 +0000 2018,55,143,0,0,0,0,277,8,"Every time you
+
+&gt;&gt;&gt; import your_module
+
+Python creates .pyc file with compiled bytecode. If you want to avoid .pyc files (for example, you do not want to commit them with git), set env. variable PYTHONDONTWRITEBYTECODE or use
+
+import sys
+sys.dont_write_bytecode = True",https://twitter.com/python_tip/status/1035407587284602880,506
+1035056020152672256,Thu Aug 30 06:46:00 +0000 2018,47,138,1,2,0,1,201,6,"Speed-up your code with @lru_cache decorator:
+
+https://t.co/Io3V6H6Dyz
+
+Example - calculation of 35th Fibonacci number
+(speedup from 4.32s to 0.000055s): https://t.co/QPonLSbWIm https://t.co/ufPkakn4Nm",https://twitter.com/python_tip/status/1035056020152672256,508
+1034688347409510400,Wed Aug 29 06:25:00 +0000 2018,18,51,1,3,0,0,223,7,"Execute Jupyter notebooks for different parameters with papermill:
+
+https://t.co/xZkQwT4Nzv
+
+Learn about scheduling and executing notebooks at Netflix:
+https://t.co/WJfmomoZ4Z
+https://t.co/J1GPZVAaKO https://t.co/q31aA71qaP",https://twitter.com/python_tip/status/1034688347409510400,509
+1034327469581455365,Tue Aug 28 06:31:00 +0000 2018,6,26,1,2,0,1,187,6,"Is this the greatest Twitter scheme of all time? Find the answer with Python:
+
+https://t.co/C5hUZawCir
+(thanks @minebocek for inspiration)
+
+https://t.co/kkYIc30boO https://t.co/EiLSyB4kiH",https://twitter.com/python_tip/status/1034327469581455365,510
+1034150828985044992,Mon Aug 27 18:49:05 +0000 2018,0,0,0,0,0,2,140,3,"RT @mhlkong: @python_tip So, is this nonsense, or is there a way of getting the expected result?
+
+I was thinking initialization, but it's a…",https://twitter.com/python_tip/status/1034150828985044992,512
+1033959293580533760,Mon Aug 27 06:08:00 +0000 2018,22,61,1,1,0,0,304,10,"One of Python gotchas:
+
+multipliers = [lambda x: i*x for i in range(3)]
+
+for f in multipliers:
+    print(f(2))
+
+You might expect to see: 0 2 4. While you actually get: 4 4 4.
+That is because all functions  refer to the same i and, at the of the cycle, i=2.
+https://t.co/a8VUbdb6uB https://t.co/NGhXwe0zH9",https://twitter.com/python_tip/status/1033959293580533760,513
+1033126873260146688,Fri Aug 24 23:00:15 +0000 2018,4,26,0,3,1,0,243,3,"#JupyterCon talk: ""I Don't Like Notebooks"": https://t.co/XFvtPCvA0U
+
+Is your project based on Jupyter notebooks? Can you share tips how you deal with these problems? (either by reply, or through https://t.co/mfUQ9twkWS) https://t.co/m93m2qIEbC",https://twitter.com/python_tip/status/1033126873260146688,514
+1032998115756912641,Fri Aug 24 14:28:37 +0000 2018,13,51,0,2,1,0,206,12,"Add padding around strings:
+
+&gt;&gt;&gt; a = ""hello""
+&gt;&gt;&gt; ""{:#^20}"".format(a)
+'#######hello########'
+&gt;&gt;&gt; f""{a:*^11}""
+'***hello***'
+
+https://t.co/fMvuoDwTUv
+https://t.co/o73VxOHAeg
+
+#python",https://twitter.com/python_tip/status/1032998115756912641,515
+1032682881011916800,Thu Aug 23 17:35:59 +0000 2018,27,95,0,0,2,1,311,8,"#pythontip from @daviddelachurch
+Loving #Python3.5 PEP 448 for overwriting a dictionary of default values:
+
+&gt;&gt;&gt; defaults = {""lenny"": ""white"", ""carl"": ""black""}
+&gt;&gt;&gt; overwrite = {""lenny"": ""yellow""}
+&gt;&gt;&gt; new = {**defaults, **overwrite}
+&gt;&gt;&gt; new
+{'lenny': 'yellow', 'carl': 'black'}",https://twitter.com/python_tip/status/1032682881011916800,516
+1032262965469294592,Wed Aug 22 13:47:24 +0000 2018,17,60,0,3,1,0,162,6,"Open a website in default web browser from #python scripts:
+
+import webbrowser
+https://t.co/JZLG2SaDuI_new_tab(""https://t.co/PlI6Z7ZLYi"")
+
+https://t.co/1xdOBsK1Xg",https://twitter.com/python_tip/status/1032262965469294592,517
+1031878446299922432,Tue Aug 21 12:19:27 +0000 2018,9,45,1,1,1,0,198,6,"#pandas: See on which rows the column is changing its value using 
+
+df['col'].ne(df['col'].shift())
+
+(shift() move the whole column down by one space)
+https://t.co/GJbLATZD22 https://t.co/0vMj802r4o",https://twitter.com/python_tip/status/1031878446299922432,518
+1031520224208728065,Mon Aug 20 12:36:00 +0000 2018,11,38,0,2,2,0,218,6,"Get a day of the week for a given date with https://t.co/PbVoFZYd0h.weekday().
+(Monday is 0, Sunday is 6):
+&gt;&gt;&gt; new_year = https://t.co/PbVoFZYd0h(2019, 1, 1)
+&gt;&gt;&gt; new_year.weekday()
+1
+#python #datetime",https://twitter.com/python_tip/status/1031520224208728065,519
+1030326397665914880,Fri Aug 17 05:32:10 +0000 2018,19,54,1,2,1,1,227,8,"Redirecting of stdout in #Python3:
+
+&gt;&gt;&gt; contextlib.redirect_stdout(f)
+
+See an example from @raymondh:
+https://t.co/ZtYLZcWAli
+
+And four other ways to redirect stdout from https://t.co/tJs6sfe5GX https://t.co/chfn252bvg",https://twitter.com/python_tip/status/1030326397665914880,520
+1029973782146904064,Thu Aug 16 06:11:00 +0000 2018,29,89,0,1,1,0,278,11,"By default, Python compare objects using their ids. Consider the following class:
+
+class Number:
+    def __init__(self, x):
+        self.x = x
+
+n1 = Number(1)
+n2 = Number(1)
+n1 == n2 # False 😲😲
+
+The elegant solution to this problem is to use #dataclasses https://t.co/wxBtxfyLPR",https://twitter.com/python_tip/status/1029973782146904064,522
+1029632055284363264,Wed Aug 15 07:33:06 +0000 2018,100,331,1,0,1,0,110,1,Wanna know which line of your function is eating all the time? Measure it with #lprun: https://t.co/1NpmVNH6F1,https://twitter.com/python_tip/status/1029632055284363264,524
+1029249762942377984,Tue Aug 14 06:14:00 +0000 2018,23,55,1,0,2,0,227,6,"&gt;&gt;&gt; from contextlib import suppress
+&gt;&gt;&gt; with suppress(SpecificError): doing_something()
+
+will not propagate SpecificError if it is raised while doing_something()
+
+#pythontip #exceptions https://t.co/zMPF7gagV5",https://twitter.com/python_tip/status/1029249762942377984,525
+1028883851844747265,Mon Aug 13 06:00:00 +0000 2018,11,32,0,2,1,1,279,7,"Unlike C, Java, R, …, there is no overloading of functions in #Python, but
+
+1) @functools.singledispatch = define specific implementations based on the type of first argument
+https://t.co/YqYaI5ioA4
+
+2) @typing.overload = for different number of arguments
+https://t.co/rTCFE80Ysu",https://twitter.com/python_tip/status/1028883851844747265,526
+1027899866976931840,Fri Aug 10 12:50:00 +0000 2018,14,63,1,2,1,1,231,6,"bqplot is a library for interactive plotting in #Jupyter notebooks. Try it yourself: 
+https://t.co/9RfOjnXdUP 
+
+Histogram idea: @NicholasStrayer 
+
+More examples at bqplot github repo: https://t.co/wn2f15vuYP https://t.co/d71fOXNMMx",https://twitter.com/python_tip/status/1027899866976931840,527
+1027509800391856131,Thu Aug 09 11:00:01 +0000 2018,46,110,1,0,1,0,245,4,"Add annotations to your #python functions to give hints about  how the function is supposed to be used. (They are not type checks and they don't alter python behavior!)
+
+def myfun(a:int, b:int) -&gt; int:
+    return a + b https://t.co/Qs7TRN6JHX",https://twitter.com/python_tip/status/1027509800391856131,528
+1027176351873286144,Wed Aug 08 12:55:00 +0000 2018,15,52,1,0,2,0,151,7,"Get number of Null values in a #pandas dataframe:
+
+df.isnull().sum() (column wise)
+
+df.isnull().sum(axis=1) (row wise)
+
+#python https://t.co/UZhQyUjYqM",https://twitter.com/python_tip/status/1027176351873286144,529
+1026725629390020608,Tue Aug 07 07:04:00 +0000 2018,15,54,0,2,1,0,113,3,"Use https://t.co/KBWVZb2pZj_clipboard() to copy and paste a table into dataframe.
+https://t.co/xAeOLeM4IE
+#pandas",https://twitter.com/python_tip/status/1026725629390020608,530
+1026445347776880641,Mon Aug 06 12:30:15 +0000 2018,0,0,0,0,0,2,140,1,"RT @A_Mc_Carthy: @python_tip Thanks for that, I've just written a short blog post (my first this year... 🙄) describing how the flags, and t…",https://twitter.com/python_tip/status/1026445347776880641,531
+1026354685891014656,Mon Aug 06 06:30:00 +0000 2018,405,756,1,0,1,1,200,7,"Be careful when reversing #unicode strings. You may be surprised…
+
+&gt;&gt;&gt; s = ""Welcome in 🇬🇧”
+&gt;&gt;&gt; s[::-1]
+'🇧🇬 ni emocleW'
+
+(thanks @piskvor for the inspiration!) https://t.co/JKNb0MotzQ",https://twitter.com/python_tip/status/1026354685891014656,532
+1025262991443259392,Fri Aug 03 06:12:00 +0000 2018,6,23,1,2,1,0,130,5,"A simple #matplotlib animation
+
+https://t.co/R7XSFkeLvv
+
+Try it yourself in Colab: https://t.co/ye3uM8jufp https://t.co/n309X3bdxQ",https://twitter.com/python_tip/status/1025262991443259392,533
+1025070401632657408,Thu Aug 02 17:26:43 +0000 2018,0,0,1,0,0,2,89,1,RT @hroncok: @python_tip Why the unnecessary dance with builtins? https://t.co/yFZw09HmL0,https://twitter.com/python_tip/status/1025070401632657408,534
+1024912431695454208,Thu Aug 02 06:59:00 +0000 2018,24,68,1,1,1,0,175,3,"In #Python3, print is a function and you can override it (NOT a recommended approach, but a hack that can be useful).
+
+Example: https://t.co/E64uSjWpnR https://t.co/QVHmcX0M93",https://twitter.com/python_tip/status/1024912431695454208,535
+1024542242885824512,Wed Aug 01 06:28:00 +0000 2018,4,18,1,3,0,0,302,9,"Kaggle BlackJack microchallenge:
+
+https://t.co/eYxoTEBAYc
+
+Simple if-condition strategy wins 41.5% games (see below). Can you get over 42.0%?
+
+Check creative ideas in the discussion:
+• Decision trees https://t.co/6AOBLrj0R8
+• Deep Reinforcement Learning, https://t.co/JUbadHgPD7 https://t.co/YOagu7ClJ0",https://twitter.com/python_tip/status/1024542242885824512,536
+1024536538930204672,Wed Aug 01 06:05:20 +0000 2018,0,0,0,0,0,1,140,1,"RT @ThePSF: New Release: NumPy 1.15.0 is a release with an unusual number of cleanups, many deprecations of old functions, and improvements…",https://twitter.com/python_tip/status/1024536538930204672,537
+1024178421696323585,Tue Jul 31 06:22:18 +0000 2018,23,79,0,2,2,1,287,10,"#pythontip from @ori75660:
+
+Check the temperature of your CPU using Python (and other cool tricks)
+https://t.co/rnwhMjqGjH
+
+&gt;&gt;&gt; import psutil
+&gt;&gt;&gt; psutil.sensors_battery()
+&gt;&gt;&gt; psutil.sensors_temperatures()
+
+Send us your own #pythontip to https://t.co/mfUQ9twkWS",https://twitter.com/python_tip/status/1024178421696323585,540
+1023842213116035073,Mon Jul 30 08:06:20 +0000 2018,56,188,1,1,0,0,330,9,"Create an animated GIF with 'imageio', Python library for reading and writing image data.
+
+&gt;&gt;&gt; from imageio import imread, mimsave
+&gt;&gt;&gt; images = []
+&gt;&gt;&gt; for f in filenames:
+    images.append(imread(f))
+&gt;&gt;&gt; mimsave('movie.gif', images)
+
+Source code: https://t.co/hKLOQkYrmJ https://t.co/xUoFCs77GN",https://twitter.com/python_tip/status/1023842213116035073,543
+1022823248424259584,Fri Jul 27 12:37:20 +0000 2018,5,42,0,1,3,0,211,8,"pathlib.Path has methods for reading and writing files:
+
+from pathlib import Path
+fname = Path('sometxt.txt')
+fname.write_text(""Pathlib is great"")
+print(https://t.co/XNpZpBgL7D_text())
+
+#python3 #python #pathlib",https://twitter.com/python_tip/status/1022823248424259584,544
+1022431882183667712,Thu Jul 26 10:42:11 +0000 2018,26,75,0,0,1,0,198,9,"Get the directory path of a #python script from within itself:
+
+import os
+print(os.path.dirname(os.path.realpath(__file__)))
+
+or
+
+from pathlib import Path
+print(str(Path(__file__).resolve().parent))",https://twitter.com/python_tip/status/1022431882183667712,545
+1022070362178285568,Wed Jul 25 10:45:38 +0000 2018,5,28,0,0,1,0,219,9,"Check from which module was the function imported: foo.__module__
+
+&gt;&gt;&gt; sum.__module__
+'builtins'
+&gt;&gt;&gt; from numpy import * # don't do this ;)
+&gt;&gt;&gt; sum.__module__
+'numpy.core.fromnumeric'
+
+#python",https://twitter.com/python_tip/status/1022070362178285568,546
+1021845471885549568,Tue Jul 24 19:52:00 +0000 2018,9,56,0,0,1,0,200,7,"You can use #python to multiply strings or tuples:
+&gt;&gt;&gt; 4*'ab'
+'abababab'
+&gt;&gt;&gt; 3*('python', 'tip')
+('python', 'tip', 'python', 'tip', 'python', 'tip')
+&gt;&gt;&gt; 2*(3,1)
+(3, 1, 3, 1)",https://twitter.com/python_tip/status/1021845471885549568,547
+1021452996868124672,Mon Jul 23 17:52:26 +0000 2018,21,49,0,2,3,0,145,1,"Check https://t.co/SQdCVjSiC4 3.0: fast rendering of big datasets, integration with #Jupyter notebooks... https://t.co/8NtBgPXoo4 #plotly #python",https://twitter.com/python_tip/status/1021452996868124672,548
+1020187800338083840,Fri Jul 20 06:05:00 +0000 2018,9,31,1,1,2,0,271,11,"If an object without any references is modified, does it make a sound? Refresh you modern pandas skills from https://t.co/RN6ai97lxq
+
+* Method Chaining
+* Indexes
+* Fast Pandas
+* Tidy Data
+* Visualization
+* Time Series
+* Scaling
+
+#pythontip #pandas https://t.co/XsquMYT9Ql",https://twitter.com/python_tip/status/1020187800338083840,549
+1019825126865424384,Thu Jul 19 06:03:52 +0000 2018,14,32,0,1,1,0,107,3,"#SciPy2018 (Scientific Computing with Python) videos are now available on YouTube:
+
+https://t.co/MmpHUhwY5A",https://twitter.com/python_tip/status/1019825126865424384,550
+1019459417513738240,Wed Jul 18 05:50:40 +0000 2018,29,65,1,2,3,0,189,6,"You most likely know about 'global' and 'local' variables but do you know 'nonlocal'?
+
+https://t.co/rmQjUgUKfZ
+https://t.co/XgaF26MKHX
+
+#python3 #pythontip #nonlocal https://t.co/RgU1rqWy59",https://twitter.com/python_tip/status/1019459417513738240,551
+1019099384657506305,Tue Jul 17 06:00:01 +0000 2018,2,9,0,1,1,0,89,3,"Troubles with #TensorFlow installation? You are not alone, check
+
+https://t.co/cMVpNwFkMF",https://twitter.com/python_tip/status/1019099384657506305,552
+1018905600921489408,Mon Jul 16 17:10:00 +0000 2018,14,57,1,0,0,0,132,5,"To test whether some class C1 is a subclass of another class C2:
+
+&gt;&gt;&gt; issubclass(C1, C2)
+
+Examples: https://t.co/99OgP7fan9",https://twitter.com/python_tip/status/1018905600921489408,553
+1017985580846551040,Sat Jul 14 04:14:10 +0000 2018,32,101,0,0,1,1,259,6,"#pythontip from @DynamicWebPaige: if you ever want to inspect the source code for a module that you've imported, but don't want to waste time hunting around for the .py file
+
+import inspect
+import pprint
+
+pprint.pprint(inspect.getsource( &lt;module_name&gt;))",https://twitter.com/python_tip/status/1017985580846551040,554
+1017312426268639232,Thu Jul 12 07:39:17 +0000 2018,18,49,0,1,1,0,195,5,"• del does not delete the object
+• del just decrease the reference counter
+• __del__ is an object destroyer, avoid using it
+
+For more see @DasIstHerrKuska's #pyconcz talk: https://t.co/unjLh0j185",https://twitter.com/python_tip/status/1017312426268639232,555
+1016945324005515264,Wed Jul 11 07:20:33 +0000 2018,9,53,0,0,2,0,83,2,"In #Jupyter notebook, %lsmagic gives you a list of all available magics.
+#pythontip",https://twitter.com/python_tip/status/1016945324005515264,556
+1016663178816737282,Tue Jul 10 12:39:25 +0000 2018,36,118,1,1,1,0,197,5,"For string concatenation, s1 += s2 + s3 is faster than s1 = s1 + s2 + s3 because s1 is not destroyed while calculating the complete string.
+
+https://t.co/5qn3jDzSHU
+
+#python https://t.co/dmgqkdJ8p8",https://twitter.com/python_tip/status/1016663178816737282,557
+1016286137906757632,Mon Jul 09 11:41:11 +0000 2018,6,27,1,1,2,1,128,3,"Confused about #pandas indexing? Check this blogpost by @_brohrer_ : https://t.co/aklBubSzMg
+
+#pythontip https://t.co/pIZLy6mtWH",https://twitter.com/python_tip/status/1016286137906757632,558
+1015127204320239616,Fri Jul 06 06:56:00 +0000 2018,41,100,1,1,0,0,157,3,"How Encoding Works in Python2 vs Python3? The best explanation of encode, decode and UTF-8 I have ever seen:
+
+https://t.co/esPYEXbHaR https://t.co/hvr6x0sMvH",https://twitter.com/python_tip/status/1015127204320239616,559
+1014762551857557509,Thu Jul 05 06:47:00 +0000 2018,18,43,0,2,1,1,234,8,"#pythontip from @rajatktb:
+
+Use generators when dealing with large data set in deep learning tasks. Each pass of the generator can go for an I/O call.
+
+For example 
+https://t.co/VbfmsgXl1E
+
+Send us your tips to https://t.co/mfUQ9teK5k",https://twitter.com/python_tip/status/1014762551857557509,560
+1014388335438004224,Wed Jul 04 06:00:00 +0000 2018,43,131,0,0,2,1,279,11,"zip() is its own inverse (via @jakevdp):
+
+&gt;&gt;&gt; data = [(1, 2, 3), ('a', 'b', 'c')]
+&gt;&gt;&gt; zipped = zip(*data)
+&gt;&gt;&gt; zipped
+[(1, 'a'), (2, 'b'), (3, 'c')]
+&gt;&gt;&gt; unzipped = zip(*zipped)
+&gt;&gt;&gt; unzipped
+[(1, 2, 3), ('a', 'b', 'c')]
+
+#pythontip #zip",https://twitter.com/python_tip/status/1014388335438004224,561
+1014032239061954561,Tue Jul 03 06:25:00 +0000 2018,14,80,1,1,1,0,94,3,"Domino animation in 10 lines of #Python code:
+
+https://t.co/LI2SFekFlm https://t.co/724pKDMmjg",https://twitter.com/python_tip/status/1014032239061954561,562
+1013671361259008000,Mon Jul 02 06:31:00 +0000 2018,18,75,0,1,2,0,130,6,"Get a list of keywords in #Python:
+
+&gt;&gt; import keyword
+&gt;&gt; print(keyword.kwlist)
+
+#pythontip via https://t.co/fL1ALJPoAb",https://twitter.com/python_tip/status/1013671361259008000,563
+1012698634280824834,Fri Jun 29 14:05:44 +0000 2018,9,35,0,1,4,0,130,3,"Practise your coding skills by solving puzzles. Try CodinGame https://t.co/GV8xn3QKAY
+
+#python #java #javascript #ruby and more...",https://twitter.com/python_tip/status/1012698634280824834,564
+1012325041252552704,Thu Jun 28 13:21:12 +0000 2018,64,120,0,1,1,0,113,2,"#Python 3.7 is released. Data classes, built-in breakpoint(), context variables and more.
+https://t.co/udgh1vyXqN",https://twitter.com/python_tip/status/1012325041252552704,565
+1011981261978599426,Wed Jun 27 14:35:09 +0000 2018,22,62,0,1,1,0,199,7,"Use maxsplit parameter in str.split to specify maximum number of splits to be done:
+&gt;&gt;&gt; s = ""aa bb cc dd""
+&gt;&gt;&gt; s.split(maxsplit=1)
+['aa', 'bb cc dd']
+
+#python
+https://t.co/o3YxgkOwUj",https://twitter.com/python_tip/status/1011981261978599426,566
+1011594171914899458,Tue Jun 26 12:56:59 +0000 2018,17,45,0,0,1,0,155,9,"Empty sequence evaluates to False in #python:
+
+&gt;&gt;&gt; lst = list()
+&gt;&gt;&gt; if lst:
+...     print(lst)
+... else:
+...     print(""Empty"")
+...
+Empty",https://twitter.com/python_tip/status/1011594171914899458,567
+1011252841447677953,Mon Jun 25 14:20:40 +0000 2018,15,48,0,1,3,0,124,1,Looking for a project template for #DataScience projects in #Python? Try #cookiecutter data science. https://t.co/f2Yf4oSbrA,https://twitter.com/python_tip/status/1011252841447677953,568
+1010040389263245312,Fri Jun 22 06:02:49 +0000 2018,24,66,0,2,1,1,271,4,"The best way to learn to code is by doing it. For a beginner it could be hard to find a project. @pybites prepared Python exercises and projects for you, check it out at https://t.co/oUKn3w62vv
+
+Try one, join #100DaysOfCode and go with us through 
+https://t.co/7evFVZC5FG",https://twitter.com/python_tip/status/1010040389263245312,569
+1009632246892937217,Thu Jun 21 03:01:00 +0000 2018,14,45,1,1,0,0,134,9,"Getting the class name of an instance X:
+
+X.__class__.__name__
+
+or 
+
+type(X).__name__
+
+https://t.co/s23ZKOaorY https://t.co/pwZmtKfJbS",https://twitter.com/python_tip/status/1009632246892937217,570
+1009323700116545537,Wed Jun 20 06:34:57 +0000 2018,25,68,1,0,1,1,291,10,"#pythontip from @singhjayp:
+
+Search multiple dicts using ChainMap
+
+from collections import ChainMap
+
+countryCapital = {'US':'Washinton', 'IN':'Delhi'}
+stateCapital = {'MA':'Boston', 'KA': 'Bangalore'}
+x = ChainMap(countryCapital, stateCapital)
+print(x['IN'], x['MA']) https://t.co/1eTBLtzVsY",https://twitter.com/python_tip/status/1009323700116545537,571
+1009142068503965696,Tue Jun 19 18:33:12 +0000 2018,0,0,0,0,0,4,140,2,"RT @zuoike: @python_tip @EnCuKou @pythoncz For Python 3, it's supposed to be
+codeobj = compile('x = 2\nprint(""X is"", x)', 'fakemodule', 'ex…",https://twitter.com/python_tip/status/1009142068503965696,572
+1008977453581135872,Tue Jun 19 07:39:05 +0000 2018,7,24,1,1,0,2,320,9,"☠ Dark magic ☠: built-in 'compile' and 'exec' functions enable you to compile and run Python code WITHIN Python:
+
+&gt;&gt;&gt; codeobj = compile('x = 2\nprint ""X is"", x', 'fakemodule', 'exec')
+&gt;&gt;&gt; exec(codeobj)
+X is 2
+
+Learn more from @EnCuKou talk at @pythoncz:
+
+https://t.co/3l0Kqi8xGC https://t.co/Bnb8Ht07u7",https://twitter.com/python_tip/status/1008977453581135872,573
+1008597844662472704,Mon Jun 18 06:30:39 +0000 2018,77,206,1,1,1,0,172,5,"In #Python3, the print function has options
+* 'sep' to separate the arguments
+* 'end' to be printed after the last argument
+
+https://t.co/Jm8LgiGnAJ https://t.co/V56ARBc7ku",https://twitter.com/python_tip/status/1008597844662472704,574
+1007629097621737472,Fri Jun 15 14:21:12 +0000 2018,15,50,1,2,1,0,209,3,"Call an external program in #python(3.5) with https://t.co/K6Gg56jD4p().
+&gt;&gt;&gt; import subprocess
+&gt;&gt;&gt; proc = https://t.co/K6Gg56jD4p([""ls"", ""-l""], stdout=subprocess.PIPE) https://t.co/GpO2WXJP3e",https://twitter.com/python_tip/status/1007629097621737472,575
+1007237101199527936,Thu Jun 14 12:23:33 +0000 2018,25,85,1,1,1,0,160,3,"Run a #python script and enter the interactive mode having access to everything defined in the script
+
+python -i https://t.co/ZW80JGqOU2 https://t.co/9uuxoeARaF",https://twitter.com/python_tip/status/1007237101199527936,576
+1006904704201297920,Wed Jun 13 14:22:43 +0000 2018,8,35,1,1,2,0,194,7,"#matplotlib labels can take TeX style strings:
+plt.xlabel(r""$xxxx = \sum_{n=1}^\infty\frac{-e^{i\pi}}{2^n}$"")
+plt.ylabel(""$4\pi t + 2$"")
+
+https://t.co/7FR6FBhj5f
+
+#python https://t.co/00WWGU4pPK",https://twitter.com/python_tip/status/1006904704201297920,577
+1006525736348454912,Tue Jun 12 13:16:50 +0000 2018,8,19,0,1,2,0,90,2,"With #doctest, you can define and run tests in docstrings. #python
+https://t.co/RHXWXTEzVW",https://twitter.com/python_tip/status/1006525736348454912,578
+1006260262117232641,Mon Jun 11 19:41:56 +0000 2018,26,82,0,0,1,0,291,12,"F-strings can embed #python (3.6) expressions:
+
+&gt;&gt;&gt; r = 10
+&gt;&gt;&gt; f'Area of a circle with radius {r}: {math.pi*r**2}'
+'Area of a circle with radius 10: 314.1592653589793’
+
+&gt;&gt;&gt; for i in range(3):
+...     f'{i} box{""es""if i!=1 else """"}'
+... 
+'0 boxes'
+'1 box'
+'2 boxes'",https://twitter.com/python_tip/status/1006260262117232641,579
+1004994185093496832,Fri Jun 08 07:51:00 +0000 2018,17,41,1,2,3,1,220,7,"New to the standard library: Data Classes = mutable namedtuples with defaults
+
+PEP557: https://t.co/WkHLCwqPJY
+
+or watch @raymondh's #PyCon2018 talk: https://t.co/VO2rUGcZaj
+
+#dataclass #pythontip https://t.co/4b5nYZ4hcX",https://twitter.com/python_tip/status/1004994185093496832,580
+1004736236450467841,Thu Jun 07 14:46:00 +0000 2018,7,14,0,1,0,0,123,3,"From 0 to Pythonic in 7 days. Sssign 🐍 up to Kaggle's 7-day Python Challenge, starting June 11th. 
+
+https://t.co/wggQkOCIaA",https://twitter.com/python_tip/status/1004736236450467841,581
+1004622477463412736,Thu Jun 07 07:13:58 +0000 2018,15,59,4,1,2,0,292,5,"#selfpromo Jupyter notebooks from our #pyconcz workshop ""Deep Learning in Keras&amp;TF: From Zero to Hero in 3 Hours""
+
+https://t.co/NBtGjsmP5j
+
+Examples: classification of Simpsons / flowers, a text generator for Obama speeches / new chapters in (Czech) Bible Kralická https://t.co/G4LyIzjbpR",https://twitter.com/python_tip/status/1004622477463412736,582
+1003875482838786049,Tue Jun 05 05:45:40 +0000 2018,5,37,0,0,0,0,192,6,"pandas.crosstab = cross-tabulation (pivot table) for two categorical variables
+
+import pandas as pd
+a = pd.Categorical([1,1,2,2,2,3,3,1])
+b = pd.Categorical([1,2,2,3,1,1,1,1])
+pd.crosstab(a,b)",https://twitter.com/python_tip/status/1003875482838786049,583
+1003548320890048512,Mon Jun 04 08:05:39 +0000 2018,23,90,0,0,1,1,239,9,"#pythontip from @singhjayp:
+
+How to insert an element into a sorted list and ensure the list remains sorted?
+
+&gt;&gt;&gt; import  bisect
+&gt;&gt;&gt; a = [1, 2, 4, 5] 
+&gt;&gt;&gt; bisect.insort(a, 3)
+&gt;&gt;&gt; print(a)
+[1, 2, 3, 4, 5]",https://twitter.com/python_tip/status/1003548320890048512,584
+1002519904497684480,Fri Jun 01 11:59:05 +0000 2018,3,19,1,1,2,0,174,5,"Searching for Colab (https://t.co/gLbfX4seZZ) specific issue? Look into ready-to-go solutions under
+
+Help &gt; Search code snippets
+
+#colab #pythontip https://t.co/iKxcZgfBHi",https://twitter.com/python_tip/status/1002519904497684480,586
+1002228567059595264,Thu May 31 16:41:25 +0000 2018,14,51,1,1,2,1,213,9,"6+1 #pythontips to Speed-up Your Calculations (by @jakevdp #PyCon2018):
+• Line profiling
+• NumPy vectorization
+• Specialized data structures
+• Cython
+• Numba
+• Dask
+
+https://t.co/6DVAxxwYrS https://t.co/uY5vZdX545",https://twitter.com/python_tip/status/1002228567059595264,587
+1001809904221515776,Wed May 30 12:57:48 +0000 2018,30,111,1,0,0,0,221,4,"Combine two lists with list comprehension:
+&gt;&gt;&gt; colors = ['red', 'green', 'blue']
+&gt;&gt;&gt; toys = ['car', 'ball', 'duck']
+&gt;&gt;&gt; [[color, toy] for color in colors for toy in toys] https://t.co/GrwkWrztIn",https://twitter.com/python_tip/status/1001809904221515776,588
+1001504188910600192,Tue May 29 16:43:00 +0000 2018,21,64,0,1,2,0,210,8,"The lambda keyword provides a shortcut for declaring small and anonymous functions.
+
+&gt;&gt;&gt; (lambda x, y: x + y)(5, 3)
+8
+
+Learn more about lambda functions from https://t.co/OlclAfqz8x
+
+#lambda #pythontip",https://twitter.com/python_tip/status/1001504188910600192,589
+1001048042420785152,Mon May 28 10:30:26 +0000 2018,6,10,0,1,3,0,107,3,"Constrained layout: experimental layout engine in #matplotlib 2.2.
+https://t.co/EnoQpGUMkG
+#dataviz #python",https://twitter.com/python_tip/status/1001048042420785152,590
+999902887370219521,Fri May 25 06:40:00 +0000 2018,35,91,1,1,4,0,136,6,"Good logging practice in #Python
+(why 'print' in not enough):
+
+https://t.co/AmGPd5MAB5
+
+#log #logging #pythontip https://t.co/1WBYYng9EY",https://twitter.com/python_tip/status/999902887370219521,591
+999539492859076609,Thu May 24 06:36:00 +0000 2018,10,28,0,1,3,0,247,7,"str() vs repr()
+
+str() and repr() are both used to get a string representation of object. But str() is used for creating output for end user while repr() is mainly used for debugging and development.
+
+https://t.co/7ocHssUZVy
+
+#str #repr #pythontip",https://twitter.com/python_tip/status/999539492859076609,592
+999197619913043969,Wed May 23 07:57:31 +0000 2018,7,31,0,4,2,0,219,8,"Python Style Guides:
+https://t.co/pVkHorwxLO
+https://t.co/vLjAIChjX4
+https://t.co/T0V1FOy7MP
+
+Pylint can help you to check for coding standards. To integrate it into your IDE: https://t.co/YwjkFURsJe
+
+#pythontip #pylint",https://twitter.com/python_tip/status/999197619913043969,593
+998821755543212033,Tue May 22 07:03:58 +0000 2018,14,35,1,2,3,1,182,5,"#pythontip from @bminor232:
+
+Create #data-pipelines via Pandas method chaining https://t.co/TdDAmWH7U1
+
+Send us your own #pythontip to https://t.co/mfUQ9twkWS https://t.co/evgfmNebdg",https://twitter.com/python_tip/status/998821755543212033,594
+998454978053226501,Mon May 21 06:46:31 +0000 2018,9,41,0,2,1,0,79,5,"#pycon2018 videos are online:
+
+https://t.co/hNFIAEcIRf
+
+https://t.co/OISLbE19c2",https://twitter.com/python_tip/status/998454978053226501,595
+997479628464934912,Fri May 18 14:10:50 +0000 2018,5,10,0,1,4,0,90,4,"How to use #tensorboard with Google #colab:
+https://t.co/ZnMk6tETEM
+
+#python #DeepLearning",https://twitter.com/python_tip/status/997479628464934912,596
+997165361287061504,Thu May 17 17:22:03 +0000 2018,17,67,1,2,2,0,204,6,"Join the content of two string columns into one column with https://t.co/gJy7eDJM81() method:
+
+df['c'] = df['a'].str.cat(df['b'], sep=',')
+
+#pandas #python 
+https://t.co/uxv9lN5CCg https://t.co/mEf0wjOx92",https://twitter.com/python_tip/status/997165361287061504,597
+996756981674332162,Wed May 16 14:19:17 +0000 2018,0,14,0,1,2,0,113,4,"Need to download a file from #Google #colab?
+
+from google.colab import files
+https://t.co/mJCa5G8g1z('model1.h5')",https://twitter.com/python_tip/status/996756981674332162,598
+996333363391860737,Tue May 15 10:15:59 +0000 2018,36,125,0,0,1,0,255,13,"Difference between list.append() and list.extend(): 
+
+&gt;&gt;&gt; x = [1, 2, 3]
+&gt;&gt;&gt; x.append([4, 5])
+&gt;&gt;&gt; print(x)
+[1, 2, 3, [4, 5]]
+
+&gt;&gt;&gt; x = [1, 2, 3]
+&gt;&gt;&gt; x.extend([4, 5])
+&gt;&gt;&gt; print(x)
+[1, 2, 3, 4, 5]
+
+#python",https://twitter.com/python_tip/status/996333363391860737,599
+996027753915998208,Mon May 14 14:01:36 +0000 2018,25,75,0,1,2,0,96,3,"Import your Google sheets into #pandas dataframes using gspread:
+https://t.co/1n4x5xDbTe
+#python",https://twitter.com/python_tip/status/996027753915998208,600
+994810079563010048,Fri May 11 05:23:00 +0000 2018,14,57,0,2,1,2,250,5,"🕒 If you have 1 hour, you can start with Neural Networks and Keras by watching this #io18 talk: https://t.co/CEjiwdsPoo
+
+📝 @DataCamp Keras Cheat Sheet: https://t.co/h4hIA3MWjk
+
+🕒🕒🕒 (If you have 3 hours, you can come to our Keras workshop at @pyconcz)",https://twitter.com/python_tip/status/994810079563010048,601
+994449201739239424,Thu May 10 05:29:00 +0000 2018,15,58,1,1,2,0,310,12,"How to ignore warnings:
+
+&gt; import warnings
+&gt; warnings.filterwarnings('ignore')
+
+You can ignore only a specific type of warnings, for example DeprecationWarning.
+
+warnings.filterwarnings('ignore', 'DeprecationWarning')
+
+For more info,  https://t.co/ihUzsTnWyy
+
+#pythontip #warnings https://t.co/zzq9zozGob",https://twitter.com/python_tip/status/994449201739239424,602
+994073352435314688,Wed May 09 04:35:30 +0000 2018,97,241,0,4,0,0,279,7,"Colab (Google's flavor of Jupyter Notebook) can now open/save notebooks directly from Github. Just add your Github path to https://t.co/8B58ZpRZDq
+
+For example, to open
+https://t.co/wMDaguQOuv
+use the following URL https://t.co/nlNkO0S800
+
+More details at https://t.co/WI3NUvBduc",https://twitter.com/python_tip/status/994073352435314688,603
+993770054515802113,Tue May 08 08:30:19 +0000 2018,4,19,0,0,0,1,289,8,"Changing an environment variable affects the current process and following child processes ('check_output' run cmd and return its output)
+
+&gt; import os, subprocess
+&gt; os.environ['USER'] = 'peter'
+&gt; subprocess.check_output('echo $USER', shell=True)
+'peter\n'
+
+(inspired by @raymondh)",https://twitter.com/python_tip/status/993770054515802113,604
+993605366196748293,Mon May 07 21:35:54 +0000 2018,0,0,0,0,0,3,140,6,"RT @__anoop: @python_tip @ratneshkush missing quotes on those
+num = 90
+name = 'Ratnesh'
+subject = 'Algorithm'
+
+print(f'I am {name} scored {…",https://twitter.com/python_tip/status/993605366196748293,606
+993562318784024577,Mon May 07 18:44:50 +0000 2018,9,31,0,1,2,1,230,12,"#pythontip from @ratneshkush:
+
+For Python 3.5+
+String formatting improved
+
+num = 90
+name = Ratnesh
+subject = Algorithm
+
+print(f'I am {name} scored {num} out of 100 in {subject}')
+
+Send us your #pythontip to https://t.co/mfUQ9twkWS",https://twitter.com/python_tip/status/993562318784024577,607
+992403864396750849,Fri May 04 14:01:33 +0000 2018,2,27,0,2,2,0,174,3,"Analyze the memory usage of your #Python code with memory_profiler. In #Jupyter notebook, you can use %memit and %mprun magic.
+https://t.co/cpqd2ba6xe
+https://t.co/K6tekSguIQ",https://twitter.com/python_tip/status/992403864396750849,608
+992397522810306560,Fri May 04 13:36:21 +0000 2018,0,0,0,0,1,1,109,4,"RT @pybites: String literals will concatenate in #Python:
+
+&gt;&gt;&gt; 'Python' ' is ' 'fun'
+'Python is fun'",https://twitter.com/python_tip/status/992397522810306560,609
+992062625679921153,Thu May 03 15:25:36 +0000 2018,9,56,0,0,1,0,158,6,"zip() is great for transposing 2D data:
+&gt;&gt;&gt; lst = [(1, 2, 3, 4), (5, 6, 7, 8)]
+&gt;&gt;&gt; list(zip(*lst))
+[(1, 5), (2, 6), (3, 7), (4, 8)]
+
+#python",https://twitter.com/python_tip/status/992062625679921153,610
+991632180668452864,Wed May 02 10:55:10 +0000 2018,18,32,0,1,1,0,165,4,"Extract tar files using #python
+import tarfile
+with https://t.co/IteGFw4RUG('./datasets/housing/housing.tgz') as tgz:
+    tgz.extractall(path = './datasets/housing')",https://twitter.com/python_tip/status/991632180668452864,611
+991410807354339329,Tue May 01 20:15:30 +0000 2018,18,33,0,0,0,0,60,1,Python dictionaries are insertion ordered by default in 3.7+,https://twitter.com/python_tip/status/991410807354339329,612
+991005945420365824,Mon Apr 30 17:26:44 +0000 2018,0,0,1,2,0,1,105,1,RT @xkcdComic: Python Environment https://t.co/cyeaNT2Mk8 https://t.co/DMqsewgIzz https://t.co/ULfDw9uL0u,https://twitter.com/python_tip/status/991005945420365824,613
+990951411302256642,Mon Apr 30 13:50:02 +0000 2018,40,132,1,0,1,0,146,4,"Print calendar of a given month and year:
+&gt;&gt;&gt; import calendar
+&gt;&gt;&gt; print(calendar.month(2018, 5))
+#python https://t.co/ivX91vqT59",https://twitter.com/python_tip/status/990951411302256642,614
+989761062856724480,Fri Apr 27 07:00:00 +0000 2018,13,30,0,0,0,0,281,5,"Modules/packages are imported only the first time. If you work interactively and need to reimport module/package after its editing
+
+&gt; importlib.reload(packagename)
+
+(works with Python version 3.4 and newer, for older versions, try imp.reload(packagename) or reload(packagename))",https://twitter.com/python_tip/status/989761062856724480,615
+989655410675089409,Fri Apr 27 00:00:11 +0000 2018,2,10,0,2,0,0,120,1,See you there on our Deep Learning with Keras &amp; Tensorflow workshop: https://t.co/M5cxOq5vmp https://t.co/b6oU2jA7D8,https://twitter.com/python_tip/status/989655410675089409,616
+989398674022256641,Thu Apr 26 07:00:00 +0000 2018,8,31,0,2,0,0,174,7,"Wrap C++ to Python the easy way:
+
+https://t.co/MPx1eQMKuP
+
+Example:
+https://t.co/ko5ztN4kmO
+(particularly with Google's bazel build system and protobufs, CLIF works miracles)",https://twitter.com/python_tip/status/989398674022256641,617
+989059204743917568,Wed Apr 25 08:31:04 +0000 2018,0,0,0,1,1,1,111,4,"RT @FilipBolt: #pandas
+
+apply =&gt; column-wise apply
+applymap =&gt; element-wise apply https://t.co/oNmPf2IeeR",https://twitter.com/python_tip/status/989059204743917568,618
+989036287440146432,Wed Apr 25 07:00:00 +0000 2018,20,70,1,1,1,0,115,4,"Learn the difference between 'apply', 'applymap' and 'map'
+
+https://t.co/9WhKbfW9L9
+#pandas https://t.co/vjRdjr3Qnu",https://twitter.com/python_tip/status/989036287440146432,619
+988673902854443008,Tue Apr 24 07:00:01 +0000 2018,2,27,1,1,0,0,86,3,"Traveling salesman portrait in Python
+
+https://t.co/QlWWRukbXZ https://t.co/ihU9RzmdnR",https://twitter.com/python_tip/status/988673902854443008,620
+988321270314909696,Mon Apr 23 07:38:47 +0000 2018,10,27,1,1,1,1,154,3,"Learn about scikit-learn, a consistent API for machine learning methods, from @amuellerml #rstatsnyc talk
+
+https://t.co/HWfDqDhcge https://t.co/I04LEc4g9D",https://twitter.com/python_tip/status/988321270314909696,621
+987316485545750529,Fri Apr 20 13:06:08 +0000 2018,24,70,1,1,2,0,201,7,"Pass functions to .loc[] and .iloc[] for indexing:
+df.loc[lambda x: x.col != 0]
+
+In this way, you can easily chain selection operations.
+https://t.co/SstL8M99WT
+
+#python #pandas https://t.co/j5LqhwZH8L",https://twitter.com/python_tip/status/987316485545750529,622
+986877058914566144,Thu Apr 19 08:00:00 +0000 2018,7,18,0,1,1,1,152,3,"Check out swiftapply by @jcarpenter542 : automatically find an efficient way to apply any function to #pandas series/dataframe.
+
+https://t.co/hADmpZzXlh",https://twitter.com/python_tip/status/986877058914566144,623
+986700393907408896,Wed Apr 18 20:18:00 +0000 2018,13,51,1,0,1,0,192,5,"Display a 2D array in #Jupyter notebook with tabulate: 
+
+from IPython.display import HTML, display
+import tabulate
+display(HTML(tabulate.tabulate(pred, tablefmt='html') https://t.co/N2oK08iZr7",https://twitter.com/python_tip/status/986700393907408896,624
+986563995011309568,Wed Apr 18 11:16:00 +0000 2018,7,14,1,0,2,0,167,1,%xmode verbose magic shows context and also values of the variables that are used in evaluation of an exceptionous expression #IPython #jupyter https://t.co/pYp772M6MC,https://twitter.com/python_tip/status/986563995011309568,625
+986209785061298177,Tue Apr 17 11:48:30 +0000 2018,11,16,1,0,2,0,137,4,"You can pass multiple axes to np.mean as a tuple:
+&gt;&gt;&gt; np.mean(myarray, axis = (0, 2, 3))
+
+#numpy #python https://t.co/WQA7mLLORG",https://twitter.com/python_tip/status/986209785061298177,626
+985896744922820609,Mon Apr 16 15:04:35 +0000 2018,26,56,0,0,1,0,194,10,"round() can accept a negative argument for number of places:
+&gt;&gt;&gt; x = 12345.6789
+&gt;&gt;&gt; round(x)
+12346.0
+&gt;&gt;&gt; round(x,2)
+12345.68
+&gt;&gt;&gt; round(x, -2)
+12300.0
+
+#python",https://twitter.com/python_tip/status/985896744922820609,627
